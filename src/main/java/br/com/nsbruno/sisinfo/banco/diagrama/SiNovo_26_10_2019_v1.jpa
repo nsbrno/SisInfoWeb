@@ -1,0 +1,1631 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings ptype="MONOLITH" ppkg="br.com.nsbruno.sisinfo" epkg="model" v="5.3" rws="_15721197299441372" cws="_15721197299441372" persistenceUnitName="DEFAULT_PU" sm="false" xs="false" id="_15721197299061057" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <jpa:entity compositePrimaryKeyClass="CfaenderEntityPK" abs="false" class="CfaenderEntity" v="true" jbn="false" xre="false" m="false" rootElement="_15721197299061057" id="_15721197299061058">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaestad" id="_15721197299061062">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAESTAD" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfacidad" id="_15721197299061063">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFACIDAD" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfabairo" id="_15721197299061064">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFABAIRO" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfalogra" id="_15721197299061065">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFALOGRA" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idSmaempre" id="_15721197299061066">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMAEMPRE" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaconta" id="_15721197299061067">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFACONTA" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfadepen" id="_15721197299061068">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFADEPEN" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaclifo" id="_15721197299061069">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFACLIFO" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfasocpa" id="_15721197299061070">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFASOCPA" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfarefcl" id="_15721197299061071">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAREFCL" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfarefer" id="_15721197299061072">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAREFER" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idApacateq" id="_15721197299061073">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_APACATEQ" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="guid" id="_15721197299061074">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GUID" unique="false" nullable="false" insertable="true" updatable="true" table="CFAENDER" length="16"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="usCad" id="_15721197299061075">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="US_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtCad" id="_15721197299061076">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAlt" id="_15721197299061077">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ALT" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="ctInteg" id="_15721197299061078">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_INTEG" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="Character" v="true" xvt="" name="tipo" id="_15721197299061079">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TIPO" unique="false" nullable="false" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="numero" id="_15721197299061080">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="NUMERO" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER" length="6"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="complemento" id="_15721197299061081">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COMPLEMENTO" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="email" id="_15721197299061082">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="EMAIL" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER" length="128"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="internet" id="_15721197299061083">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="INTERNET" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER" length="128"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="letraCxPostal" id="_15721197299061084">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="LETRA_CX_POSTAL" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="caixaPostal" id="_15721197299061085">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CAIXA_POSTAL" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="logradouro" id="_15721197299061086">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="LOGRADOURO" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="cep" id="_15721197299071087">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CEP" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER" length="9"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="cepCaixaPostal" id="_15721197299071088">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CEP_CAIXA_POSTAL" unique="false" nullable="true" insertable="true" updatable="true" table="CFAENDER" length="9"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" v="true" xvt="" name="idCfaender" id="_15721197299061061">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAENDER" unique="false" nullable="false" insertable="true" updatable="true" table="CFAENDER"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="CFAENDER"/>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="CfaclifoEntityPK" abs="false" class="CfaclifoEntity" v="true" jbn="false" xre="false" m="false" rootElement="_15721197299061057" id="_15721197299061059">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfapaise" id="_15721197299071090">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAPAISE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaprofi" id="_15721197299081091">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAPROFI" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfatimef" id="_15721197299081092">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFATIMEF" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaparti" id="_15721197299081093">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAPARTI" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfatpfor" id="_15721197299081094">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFATPFOR" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaativi" id="_15721197299081095">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAATIVI" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaareas" id="_15721197299081096">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAAREAS" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfatpcli" id="_15721197299081097">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFATPCLI" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfastatu" id="_15721197299081098">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFASTATU" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaprofiConj" id="_15721197299081099">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAPROFI_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaprofiCargoConj" id="_15721197299081100">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAPROFI_CARGO_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaprofiCargo" id="_15721197299081101">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAPROFI_CARGO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaportaBanco" id="_15721197299081102">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAPORTA_BANCO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaportaBancoConj" id="_15721197299081103">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAPORTA_BANCO_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaestadUfOrgao" id="_15721197299081104">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAESTAD_UF_ORGAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaestadUfOrgConj" id="_15721197299081105">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAESTAD_UF_ORG_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaestadNatural" id="_15721197299081106">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAESTAD_NATURAL" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfacidadNatural" id="_15721197299081107">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFACIDAD_NATURAL" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaestadUfHabilit" id="_15721197299081108">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAESTAD_UF_HABILIT" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaccredConj" id="_15721197299081109">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFACCRED_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaccred" id="_15721197299081110">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFACCRED" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idSmaempre" id="_15721197299081111">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMAEMPRE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idSmadepto" id="_15721197299081112">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMADEPTO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaclifoDioce" id="_15721197299081113">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFACLIFO_DIOCE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaclifoParoq" id="_15721197299081114">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFACLIFO_PAROQ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaclifoComun" id="_15721197299081115">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFACLIFO_COMUN" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idPastoralParticipa" id="_15721197299081116">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_PASTORAL_PARTICIPA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idPastoralGostaria" id="_15721197299081117">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_PASTORAL_GOSTARIA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="guid" id="_15721197299081118">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GUID" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO" length="16"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="usCad" id="_15721197299081119">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="US_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtCad" id="_15721197299081120">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAlt" id="_15721197299081121">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ALT" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="ctInteg" id="_15721197299081122">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_INTEG" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="cpfCgc" id="_15721197299081123">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CPF_CGC" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="18"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="cpfCgcSeq" id="_15721197299081124">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CPF_CGC_SEQ" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="ieRg" id="_15721197299081125">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IE_RG" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="18"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="orgaoEmissor" id="_15721197299081126">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ORGAO_EMISSOR" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="3"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="nomeRazao" id="_15721197299081127">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="NOME_RAZAO" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtNascimento" id="_15721197299081128">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_NASCIMENTO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="codigoCli" id="_15721197299081129">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO_CLI" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="codigoFor" id="_15721197299081130">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO_FOR" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="codigoFun" id="_15721197299081131">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO_FUN" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="codigoUsu" id="_15721197299081132">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO_USU" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="codigoRep" id="_15721197299081133">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO_REP" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="codigoCon" id="_15721197299081134">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO_CON" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="codigoTra" id="_15721197299081135">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO_TRA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="codigoApa" id="_15721197299081136">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO_APA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="cliente" id="_15721197299081137">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CLIENTE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="fornecedor" id="_15721197299081138">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FORNECEDOR" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="funcionario" id="_15721197299081139">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FUNCIONARIO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="usuario" id="_15721197299081140">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="USUARIO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="representante" id="_15721197299081141">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="REPRESENTANTE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="concorrente" id="_15721197299081142">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CONCORRENTE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="transportadora" id="_15721197299081143">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TRANSPORTADORA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="nomeFantasia" id="_15721197299081144">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="NOME_FANTASIA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="selecionado" id="_15721197299081145">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="SELECIONADO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="sexo" id="_15721197299081146">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="SEXO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="inscJunta" id="_15721197299081147">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="INSC_JUNTA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="18"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="inscSuframa" id="_15721197299081148">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="INSC_SUFRAMA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="18"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="inscMunicipal" id="_15721197299081149">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="INSC_MUNICIPAL" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="18"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="inscProdutor" id="_15721197299081150">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="INSC_PRODUTOR" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="18"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="complementoCargo" id="_15721197299081151">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COMPLEMENTO_CARGO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="rendaMesGiro" id="_15721197299081152">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="RENDA_MES_GIRO" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="capitalSocial" id="_15721197299081153">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CAPITAL_SOCIAL" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="estMercadorias" id="_15721197299081154">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="EST_MERCADORIAS" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="estMatPrima" id="_15721197299081155">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="EST_MAT_PRIMA" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="movtoVendas" id="_15721197299081156">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MOVTO_VENDAS" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="despesas" id="_15721197299081157">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESPESAS" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="empresaTrab" id="_15721197299081158">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="EMPRESA_TRAB" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="numCartHabilit" id="_15721197299081159">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="NUM_CART_HABILIT" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="18"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAdmissao" id="_15721197299081160">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_ADMISSAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="numRegHabilit" id="_15721197299081161">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="NUM_REG_HABILIT" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="18"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtVenctHabilit" id="_15721197299081162">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_VENCT_HABILIT" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="fumante" id="_15721197299081163">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FUMANTE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="obs" id="_15721197299091164">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="OBS" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="moradia" id="_15721197299091165">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MORADIA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="moraDesde" id="_15721197299091166">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="MORA_DESDE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="pessoa" id="_15721197299091167">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PESSOA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="civil" id="_15721197299091168">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CIVIL" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="conjuge" id="_15721197299091169">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CONJUGE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="cpfConjuge" id="_15721197299091170">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CPF_CONJUGE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="18"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtNascConj" id="_15721197299091171">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_NASC_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="pai" id="_15721197299091172">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PAI" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="cpfPai" id="_15721197299091173">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CPF_PAI" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="18"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="telPai" id="_15721197299091174">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TEL_PAI" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="15"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtNascPai" id="_15721197299091175">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_NASC_PAI" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="mae" id="_15721197299091176">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MAE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="telMae" id="_15721197299091177">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TEL_MAE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="15"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="cpfMae" id="_15721197299091178">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CPF_MAE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="18"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtNascMae" id="_15721197299091179">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_NASC_MAE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="escolaridade" id="_15721197299091180">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ESCOLARIDADE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="formacaoSuperior" id="_15721197299091181">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FORMACAO_SUPERIOR" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="18"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="areasInteresse" id="_15721197299091182">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="AREAS_INTERESSE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="128"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="qtdeFuncionarios" id="_15721197299091183">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="QTDE_FUNCIONARIOS" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="outrasRendas" id="_15721197299091184">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="OUTRAS_RENDAS" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="limiteCartao" id="_15721197299091185">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="LIMITE_CARTAO" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="numDepMaior" id="_15721197299091186">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="NUM_DEP_MAIOR" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="numDepMenor" id="_15721197299091187">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="NUM_DEP_MENOR" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="complementoCargoConj" id="_15721197299091188">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COMPLEMENTO_CARGO_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="rgConjuge" id="_15721197299091189">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="RG_CONJUGE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="18"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="orgaoEmissorConj" id="_15721197299091190">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ORGAO_EMISSOR_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="3"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="limiteConjuge" id="_15721197299091191">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="LIMITE_CONJUGE" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="empresaConjuge" id="_15721197299091192">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="EMPRESA_CONJUGE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="admissaoConjuge" id="_15721197299091193">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="ADMISSAO_CONJUGE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="rendaConjuge" id="_15721197299091194">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="RENDA_CONJUGE" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="agenciaConj" id="_15721197299091195">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="AGENCIA_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="dgAgConj" id="_15721197299091196">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DG_AG_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="contaConj" id="_15721197299091197">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CONTA_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="dgCtConj" id="_15721197299091198">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DG_CT_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="2"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="tipoContaConj" id="_15721197299091199">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TIPO_CONTA_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAberturaCtConj" id="_15721197299091200">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_ABERTURA_CT_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="validadeCtConj" id="_15721197299091201">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="VALIDADE_CT_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="ctEspecialConj" id="_15721197299091202">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_ESPECIAL_CONJ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="agencia" id="_15721197299091203">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="AGENCIA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="dgAg" id="_15721197299091204">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DG_AG" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="conta" id="_15721197299091205">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CONTA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="dgCt" id="_15721197299091206">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DG_CT" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="2"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="tipoCt" id="_15721197299091207">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TIPO_CT" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="validadeCartao" id="_15721197299091208">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="VALIDADE_CARTAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAberturaConta" id="_15721197299091209">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_ABERTURA_CONTA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="contaEspecial" id="_15721197299091210">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CONTA_ESPECIAL" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="convenio" id="_15721197299091211">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CONVENIO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="mascaraProduto" id="_15721197299091212">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MASCARA_PRODUTO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="consumidorRevenda" id="_15721197299091213">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CONSUMIDOR_REVENDA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="localTrabalho" id="_15721197299091214">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="LOCAL_TRABALHO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="manequim" id="_15721197299091215">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MANEQUIM" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="manequimConjuge" id="_15721197299091216">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MANEQUIM_CONJUGE" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="calcado" id="_15721197299091217">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CALCADO" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="calcadoConjuge" id="_15721197299091218">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CALCADO_CONJUGE" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="tipoFuncionario" id="_15721197299091219">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TIPO_FUNCIONARIO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="18"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="senha" id="_15721197299091220">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="SENHA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="Character" v="true" xvt="" name="ativo" id="_15721197299101221">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ATIVO" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="enviarExtrato" id="_15721197299101222">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ENVIAR_EXTRATO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="tipoExtrato" id="_15721197299101223">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TIPO_EXTRATO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="conjPodeComprar" id="_15721197299101224">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CONJ_PODE_COMPRAR" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtUltCompra" id="_15721197299101225">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_ULT_COMPRA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtRenovacao" id="_15721197299101226">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_RENOVACAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="isDizimista" id="_15721197299101227">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IS_DIZIMISTA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="isCatequista" id="_15721197299101228">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IS_CATEQUISTA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="isCatequizando" id="_15721197299101229">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IS_CATEQUIZANDO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="isReligioso" id="_15721197299101230">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IS_RELIGIOSO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="isPadre" id="_15721197299101231">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IS_PADRE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="isLeigo" id="_15721197299101232">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IS_LEIGO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="isMinistro" id="_15721197299101233">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IS_MINISTRO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="isOutros" id="_15721197299101234">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IS_OUTROS" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="isDiocese" id="_15721197299101235">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IS_DIOCESE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="isParoquia" id="_15721197299101236">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IS_PAROQUIA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="isComunidade" id="_15721197299101237">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IS_COMUNIDADE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="isContribuinte" id="_15721197299101238">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IS_CONTRIBUINTE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="isFuneraria" id="_15721197299101239">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IS_FUNERARIA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="isCoordcomun" id="_15721197299101240">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IS_COORDCOMUN" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="isCoordparoq" id="_15721197299101241">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IS_COORDPAROQ" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="paroquiaAnterior" id="_15721197299101242">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PAROQUIA_ANTERIOR" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="padreParocoVigario" id="_15721197299101243">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PADRE_PAROCO_VIGARIO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="padreTemProcuracao" id="_15721197299101244">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PADRE_TEM_PROCURACAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="padreDtExpedicao" id="_15721197299101245">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="PADRE_DT_EXPEDICAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="padreDtValidade" id="_15721197299101246">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="PADRE_DT_VALIDADE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="padreLivroProcuracao" id="_15721197299101247">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PADRE_LIVRO_PROCURACAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="padreFolhaProcuracao" id="_15721197299101248">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PADRE_FOLHA_PROCURACAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="padreVinculacaoDr" id="_15721197299101249">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PADRE_VINCULACAO_DR" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="padreDtChegadaDiocese" id="_15721197299101250">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="PADRE_DT_CHEGADA_DIOCESE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="padreDtOrdenacao" id="_15721197299101251">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="PADRE_DT_ORDENACAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="padreDtPresbiteral" id="_15721197299101252">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="PADRE_DT_PRESBITERAL" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="padreDtEpiscopal" id="_15721197299101253">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="PADRE_DT_EPISCOPAL" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="padreDioceseOrdenacao" id="_15721197299101254">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PADRE_DIOCESE_ORDENACAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="padreDioceseIncardinacao" id="_15721197299101255">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PADRE_DIOCESE_INCARDINACAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="padreDioceseResidencia" id="_15721197299101256">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PADRE_DIOCESE_RESIDENCIA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="padreEstudosFeitos" id="_15721197299101257">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PADRE_ESTUDOS_FEITOS" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="catJaFoi" id="_15721197299101258">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CAT_JA_FOI" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="catJaFoiOnde" id="_15721197299101259">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CAT_JA_FOI_ONDE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="catJaFoiDtInicio" id="_15721197299101260">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="CAT_JA_FOI_DT_INICIO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="catJaFoiDtFinal" id="_15721197299101261">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="CAT_JA_FOI_DT_FINAL" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="catAtualDtInicio" id="_15721197299101262">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="CAT_ATUAL_DT_INICIO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="catAtualDtFinal" id="_15721197299111263">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="CAT_ATUAL_DT_FINAL" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="catAtualNMatriculas" id="_15721197299111264">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CAT_ATUAL_N_MATRICULAS" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="catAtualNFormandos" id="_15721197299111265">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CAT_ATUAL_N_FORMANDOS" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="catAtualUsaAgenda" id="_15721197299111266">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CAT_ATUAL_USA_AGENDA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtCasamento" id="_15721197299111267">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_CASAMENTO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="tipoSanguineo" id="_15721197299111268">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TIPO_SANGUINEO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="tipoSangRh" id="_15721197299111269">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TIPO_SANG_RH" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="ieRgDtExpedicao" id="_15721197299111270">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="IE_RG_DT_EXPEDICAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="tempoContribuicao" id="_15721197299111271">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TEMPO_CONTRIBUICAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="40"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="zona" id="_15721197299111272">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ZONA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="grupoReflexao" id="_15721197299111273">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GRUPO_REFLEXAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="quantGrupoReflexao" id="_15721197299111274">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="QUANT_GRUPO_REFLEXAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="leigoOutrosObservacao" id="_15721197299111275">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="LEIGO_OUTROS_OBSERVACAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="numeroFicha" id="_15721197299111276">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="NUMERO_FICHA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="participaPastoral" id="_15721197299111277">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PARTICIPA_PASTORAL" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="gostariaPastoral" id="_15721197299111278">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GOSTARIA_PASTORAL" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="codigo" id="_15721197299111279">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtBatizado" id="_15721197299111280">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_BATIZADO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtEucaristia" id="_15721197299111281">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_EUCARISTIA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="paroqBatizado" id="_15721197299111282">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PAROQ_BATIZADO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="paroqEucaristia" id="_15721197299111283">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PAROQ_EUCARISTIA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="emailGeral" id="_15721197299111284">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="EMAIL_GERAL" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="128"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="emailFinan" id="_15721197299111285">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="EMAIL_FINAN" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="128"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="emailContabil" id="_15721197299111286">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="EMAIL_CONTABIL" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="128"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="emailCompras" id="_15721197299111287">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="EMAIL_COMPRAS" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="128"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="site" id="_15721197299111288">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="SITE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="128"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="crt" id="_15721197299111289">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CRT" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="suframaOk" id="_15721197299111290">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="SUFRAMA_OK" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtValidadeSuframa" id="_15721197299111291">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_VALIDADE_SUFRAMA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="qtdeLicencaMovel" id="_15721197299111292">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="QTDE_LICENCA_MOVEL" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="versaoSavare" id="_15721197299111293">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="VERSAO_SAVARE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="ipServidorSisinfo" id="_15721197299111294">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IP_SERVIDOR_SISINFO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="128"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="ipServidorWebservice" id="_15721197299111295">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IP_SERVIDOR_WEBSERVICE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="128"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="usuSisinfoWebservice" id="_15721197299111296">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="USU_SISINFO_WEBSERVICE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="senhaSisinfoWebservice" id="_15721197299111297">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="SENHA_SISINFO_WEBSERVICE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="caminhoBancoSisinfo" id="_15721197299111298">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CAMINHO_BANCO_SISINFO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="128"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="portaBancoSisinfo" id="_15721197299111299">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PORTA_BANCO_SISINFO" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="modoConexaoWebservice" id="_15721197299111300">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MODO_CONEXAO_WEBSERVICE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="maeFone" id="_15721197299111301">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MAE_FONE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="15"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="paiFone" id="_15721197299111302">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PAI_FONE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="15"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="temBiblia" id="_15721197299111303">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TEM_BIBLIA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="padrinho" id="_15721197299111304">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PADRINHO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="padriCasado" id="_15721197299111305">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PADRI_CASADO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="padriConjugue" id="_15721197299111306">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PADRI_CONJUGUE" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="batismo" id="_15721197299111307">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BATISMO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="eucaristia" id="_15721197299111308">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="EUCARISTIA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="crisma" id="_15721197299111309">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CRISMA" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="matrimonio" id="_15721197299111310">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MATRIMONIO" unique="false" nullable="true" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" v="true" xvt="" name="idCfaclifo" id="_15721197299071089">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFACLIFO" unique="false" nullable="false" insertable="true" updatable="true" table="CFACLIFO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="CFACLIFO"/>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="CfaparamEntityPK" abs="false" class="CfaparamEntity" v="true" jbn="false" xre="false" m="false" rootElement="_15721197299061057" id="_15721197299061060">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="idCfaclifo" id="_15721197299121312">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFACLIFO" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="idSmaempre" id="_15721197299121313">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMAEMPRE" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaclifoVende" id="_15721197299121314">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFACLIFO_VENDE" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaclifoConvenio" id="_15721197299121315">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFACLIFO_CONVENIO" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaclifoIndicou" id="_15721197299121316">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFACLIFO_INDICOU" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfamoeda" id="_15721197299121317">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAMOEDA" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfatpcob" id="_15721197299121318">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFATPCOB" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfaporta" id="_15721197299121319">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAPORTA" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCbaplcta" id="_15721197299121320">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CBAPLCTA" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCbactcus" id="_15721197299121321">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CBACTCUS" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfatpdoc" id="_15721197299121322">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFATPDOC" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idAeaforma" id="_15721197299121323">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEAFORMA" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idAeaplpgt" id="_15721197299121324">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEAPLPGT" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="guid" id="_15721197299121325">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GUID" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM" length="16"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="usCad" id="_15721197299121326">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="US_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtCad" id="_15721197299121327">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAlt" id="_15721197299121328">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ALT" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="ctInteg" id="_15721197299121329">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_INTEG" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="vendeAtrazado" id="_15721197299121330">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="VENDE_ATRAZADO" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="debitoEmConta" id="_15721197299121331">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DEBITO_EM_CONTA" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="limite" id="_15721197299121332">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="LIMITE" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="descAtacVista" id="_15721197299121333">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESC_ATAC_VISTA" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="descAtacPrazo" id="_15721197299121334">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESC_ATAC_PRAZO" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="descVareVista" id="_15721197299121335">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESC_VARE_VISTA" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="descVarePrazo" id="_15721197299121336">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESC_VARE_PRAZO" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="descServVista" id="_15721197299121337">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESC_SERV_VISTA" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="descServPrazo" id="_15721197299121338">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESC_SERV_PRAZO" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="descPromocao" id="_15721197299121339">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESC_PROMOCAO" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="diaVencto1" id="_15721197299121340">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DIA_VENCTO1" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="diaVencto2" id="_15721197299121341">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DIA_VENCTO2" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="diaVencto3" id="_15721197299121342">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DIA_VENCTO3" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="diaVencto4" id="_15721197299121343">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DIA_VENCTO4" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="diaVenctoSemana1" id="_15721197299121344">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DIA_VENCTO_SEMANA1" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="diaVenctoSemana2" id="_15721197299121345">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DIA_VENCTO_SEMANA2" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="roteiro" id="_15721197299121346">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ROTEIRO" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="frequencia" id="_15721197299121347">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FREQUENCIA" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="posicaoRoteiro" id="_15721197299121348">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="POSICAO_ROTEIRO" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtUltCompra" id="_15721197299121349">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_ULT_COMPRA" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtUltVisita" id="_15721197299121350">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_ULT_VISITA" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtUltEnvio" id="_15721197299121351">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ULT_ENVIO" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtUltRecebto" id="_15721197299121352">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ULT_RECEBTO" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtProximoContato" id="_15721197299121353">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_PROXIMO_CONTATO" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="percReducFatAtac" id="_15721197299121354">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PERC_REDUC_FAT_ATAC" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="percReducFatVare" id="_15721197299121355">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PERC_REDUC_FAT_VARE" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="valorMinimoAgrup" id="_15721197299121356">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="VALOR_MINIMO_AGRUP" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="valorMaximoAgrup" id="_15721197299121357">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="VALOR_MAXIMO_AGRUP" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="diasAtrazo" id="_15721197299121358">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DIAS_ATRAZO" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="diasCarencia" id="_15721197299121359">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DIAS_CARENCIA" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="jurosDiario" id="_15721197299121360">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="JUROS_DIARIO" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="atacadoVarejo" id="_15721197299121361">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ATACADO_VAREJO" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="vistaPrazo" id="_15721197299121362">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="VISTA_PRAZO" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="faturaVlMin" id="_15721197299121363">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FATURA_VL_MIN" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="parcelaEmAberto" id="_15721197299121364">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PARCELA_EM_ABERTO" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="capitaliza" id="_15721197299121365">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CAPITALIZA" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="bloqueiaTit" id="_15721197299121366">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BLOQUEIA_TIT" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="bloqueiaBol" id="_15721197299121367">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BLOQUEIA_BOL" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="bloqueiaReq" id="_15721197299121368">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BLOQUEIA_REQ" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="bloqueiaChq" id="_15721197299121369">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BLOQUEIA_CHQ" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="jurosFactory" id="_15721197299121370">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="JUROS_FACTORY" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="funcoesMobile" id="_15721197299121371">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FUNCOES_MOBILE" unique="false" nullable="true" insertable="true" updatable="true" table="CFAPARAM" length="18"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" v="true" xvt="" name="idCfaparam" id="_15721197299121311">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAPARAM" unique="false" nullable="false" insertable="true" updatable="true" table="CFAPARAM"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="CFAPARAM">
+            <jpa:unique-constraint>
+                <jpa:column-name>ID_SMAEMPRE</jpa:column-name>
+                <jpa:column-name>ID_CFACLIFO</jpa:column-name>
+            </jpa:unique-constraint>
+        </jpa:table>
+    </jpa:entity>
+    <jpa:wsl>
+        <jpa:ws n="Main" id="_15721197299441372">
+            <i ref="_15721197299061059" x="335" y="32"/>
+            <i ref="_15721197299061058" x="654" y="32"/>
+            <i ref="_15721197299061060" x="32" y="32"/>
+        </jpa:ws>
+    </jpa:wsl>
+</jpa:entity-mappings>

@@ -1,0 +1,1733 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings ptype="MONOLITH" ppkg="br.com.nsbruno.sisinfo.modal" epkg="modal" v="5.3" rws="_1572117628101328" cws="_1572117628101328" persistenceUnitName="DEFAULT_PU" sm="false" xs="false" id="_15721176280183" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <jpa:entity compositePrimaryKeyClass="SmausuarEntityPK" abs="false" class="SmausuarEntity" v="true" jbn="false" xre="false" m="false" rootElement="_15721176280183" id="_15721176280184">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idSmaempre" id="_157211762802615">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMAEMPRE" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="idCfaclifo" id="_157211762802716">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFACLIFO" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCbanumcx" id="_157211762802717">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CBANUMCX" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="guid" id="_157211762802718">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GUID" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR" length="16"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="usCad" id="_157211762802719">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="US_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtCad" id="_157211762802720">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAlt" id="_157211762802721">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ALT" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="ctInteg" id="_157211762802722">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_INTEG" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="nome" id="_157211762802723">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="NOME" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="corCampoComFocu" id="_157211762802724">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COR_CAMPO_COM_FOCU" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="corCampoSemFocu" id="_157211762802725">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COR_CAMPO_SEM_FOCU" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="corBoxComFocu" id="_157211762802726">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COR_BOX_COM_FOCU" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="corBoxSemFocu" id="_157211762802727">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COR_BOX_SEM_FOCU" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="corLinhaSelGrid" id="_157211762802728">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COR_LINHA_SEL_GRID" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="corColunaSelGrid" id="_157211762802729">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COR_COLUNA_SEL_GRID" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="corCampoSelGrid" id="_157211762802730">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COR_CAMPO_SEL_GRID" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="corLinhaImparGrid" id="_157211762802731">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COR_LINHA_IMPAR_GRID" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="corLinhaParGrid" id="_157211762802732">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COR_LINHA_PAR_GRID" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="corHeaderGridComFocu" id="_157211762802733">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COR_HEADER_GRID_COM_FOCU" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="corHeaderGridSemFocu" id="_157211762802734">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COR_HEADER_GRID_SEM_FOCU" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="corLinha" id="_157211762802735">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COR_LINHA" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="corForm" id="_157211762802736">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COR_FORM" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteLcfNome" id="_157211762802737">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LCF_NOME" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteLsfNome" id="_157211762802738">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LSF_NOME" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteCcfNome" id="_157211762802739">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_CCF_NOME" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteCsfNome" id="_157211762802740">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_CSF_NOME" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteLsgNome" id="_157211762802741">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LSG_NOME" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteColsgNome" id="_157211762802742">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_COLSG_NOME" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteCposgNome" id="_157211762802743">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_CPOSG_NOME" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteLigNome" id="_157211762802744">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LIG_NOME" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteLpgNome" id="_157211762802745">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LPG_NOME" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteHgcfNome" id="_157211762802746">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_HGCF_NOME" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteHgsfNome" id="_157211762802747">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_HGSF_NOME" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteMenuNome" id="_157211762802748">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_MENU_NOME" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteRelatNome" id="_157211762802749">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_RELAT_NOME" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteLcfCor" id="_157211762802750">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LCF_COR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteLsfCor" id="_157211762802751">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LSF_COR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteCcfCor" id="_157211762802752">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_CCF_COR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteCsfCor" id="_157211762802753">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_CSF_COR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteLsgCor" id="_157211762802754">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LSG_COR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteColsgCor" id="_157211762802855">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_COLSG_COR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteCposgCor" id="_157211762802856">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_CPOSG_COR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteLigCor" id="_157211762802857">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LIG_COR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteLpgCor" id="_157211762802858">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LPG_COR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteHgcfCor" id="_157211762802859">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_HGCF_COR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteHgsfCor" id="_157211762802860">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_HGSF_COR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteMenuCor" id="_157211762802861">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_MENU_COR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="fonteLcfSize" id="_157211762802862">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LCF_SIZE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="fonteLsfSize" id="_157211762802863">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LSF_SIZE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="fonteCcfSize" id="_157211762802864">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_CCF_SIZE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="fonteCsfSize" id="_157211762802865">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_CSF_SIZE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="fonteLsgSize" id="_157211762802866">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LSG_SIZE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="fonteCposgSize" id="_157211762802867">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_CPOSG_SIZE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="fonteLigSize" id="_157211762802868">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LIG_SIZE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="fonteLpgSize" id="_157211762802869">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LPG_SIZE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="fonteHgcfSize" id="_157211762802870">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_HGCF_SIZE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="fonteColsgSize" id="_157211762802871">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_COLSG_SIZE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="fonteHgsfSize" id="_157211762802872">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_HGSF_SIZE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="fonteMenuSize" id="_157211762802873">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_MENU_SIZE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="fonteRelatSize" id="_157211762802874">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_RELAT_SIZE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteLcfEstilo" id="_157211762802875">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LCF_ESTILO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="5"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteLsfEstilo" id="_157211762802976">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LSF_ESTILO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="5"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteCcfEstilo" id="_157211762802977">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_CCF_ESTILO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="5"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteCsfEstilo" id="_157211762802978">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_CSF_ESTILO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="5"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteLsgEstilo" id="_157211762802979">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LSG_ESTILO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="5"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteColsgEstilo" id="_157211762802980">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_COLSG_ESTILO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="5"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteCposgEstilo" id="_157211762802981">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_CPOSG_ESTILO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="5"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteLigEstilo" id="_157211762802982">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LIG_ESTILO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="5"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteLpgEstilo" id="_157211762802983">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_LPG_ESTILO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="5"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteHgcfEstilo" id="_157211762802984">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_HGCF_ESTILO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="5"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteHgsfEstilo" id="_157211762802985">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_HGSF_ESTILO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="5"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteMenuEstilo" id="_157211762802986">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_MENU_ESTILO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="5"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="boxEnvolvator" id="_157211762802987">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BOX_ENVOLVATOR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="botaoRelevo" id="_157211762802988">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BOTAO_RELEVO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="edicao2d" id="_157211762802989">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="EDICAO_2D" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="selecionaEdicao" id="_157211762802990">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="SELECIONA_EDICAO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="piscaNomeCampo" id="_157211762802991">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PISCA_NOME_CAMPO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="telaChamadora" id="_157211762802992">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TELA_CHAMADORA" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="acessoTotal" id="_157211762802993">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ACESSO_TOTAL" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="defaultRowHeight" id="_157211762802994">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DEFAULT_ROW_HEIGHT" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="defaultRowHeightC" id="_157211762802995">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DEFAULT_ROW_HEIGHT_C" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="mascaraDataHora" id="_157211762802996">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MASCARA_DATA_HORA" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="40"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="mascaraData" id="_157211762802997">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MASCARA_DATA" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="40"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="mascaraHora" id="_157211762802998">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MASCARA_HORA" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="40"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="mascaraPercentual" id="_157211762803099">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MASCARA_PERCENTUAL" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="40"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="mascaraQtde" id="_1572117628030100">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MASCARA_QTDE" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="40"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="mascaraMonetaria" id="_1572117628030101">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MASCARA_MONETARIA" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="40"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="tamanhoPerc" id="_1572117628030102">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TAMANHO_PERC" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="tamanhoQtde" id="_1572117628030103">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TAMANHO_QTDE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="decimaisPerc" id="_1572117628030104">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DECIMAIS_PERC" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="decimaisQtde" id="_1572117628030105">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DECIMAIS_QTDE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="decimaisPreco" id="_1572117628030106">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DECIMAIS_PRECO" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="gerenciaCores" id="_1572117628030107">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GERENCIA_CORES" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="acessaCadastro" id="_1572117628030108">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ACESSA_CADASTRO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="escolheRelatorio" id="_1572117628031109">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ESCOLHE_RELATORIO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpBrowse" id="_1572117628031110">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_BROWSE" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpSelecao" id="_1572117628031111">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_SELECAO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpEdit" id="_1572117628031112">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_EDIT" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpInsert" id="_1572117628031113">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_INSERT" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpFirst" id="_1572117628032114">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_FIRST" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpPrior" id="_1572117628032115">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_PRIOR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpNext" id="_1572117628033116">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_NEXT" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpLast" id="_1572117628033117">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_LAST" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpClear" id="_1572117628033118">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_CLEAR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpGrava" id="_1572117628033119">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_GRAVA" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpExclui" id="_1572117628033120">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_EXCLUI" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpConsulta" id="_1572117628033121">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_CONSULTA" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpCadastra" id="_1572117628034122">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_CADASTRA" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpCalend" id="_1572117628034123">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_CALEND" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpCalc" id="_1572117628034124">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_CALC" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpSair" id="_1572117628034125">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_SAIR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpOk" id="_1572117628034126">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_OK" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpCancel" id="_1572117628034127">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_CANCEL" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpImprimir" id="_1572117628034128">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_IMPRIMIR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpOpcaoTela" id="_1572117628034129">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_OPCAO_TELA" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpRefreshRecord" id="_1572117628036130">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_REFRESH_RECORD" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpFundoTela" id="_1572117628036131">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_FUNDO_TELA" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="bmpVisualizar" id="_1572117628036132">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BMP_VISUALIZAR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="tipoFundo" id="_1572117628036133">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TIPO_FUNDO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="skin" id="_1572117628036134">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="SKIN" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR" length="40"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="modeloCalculadora" id="_1572117628036135">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MODELO_CALCULADORA" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" v="true" xvt="" name="idSmausuar" id="_157211762802514">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMAUSUAR" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSUAR"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="SMAUSUAR">
+            <jpa:unique-constraint>
+                <jpa:column-name>ID_CFACLIFO</jpa:column-name>
+            </jpa:unique-constraint>
+        </jpa:table>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="AeaproduEntityPK" abs="false" class="AeaproduEntity" v="true" jbn="false" xre="false" m="false" rootElement="_15721176280183" id="_15721176280195">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idAeafamil" id="_1572117628037137">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEAFAMIL" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idAeaclase" id="_1572117628037138">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEACLASE" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idAeagrupo" id="_1572117628037139">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEAGRUPO" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idAeasgrup" id="_1572117628037140">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEASGRUP" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idAeamarca" id="_1572117628037141">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEAMARCA" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="idAeaunven" id="_1572117628037142">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEAUNVEN" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idAeapesos" id="_1572117628037143">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEAPESOS" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idAeatpgrd" id="_1572117628037144">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEATPGRD" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="idAeacodom" id="_1572117628037145">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEACODOM" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idCfamodeq" id="_1572117628037146">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_CFAMODEQ" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idAeacodge" id="_1572117628037147">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEACODGE" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idAealisse" id="_1572117628037148">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEALISSE" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idAeacoanp" id="_1572117628037149">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEACOANP" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="guid" id="_1572117628037150">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GUID" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPRODU" length="16"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="usCad" id="_1572117628037151">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="US_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtCad" id="_1572117628037152">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAlt" id="_1572117628037153">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ALT" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="ctInteg" id="_1572117628037154">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_INTEG" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="descricao" id="_1572117628037155">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESCRICAO" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPRODU" length="50"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="byte []" v="true" xvt="" name="descricaoAuxiliar" id="_1572117628037156">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESCRICAO_AUXILIAR" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+                <jpa:lob/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="descricaoMascara" id="_1572117628037157">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESCRICAO_MASCARA" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU" length="50"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="Integer" v="true" xvt="" name="codigo" id="_1572117628037158">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPRODU" precision="0"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="codigoEstrutural" id="_1572117628037159">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO_ESTRUTURAL" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="referencia" id="_1572117628037160">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="REFERENCIA" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="codigoBarras" id="_1572117628037161">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO_BARRAS" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="abrevCf" id="_1572117628037162">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ABREV_CF" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU" length="2"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="classifFiscal" id="_1572117628037163">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CLASSIF_FISCAL" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="pesoLiquido" id="_1572117628037164">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PESO_LIQUIDO" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="pesoBruto" id="_1572117628037165">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PESO_BRUTO" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="Character" v="true" xvt="" name="ativo" id="_1572117628037166">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ATIVO" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="Character" v="true" xvt="" name="tipo" id="_1572117628037167">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TIPO" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="genero" id="_1572117628037168">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GENERO" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="validade" id="_1572117628037169">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="VALIDADE" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="garantia" id="_1572117628037170">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GARANTIA" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="controleSerial" id="_1572117628037171">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CONTROLE_SERIAL" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="saiNaNf" id="_1572117628037172">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="SAI_NA_NF" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="agrupadorPreco" id="_1572117628037173">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="AGRUPADOR_PRECO" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="exIpi" id="_1572117628037174">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="EX_IPI" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU" length="3"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="tipoItemEfd" id="_1572117628037175">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TIPO_ITEM_EFD" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="codigoNcm" id="_1572117628037176">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO_NCM" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU" length="13"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="similaridade" id="_1572117628037177">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="SIMILARIDADE" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="romaneia" id="_1572117628037178">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ROMANEIA" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fci" id="_1572117628037179">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FCI" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU" length="40"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="lucroVare" id="_1572117628037180">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="LUCRO_VARE" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="lucroAtac" id="_1572117628037181">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="LUCRO_ATAC" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="mva" id="_1572117628038182">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MVA" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="cest" id="_1572117628038183">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CEST" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPRODU" length="13"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" v="true" xvt="" name="idAeaprodu" id="_1572117628036136">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEAPRODU" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPRODU"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="AEAPRODU">
+            <jpa:unique-constraint>
+                <jpa:column-name>CODIGO</jpa:column-name>
+            </jpa:unique-constraint>
+        </jpa:table>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="AeaclaseEntityPK" abs="false" class="AeaclaseEntity" v="true" jbn="false" xre="false" m="false" rootElement="_15721176280183" id="_15721176280196">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="guid" id="_1572117628038185">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GUID" unique="false" nullable="false" insertable="true" updatable="true" table="AEACLASE" length="16"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="usCad" id="_1572117628038186">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="US_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="AEACLASE" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtCad" id="_1572117628038187">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="AEACLASE"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAlt" id="_1572117628038188">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ALT" unique="false" nullable="true" insertable="true" updatable="true" table="AEACLASE"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="ctInteg" id="_1572117628038189">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_INTEG" unique="false" nullable="true" insertable="true" updatable="true" table="AEACLASE"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="codigo" id="_1572117628038190">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO" unique="false" nullable="false" insertable="true" updatable="true" table="AEACLASE"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="descricao" id="_1572117628038191">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESCRICAO" unique="false" nullable="false" insertable="true" updatable="true" table="AEACLASE" length="60"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" v="true" xvt="" name="idAeaclase" id="_1572117628038184">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEACLASE" unique="false" nullable="false" insertable="true" updatable="true" table="AEACLASE"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="AEACLASE">
+            <jpa:unique-constraint>
+                <jpa:column-name>CODIGO</jpa:column-name>
+            </jpa:unique-constraint>
+        </jpa:table>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="AeasgrupEntityPK" abs="false" class="AeasgrupEntity" v="true" jbn="false" xre="false" m="false" rootElement="_15721176280183" id="_15721176280197">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="idAeagrupo" id="_1572117628038193">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEAGRUPO" unique="false" nullable="false" insertable="true" updatable="true" table="AEASGRUP"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="guid" id="_1572117628038194">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GUID" unique="false" nullable="false" insertable="true" updatable="true" table="AEASGRUP" length="16"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="usCad" id="_1572117628038195">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="US_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="AEASGRUP" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtCad" id="_1572117628038196">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="AEASGRUP"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAlt" id="_1572117628038197">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ALT" unique="false" nullable="true" insertable="true" updatable="true" table="AEASGRUP"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="ctInteg" id="_1572117628038198">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_INTEG" unique="false" nullable="true" insertable="true" updatable="true" table="AEASGRUP"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="codigo" id="_1572117628038199">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO" unique="false" nullable="false" insertable="true" updatable="true" table="AEASGRUP"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="descricao" id="_1572117628038200">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESCRICAO" unique="false" nullable="false" insertable="true" updatable="true" table="AEASGRUP" length="60"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" v="true" xvt="" name="idAeasgrup" id="_1572117628038192">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEASGRUP" unique="false" nullable="false" insertable="true" updatable="true" table="AEASGRUP"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="AEASGRUP">
+            <jpa:unique-constraint>
+                <jpa:column-name>ID_AEAGRUPO</jpa:column-name>
+                <jpa:column-name>CODIGO</jpa:column-name>
+            </jpa:unique-constraint>
+        </jpa:table>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="SmamenusEntityPK" abs="false" class="SmamenusEntity" v="true" jbn="false" xre="false" m="false" rootElement="_15721176280183" id="_15721176280198">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="guid" id="_1572117628038202">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GUID" unique="false" nullable="false" insertable="true" updatable="true" table="SMAMENUS" length="16"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="usCad" id="_1572117628038203">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="US_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="SMAMENUS" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtCad" id="_1572117628038204">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="SMAMENUS"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAlt" id="_1572117628038205">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ALT" unique="false" nullable="true" insertable="true" updatable="true" table="SMAMENUS"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="ctInteg" id="_1572117628038206">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_INTEG" unique="false" nullable="true" insertable="true" updatable="true" table="SMAMENUS"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="nome" id="_1572117628038207">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="NOME" unique="false" nullable="false" insertable="true" updatable="true" table="SMAMENUS" length="12"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="descricao" id="_1572117628038208">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESCRICAO" unique="false" nullable="false" insertable="true" updatable="true" table="SMAMENUS" length="60"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" v="true" xvt="" name="idSmamenus" id="_1572117628038201">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMAMENUS" unique="false" nullable="false" insertable="true" updatable="true" table="SMAMENUS"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="SMAMENUS">
+            <jpa:unique-constraint>
+                <jpa:column-name>NOME</jpa:column-name>
+            </jpa:unique-constraint>
+        </jpa:table>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="SmaparamEntityPK" abs="false" class="SmaparamEntity" v="true" jbn="false" xre="false" m="false" rootElement="_15721176280183" id="_15721176280199">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idAeacodom" id="_1572117628038210">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEACODOM" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idSmaempreManutProd" id="_1572117628038211">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMAEMPRE_MANUT_PROD" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idSmaempre" id="_1572117628038212">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMAEMPRE" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="guid" id="_1572117628038213">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GUID" unique="false" nullable="false" insertable="true" updatable="true" table="SMAPARAM" length="16"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="usCad" id="_1572117628038214">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="US_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtCad" id="_1572117628038215">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAlt" id="_1572117628038216">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ALT" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="ctInteg" id="_1572117628038217">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_INTEG" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="digFamilia" id="_1572117628038218">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DIG_FAMILIA" unique="false" nullable="false" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="digClasse" id="_1572117628038219">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DIG_CLASSE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="digGrupo" id="_1572117628038220">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DIG_GRUPO" unique="false" nullable="false" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="digSubgrupo" id="_1572117628038221">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DIG_SUBGRUPO" unique="false" nullable="false" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="digCodigo" id="_1572117628038222">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DIG_CODIGO" unique="false" nullable="false" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="nomeRazao" id="_1572117628038223">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="NOME_RAZAO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM" length="60"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="cpfCgc" id="_1572117628038224">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CPF_CGC" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM" length="18"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="padraoCodigoBarras" id="_1572117628039225">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PADRAO_CODIGO_BARRAS" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="inativaProdComEstoque" id="_1572117628039226">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="INATIVA_PROD_COM_ESTOQUE" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="fonteRelatNome" id="_1572117628039227">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_RELAT_NOME" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="fonteRelatSize" id="_1572117628039228">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FONTE_RELAT_SIZE" unique="false" nullable="false" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dataUltTransf" id="_1572117628039229">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DATA_ULT_TRANSF" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dataEntrouAr" id="_1572117628039230">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DATA_ENTROU_AR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="anosLock" id="_1572117628039231">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ANOS_LOCK" unique="false" nullable="false" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="delayBanner" id="_1572117628039232">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DELAY_BANNER" unique="false" nullable="false" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="delayEntreBanner" id="_1572117628039233">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DELAY_ENTRE_BANNER" unique="false" nullable="false" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="retornoFaturado" id="_1572117628039234">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="RETORNO_FATURADO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="validaGtin" id="_1572117628039235">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="VALIDA_GTIN" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="codIncTrib" id="_1572117628039236">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COD_INC_TRIB" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="indAproCred" id="_1572117628039237">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IND_APRO_CRED" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="codTipoCont" id="_1572117628039238">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COD_TIPO_CONT" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="indRegCum" id="_1572117628039239">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="IND_REG_CUM" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="versaoBanco" id="_1572117628039240">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="VERSAO_BANCO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="bdAtualizando" id="_1572117628039241">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="BD_ATUALIZANDO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="tipoPartidas" id="_1572117628039242">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TIPO_PARTIDAS" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="tipoBaixaContratos" id="_1572117628039243">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TIPO_BAIXA_CONTRATOS" unique="false" nullable="true" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" v="true" xvt="" name="idSmaparam" id="_1572117628038209">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMAPARAM" unique="false" nullable="false" insertable="true" updatable="true" table="SMAPARAM"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="SMAPARAM"/>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="AeagrupoEntityPK" abs="false" class="AeagrupoEntity" v="true" jbn="false" xre="false" m="false" rootElement="_15721176280183" id="_157211762801910">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="idAeaclase" id="_1572117628039245">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEACLASE" unique="false" nullable="false" insertable="true" updatable="true" table="AEAGRUPO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="guid" id="_1572117628039246">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GUID" unique="false" nullable="false" insertable="true" updatable="true" table="AEAGRUPO" length="16"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="usCad" id="_1572117628039247">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="US_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="AEAGRUPO" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtCad" id="_1572117628039248">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="AEAGRUPO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAlt" id="_1572117628039249">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ALT" unique="false" nullable="true" insertable="true" updatable="true" table="AEAGRUPO"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="ctInteg" id="_1572117628039250">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_INTEG" unique="false" nullable="true" insertable="true" updatable="true" table="AEAGRUPO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="codigo" id="_1572117628039251">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CODIGO" unique="false" nullable="false" insertable="true" updatable="true" table="AEAGRUPO"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="descricao" id="_1572117628039252">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESCRICAO" unique="false" nullable="false" insertable="true" updatable="true" table="AEAGRUPO" length="60"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" v="true" xvt="" name="idAeagrupo" id="_1572117628039244">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEAGRUPO" unique="false" nullable="false" insertable="true" updatable="true" table="AEAGRUPO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="AEAGRUPO">
+            <jpa:unique-constraint>
+                <jpa:column-name>ID_AEACLASE</jpa:column-name>
+                <jpa:column-name>CODIGO</jpa:column-name>
+            </jpa:unique-constraint>
+        </jpa:table>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="SmausurlEntityPK" abs="false" class="SmausurlEntity" v="true" jbn="false" xre="false" m="false" rootElement="_15721176280183" id="_157211762801911">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idSmaarqui" id="_1572117628039254">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMAARQUI" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSURL"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idSmarelat" id="_1572117628039255">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMARELAT" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSURL"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idSmausuar" id="_1572117628039256">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMAUSUAR" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSURL"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="guid" id="_1572117628039257">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GUID" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSURL" length="16"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="usCad" id="_1572117628039258">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="US_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSURL" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtCad" id="_1572117628039259">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSURL"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAlt" id="_1572117628039260">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ALT" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSURL"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="ctInteg" id="_1572117628039261">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_INTEG" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSURL"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="comandoImpressao" id="_1572117628039262">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COMANDO_IMPRESSAO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSURL" length="40"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="pedeSaida" id="_1572117628039263">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PEDE_SAIDA" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSURL"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="salvaTela" id="_1572117628039264">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="SALVA_TELA" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSURL"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="tipo" id="_1572117628039265">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TIPO" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSURL"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="usuarioConfigura" id="_1572117628039266">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="USUARIO_CONFIGURA" unique="false" nullable="true" insertable="true" updatable="true" table="SMAUSURL"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="copias" id="_1572117628039267">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="COPIAS" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSURL"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" v="true" xvt="" name="idSmausurl" id="_1572117628039253">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMAUSURL" unique="false" nullable="false" insertable="true" updatable="true" table="SMAUSURL"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="SMAUSURL"/>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="SmamodulEntityPK" abs="false" class="SmamodulEntity" v="true" jbn="false" xre="false" m="false" rootElement="_15721176280183" id="_157211762801912">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="guid" id="_1572117628039269">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GUID" unique="false" nullable="false" insertable="true" updatable="true" table="SMAMODUL" length="16"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="usCad" id="_1572117628039270">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="US_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="SMAMODUL" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtCad" id="_1572117628039271">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="SMAMODUL"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAlt" id="_1572117628039272">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ALT" unique="false" nullable="true" insertable="true" updatable="true" table="SMAMODUL"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="ctInteg" id="_1572117628039273">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_INTEG" unique="false" nullable="true" insertable="true" updatable="true" table="SMAMODUL"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="modulo" id="_1572117628039274">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MODULO" unique="false" nullable="false" insertable="true" updatable="true" table="SMAMODUL" length="12"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="descricao" id="_1572117628039275">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="DESCRICAO" unique="false" nullable="false" insertable="true" updatable="true" table="SMAMODUL" length="40"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" v="true" xvt="" name="idSmamodul" id="_1572117628039268">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMAMODUL" unique="false" nullable="false" insertable="true" updatable="true" table="SMAMODUL"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="SMAMODUL">
+            <jpa:unique-constraint>
+                <jpa:column-name>DESCRICAO</jpa:column-name>
+            </jpa:unique-constraint>
+        </jpa:table>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="AeaplojaEntityPK" abs="false" class="AeaplojaEntity" v="true" jbn="false" xre="false" m="false" rootElement="_15721176280183" id="_157211762801913">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="idSmaempre" id="_1572117628040277">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_SMAEMPRE" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="idAeaprodu" id="_1572117628040278">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEAPRODU" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="idAeacodstEnt" id="_1572117628040279">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEACODST_ENT" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="idAeacodst" id="_1572117628040280">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEACODST" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idAeaobspr" id="_1572117628040281">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEAOBSPR" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="idAeasazon" id="_1572117628040282">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEASAZON" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="guid" id="_1572117628040283">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="GUID" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA" length="16"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" xvt="" name="usCad" id="_1572117628040284">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="US_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA" length="20"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtCad" id="_1572117628040285">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_CAD" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtAlt" id="_1572117628040286">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ALT" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" xvt="" name="ctInteg" id="_1572117628040287">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_INTEG" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="estoqueF" id="_1572117628040288">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ESTOQUE_F" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="estoqueC" id="_1572117628040289">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ESTOQUE_C" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="retido" id="_1572117628040290">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="RETIDO" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="pedido" id="_1572117628040291">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PEDIDO" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="Character" v="true" xvt="" name="ativo" id="_1572117628040292">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ATIVO" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtReajusteVare" id="_1572117628040293">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_REAJUSTE_VARE" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtReajusteAtac" id="_1572117628040294">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_REAJUSTE_ATAC" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtVendaVareD" id="_1572117628040295">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_VENDA_VARE_D" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtVendaAtacD" id="_1572117628040296">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_VENDA_ATAC_D" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtVendaVareN" id="_1572117628040297">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_VENDA_VARE_N" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtVendaAtacN" id="_1572117628040298">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_VENDA_ATAC_N" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtVendaPromoVareD" id="_1572117628040299">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_VENDA_PROMO_VARE_D" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtVendaPromoAtacD" id="_1572117628040300">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_VENDA_PROMO_ATAC_D" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtVendaPromoVareN" id="_1572117628040301">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_VENDA_PROMO_VARE_N" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtVendaPromoAtacN" id="_1572117628040302">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_VENDA_PROMO_ATAC_N" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtEntradaD" id="_1572117628040303">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_ENTRADA_D" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtCompra" id="_1572117628040304">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_COMPRA" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtEntradaN" id="_1572117628040305">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_ENTRADA_N" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" xvt="" name="dtUltAlt" id="_1572117628040306">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="DT_ULT_ALT" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="ctReposicaoN" id="_1572117628040307">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_REPOSICAO_N" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="ctCompletoN" id="_1572117628040308">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_COMPLETO_N" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="ctRealN" id="_1572117628040309">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_REAL_N" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="ctMedioN" id="_1572117628040310">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_MEDIO_N" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="ctMedioCompN" id="_1572117628040311">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_MEDIO_COMP_N" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="ctReposicaoD" id="_1572117628040312">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_REPOSICAO_D" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="ctRealD" id="_1572117628040313">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_REAL_D" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="ctMedioD" id="_1572117628040314">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_MEDIO_D" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="ctMedioCnd" id="_1572117628040315">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="CT_MEDIO_CND" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="vendaAtac" id="_1572117628040316">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="VENDA_ATAC" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="vendaVare" id="_1572117628040317">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="VENDA_VARE" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="minimo" id="_1572117628040318">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MINIMO" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="medio" id="_1572117628040319">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MEDIO" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="maximo" id="_1572117628040320">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="MAXIMO" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" xvt="" name="numCompras" id="_1572117628041321">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="NUM_COMPRAS" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="tempoPedEntrega" id="_1572117628041322">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="TEMPO_PED_ENTREGA" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="precoTabela" id="_1572117628041323">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PRECO_TABELA" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="percFatAtac" id="_1572117628041324">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PERC_FAT_ATAC" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="percFatVare" id="_1572117628041325">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="PERC_FAT_VARE" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="double" v="true" xvt="" name="qtdeProdDia" id="_1572117628041326">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="QTDE_PROD_DIA" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Character" v="true" xvt="" name="formaVenda" id="_1572117628041327">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="FORMA_VENDA" unique="false" nullable="true" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" v="true" xvt="" name="idAeaploja" id="_1572117628040276">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="ID_AEAPLOJA" unique="false" nullable="false" insertable="true" updatable="true" table="AEAPLOJA"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="AEAPLOJA">
+            <jpa:unique-constraint>
+                <jpa:column-name>ID_SMAEMPRE</jpa:column-name>
+                <jpa:column-name>ID_AEAPRODU</jpa:column-name>
+            </jpa:unique-constraint>
+        </jpa:table>
+    </jpa:entity>
+    <jpa:c/>
+    <jpa:wsl>
+        <jpa:ws n="Main" id="_1572117628101328">
+            <i ref="_157211762801913" x="948" y="32"/>
+            <i ref="_157211762801911" x="32" y="32"/>
+            <i ref="_157211762801912" x="640" y="32"/>
+            <i ref="_15721176280196" x="1556" y="32"/>
+            <i ref="_15721176280197" x="2158" y="32"/>
+            <i ref="_157211762801910" x="2460" y="32"/>
+            <i ref="_15721176280198" x="1244" y="32"/>
+            <i ref="_15721176280199" x="2762" y="32"/>
+            <i ref="_15721176280184" x="334" y="32"/>
+            <i ref="_15721176280195" x="1856" y="32"/>
+        </jpa:ws>
+    </jpa:wsl>
+</jpa:entity-mappings>
