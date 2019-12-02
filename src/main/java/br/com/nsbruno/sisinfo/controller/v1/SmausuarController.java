@@ -46,7 +46,7 @@ public class SmausuarController extends BaseMyController<SmausuarService, Smausu
         try {
             // Checa se foi passado alguns dados de usuario e senha
             if ((request.getUserPrincipal() != null) && (request.getUserPrincipal().getName() != null) && (!request.getUserPrincipal().getName().isEmpty())) {
-                UserDetails user = baseMyService.loadUserByUsername(request.getUserPrincipal().getName());
+                UserDetails user = null; // baseMyService.loadUserByUsername(request.getUserPrincipal().getName());
                 // Checa se retornou algum usuario
                 if ((user != null) && (user.getUsername() != null) && (!user.getUsername().isEmpty())) {
                     //BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();

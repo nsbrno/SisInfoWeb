@@ -21,6 +21,7 @@ import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.web.context.request.RequestContextListener;
 
 /**
  *
@@ -76,5 +77,10 @@ public class PersistenceJPAConfiguration {
         properties.setProperty("format_sql", "true");
 
         return properties;
+    }
+
+    @Bean
+    public RequestContextListener requestContextListener() {
+        return new RequestContextListener();
     }
 }

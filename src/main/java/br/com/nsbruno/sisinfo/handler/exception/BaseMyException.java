@@ -5,13 +5,17 @@
  */
 package br.com.nsbruno.sisinfo.handler.exception;
 
+import br.com.nsbruno.sisinfo.model.ErrorMessageEntity;
+
 /**
  *
  * @author Nogueira
  */
 public class BaseMyException extends RuntimeException{
+    
+    private ErrorMessageEntity errorMessage;
 
-    public BaseMyException(String message) {
-        super(message);
+    public BaseMyException(ErrorMessageEntity errorMessage) {
+        this.errorMessage = errorMessage;
     }
 }
