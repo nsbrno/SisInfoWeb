@@ -17,7 +17,7 @@ public class AutorizadorInterceptor extends HandlerInterceptorAdapter {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        System.err.println("Deu certo aqui o preHandle ###########################################");
+        System.err.println("*** Deu certo aqui o preHandle ###########################################");
         return true;
     }
     
