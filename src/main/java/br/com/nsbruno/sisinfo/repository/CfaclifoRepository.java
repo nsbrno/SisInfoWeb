@@ -15,4 +15,5 @@ public interface CfaclifoRepository extends BaseMyRepository<CfaclifoEntity, Int
     
     public CfaclifoEntity findByCodigoUsuAndUsuario(Integer codigoUsuario, String usuario);
     
+    public CfaclifoEntity findByIdCfaclifo(Integer id);
 }

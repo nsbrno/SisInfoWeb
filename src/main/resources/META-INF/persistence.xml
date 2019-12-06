@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-  <persistence-unit name="DEFAULT_PU" transaction-type="RESOURCE_LOCAL">
+  <persistence-unit name="SisInfoWeb" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-    <class>br.com.nsbruno.sisinfo.model.CfaenderEntity</class>
-    <class>br.com.nsbruno.sisinfo.model.SmausuarEntity</class>
-    <class>br.com.nsbruno.sisinfo.model.SmaparamEntity</class>
-    <class>br.com.nsbruno.sisinfo.model.AeaplojaEntity</class>
-    <class>br.com.nsbruno.sisinfo.model.AeasgrupEntity</class>
-    <class>br.com.nsbruno.sisinfo.model.AeagrupoEntity</class>
-    <class>br.com.nsbruno.sisinfo.model.SmamodulEntity</class>
-    <class>br.com.nsbruno.sisinfo.model.AeaproduEntity</class>
-    <class>br.com.nsbruno.sisinfo.model.AeaclaseEntity</class>
-    <class>br.com.nsbruno.sisinfo.model.CfaparamEntity</class>
-    <class>br.com.nsbruno.sisinfo.model.CfaclifoEntity</class>
-    <class>br.com.nsbruno.sisinfo.model.SmausurlEntity</class>
-    <class>br.com.nsbruno.sisinfo.model.SmamenusEntity</class>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>
-      <property name="javax.persistence.jdbc.password" value="app"/>
-      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
-      <property name="javax.persistence.jdbc.user" value="app"/>
-      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:firebirdsql:192.168.139.219/3050:C:\\SisInfo\\si.fir?charSet=UTF8&amp;collate=UNICODE_CI_AI"/>
+      <property name="javax.persistence.jdbc.user" value="SYSDBA"/>
+      <property name="javax.persistence.jdbc.driver" value="org.firebirdsql.jdbc.FBDriver"/>
+      <property name="javax.persistence.jdbc.password" value="."/>
     </properties>
   </persistence-unit>
 </persistence>

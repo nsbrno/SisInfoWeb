@@ -5,24 +5,8 @@
  */
 package br.com.nsbruno.sisinfo.service;
 
-import br.com.nsbruno.sisinfo.handler.exception.BaseMyException;
-import br.com.nsbruno.sisinfo.model.CfaclifoEntity;
-import br.com.nsbruno.sisinfo.model.ErrorMessageEntity;
 import br.com.nsbruno.sisinfo.model.SmausuarEntity;
-import br.com.nsbruno.sisinfo.repository.CfaclifoRepository;
 import br.com.nsbruno.sisinfo.repository.SmausuarRepository;
-import java.util.Date;
-import java.util.Enumeration;
-import java.util.List;
-import javax.servlet.http.HttpServletRequest;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.AuthorityUtils;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 /**
@@ -35,7 +19,7 @@ public class SmausuarService extends BaseMyService<SmausuarRepository, SmausuarE
     public SmausuarService(SmausuarRepository baseMyRepository) {
         super(baseMyRepository);
     }
-
+//  TODO--Deletar este comentario
 //    @Autowired
 //    SmausuarRepository smausuarRepository;
 //

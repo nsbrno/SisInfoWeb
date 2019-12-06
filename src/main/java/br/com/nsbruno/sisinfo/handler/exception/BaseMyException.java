@@ -5,17 +5,24 @@
  */
 package br.com.nsbruno.sisinfo.handler.exception;
 
-import br.com.nsbruno.sisinfo.model.ErrorMessageEntity;
-
 /**
- *
+ * TODO--Colocar aqui o insert de log no banco de dados e no arquivo de servidor
  * @author Nogueira
  */
 public class BaseMyException extends RuntimeException{
-    
-    private ErrorMessageEntity errorMessage;
 
-    public BaseMyException(ErrorMessageEntity errorMessage) {
-        this.errorMessage = errorMessage;
+    public BaseMyException(String message) {
+        super(message);
     }
+
+    public BaseMyException(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+    public BaseMyException(Exception e) {
+        super(e);
+    }
+    
+    
+    
 }

@@ -7,7 +7,6 @@
 package br.com.nsbruno.sisinfo.service;
 
 import br.com.nsbruno.sisinfo.model.SmausuarEntity;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * Document   : SmausuarServiceTest

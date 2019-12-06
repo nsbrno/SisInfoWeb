@@ -8,12 +8,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.persistence.UniqueConstraint;
+
 import lombok.Data;
 
-@Data
 @Entity
-@Table(name = "CFAPARAM", uniqueConstraints = @UniqueConstraint(columnNames = {"ID_SMAEMPRE", "ID_CFACLIFO"}))
+@Table(name = "CFAPARAM")
+@Data
 public class CfaparamEntity {
 
     @Id
@@ -22,11 +22,11 @@ public class CfaparamEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO", table = "CFAPARAM", nullable = false)
-    private Integer idCfaclifo;
+    private int idCfaclifo;
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "CFAPARAM", nullable = false)
-    private Integer idSmaempre;
+    private int idSmaempre;
 
     @Basic
     @Column(name = "ID_CFACLIFO_VENDE", table = "CFAPARAM")
@@ -136,39 +136,39 @@ public class CfaparamEntity {
 
     @Basic(optional = false)
     @Column(name = "DIA_VENCTO1", table = "CFAPARAM", nullable = false)
-    private Integer diaVencto1;
+    private int diaVencto1;
 
     @Basic(optional = false)
     @Column(name = "DIA_VENCTO2", table = "CFAPARAM", nullable = false)
-    private Integer diaVencto2;
+    private int diaVencto2;
 
     @Basic(optional = false)
     @Column(name = "DIA_VENCTO3", table = "CFAPARAM", nullable = false)
-    private Integer diaVencto3;
+    private int diaVencto3;
 
     @Basic(optional = false)
     @Column(name = "DIA_VENCTO4", table = "CFAPARAM", nullable = false)
-    private Integer diaVencto4;
+    private int diaVencto4;
 
     @Basic(optional = false)
     @Column(name = "DIA_VENCTO_SEMANA1", table = "CFAPARAM", nullable = false)
-    private Integer diaVenctoSemana1;
+    private int diaVenctoSemana1;
 
     @Basic(optional = false)
     @Column(name = "DIA_VENCTO_SEMANA2", table = "CFAPARAM", nullable = false)
-    private Integer diaVenctoSemana2;
+    private int diaVenctoSemana2;
 
     @Basic(optional = false)
     @Column(name = "ROTEIRO", table = "CFAPARAM", nullable = false)
-    private Integer roteiro;
+    private int roteiro;
 
     @Basic(optional = false)
     @Column(name = "FREQUENCIA", table = "CFAPARAM", nullable = false)
-    private Integer frequencia;
+    private int frequencia;
 
     @Basic(optional = false)
     @Column(name = "POSICAO_ROTEIRO", table = "CFAPARAM", nullable = false)
-    private Integer posicaoRoteiro;
+    private int posicaoRoteiro;
 
     @Basic
     @Column(name = "DT_ULT_COMPRA", table = "CFAPARAM")
@@ -213,11 +213,11 @@ public class CfaparamEntity {
 
     @Basic(optional = false)
     @Column(name = "DIAS_ATRAZO", table = "CFAPARAM", nullable = false)
-    private Integer diasAtrazo;
+    private int diasAtrazo;
 
     @Basic(optional = false)
     @Column(name = "DIAS_CARENCIA", table = "CFAPARAM", nullable = false)
-    private Integer diasCarencia;
+    private int diasCarencia;
 
     @Basic(optional = false)
     @Column(name = "JUROS_DIARIO", table = "CFAPARAM", nullable = false)
@@ -266,4 +266,493 @@ public class CfaparamEntity {
     @Basic
     @Column(name = "FUNCOES_MOBILE", table = "CFAPARAM", length = 18)
     private String funcoesMobile;
+
+    public Integer getIdCfaparam() {
+        return idCfaparam;
+    }
+
+    public void setIdCfaparam(Integer idCfaparam) {
+        this.idCfaparam = idCfaparam;
+    }
+
+    public int getIdCfaclifo() {
+        return idCfaclifo;
+    }
+
+    public void setIdCfaclifo(int idCfaclifo) {
+        this.idCfaclifo = idCfaclifo;
+    }
+
+    public int getIdSmaempre() {
+        return idSmaempre;
+    }
+
+    public void setIdSmaempre(int idSmaempre) {
+        this.idSmaempre = idSmaempre;
+    }
+
+    public Integer getIdCfaclifoVende() {
+        return idCfaclifoVende;
+    }
+
+    public void setIdCfaclifoVende(Integer idCfaclifoVende) {
+        this.idCfaclifoVende = idCfaclifoVende;
+    }
+
+    public Integer getIdCfaclifoConvenio() {
+        return idCfaclifoConvenio;
+    }
+
+    public void setIdCfaclifoConvenio(Integer idCfaclifoConvenio) {
+        this.idCfaclifoConvenio = idCfaclifoConvenio;
+    }
+
+    public Integer getIdCfaclifoIndicou() {
+        return idCfaclifoIndicou;
+    }
+
+    public void setIdCfaclifoIndicou(Integer idCfaclifoIndicou) {
+        this.idCfaclifoIndicou = idCfaclifoIndicou;
+    }
+
+    public Integer getIdCfamoeda() {
+        return idCfamoeda;
+    }
+
+    public void setIdCfamoeda(Integer idCfamoeda) {
+        this.idCfamoeda = idCfamoeda;
+    }
+
+    public Integer getIdCfatpcob() {
+        return idCfatpcob;
+    }
+
+    public void setIdCfatpcob(Integer idCfatpcob) {
+        this.idCfatpcob = idCfatpcob;
+    }
+
+    public Integer getIdCfaporta() {
+        return idCfaporta;
+    }
+
+    public void setIdCfaporta(Integer idCfaporta) {
+        this.idCfaporta = idCfaporta;
+    }
+
+    public Integer getIdCbaplcta() {
+        return idCbaplcta;
+    }
+
+    public void setIdCbaplcta(Integer idCbaplcta) {
+        this.idCbaplcta = idCbaplcta;
+    }
+
+    public Integer getIdCbactcus() {
+        return idCbactcus;
+    }
+
+    public void setIdCbactcus(Integer idCbactcus) {
+        this.idCbactcus = idCbactcus;
+    }
+
+    public Integer getIdCfatpdoc() {
+        return idCfatpdoc;
+    }
+
+    public void setIdCfatpdoc(Integer idCfatpdoc) {
+        this.idCfatpdoc = idCfatpdoc;
+    }
+
+    public Integer getIdAeaforma() {
+        return idAeaforma;
+    }
+
+    public void setIdAeaforma(Integer idAeaforma) {
+        this.idAeaforma = idAeaforma;
+    }
+
+    public Integer getIdAeaplpgt() {
+        return idAeaplpgt;
+    }
+
+    public void setIdAeaplpgt(Integer idAeaplpgt) {
+        this.idAeaplpgt = idAeaplpgt;
+    }
+
+    public String getGuid() {
+        return guid;
+    }
+
+    public void setGuid(String guid) {
+        this.guid = guid;
+    }
+
+    public String getUsCad() {
+        return usCad;
+    }
+
+    public void setUsCad(String usCad) {
+        this.usCad = usCad;
+    }
+
+    public Date getDtCad() {
+        return dtCad;
+    }
+
+    public void setDtCad(Date dtCad) {
+        this.dtCad = dtCad;
+    }
+
+    public Date getDtAlt() {
+        return dtAlt;
+    }
+
+    public void setDtAlt(Date dtAlt) {
+        this.dtAlt = dtAlt;
+    }
+
+    public Integer getCtInteg() {
+        return ctInteg;
+    }
+
+    public void setCtInteg(Integer ctInteg) {
+        this.ctInteg = ctInteg;
+    }
+
+    public String getVendeAtrazado() {
+        return vendeAtrazado;
+    }
+
+    public void setVendeAtrazado(String vendeAtrazado) {
+        this.vendeAtrazado = vendeAtrazado;
+    }
+
+    public String getDebitoEmConta() {
+        return debitoEmConta;
+    }
+
+    public void setDebitoEmConta(String debitoEmConta) {
+        this.debitoEmConta = debitoEmConta;
+    }
+
+    public double getLimite() {
+        return limite;
+    }
+
+    public void setLimite(double limite) {
+        this.limite = limite;
+    }
+
+    public double getDescAtacVista() {
+        return descAtacVista;
+    }
+
+    public void setDescAtacVista(double descAtacVista) {
+        this.descAtacVista = descAtacVista;
+    }
+
+    public double getDescAtacPrazo() {
+        return descAtacPrazo;
+    }
+
+    public void setDescAtacPrazo(double descAtacPrazo) {
+        this.descAtacPrazo = descAtacPrazo;
+    }
+
+    public double getDescVareVista() {
+        return descVareVista;
+    }
+
+    public void setDescVareVista(double descVareVista) {
+        this.descVareVista = descVareVista;
+    }
+
+    public double getDescVarePrazo() {
+        return descVarePrazo;
+    }
+
+    public void setDescVarePrazo(double descVarePrazo) {
+        this.descVarePrazo = descVarePrazo;
+    }
+
+    public double getDescServVista() {
+        return descServVista;
+    }
+
+    public void setDescServVista(double descServVista) {
+        this.descServVista = descServVista;
+    }
+
+    public double getDescServPrazo() {
+        return descServPrazo;
+    }
+
+    public void setDescServPrazo(double descServPrazo) {
+        this.descServPrazo = descServPrazo;
+    }
+
+    public String getDescPromocao() {
+        return descPromocao;
+    }
+
+    public void setDescPromocao(String descPromocao) {
+        this.descPromocao = descPromocao;
+    }
+
+    public int getDiaVencto1() {
+        return diaVencto1;
+    }
+
+    public void setDiaVencto1(int diaVencto1) {
+        this.diaVencto1 = diaVencto1;
+    }
+
+    public int getDiaVencto2() {
+        return diaVencto2;
+    }
+
+    public void setDiaVencto2(int diaVencto2) {
+        this.diaVencto2 = diaVencto2;
+    }
+
+    public int getDiaVencto3() {
+        return diaVencto3;
+    }
+
+    public void setDiaVencto3(int diaVencto3) {
+        this.diaVencto3 = diaVencto3;
+    }
+
+    public int getDiaVencto4() {
+        return diaVencto4;
+    }
+
+    public void setDiaVencto4(int diaVencto4) {
+        this.diaVencto4 = diaVencto4;
+    }
+
+    public int getDiaVenctoSemana1() {
+        return diaVenctoSemana1;
+    }
+
+    public void setDiaVenctoSemana1(int diaVenctoSemana1) {
+        this.diaVenctoSemana1 = diaVenctoSemana1;
+    }
+
+    public int getDiaVenctoSemana2() {
+        return diaVenctoSemana2;
+    }
+
+    public void setDiaVenctoSemana2(int diaVenctoSemana2) {
+        this.diaVenctoSemana2 = diaVenctoSemana2;
+    }
+
+    public int getRoteiro() {
+        return roteiro;
+    }
+
+    public void setRoteiro(int roteiro) {
+        this.roteiro = roteiro;
+    }
+
+    public int getFrequencia() {
+        return frequencia;
+    }
+
+    public void setFrequencia(int frequencia) {
+        this.frequencia = frequencia;
+    }
+
+    public int getPosicaoRoteiro() {
+        return posicaoRoteiro;
+    }
+
+    public void setPosicaoRoteiro(int posicaoRoteiro) {
+        this.posicaoRoteiro = posicaoRoteiro;
+    }
+
+    public Date getDtUltCompra() {
+        return dtUltCompra;
+    }
+
+    public void setDtUltCompra(Date dtUltCompra) {
+        this.dtUltCompra = dtUltCompra;
+    }
+
+    public Date getDtUltVisita() {
+        return dtUltVisita;
+    }
+
+    public void setDtUltVisita(Date dtUltVisita) {
+        this.dtUltVisita = dtUltVisita;
+    }
+
+    public Date getDtUltEnvio() {
+        return dtUltEnvio;
+    }
+
+    public void setDtUltEnvio(Date dtUltEnvio) {
+        this.dtUltEnvio = dtUltEnvio;
+    }
+
+    public Date getDtUltRecebto() {
+        return dtUltRecebto;
+    }
+
+    public void setDtUltRecebto(Date dtUltRecebto) {
+        this.dtUltRecebto = dtUltRecebto;
+    }
+
+    public Date getDtProximoContato() {
+        return dtProximoContato;
+    }
+
+    public void setDtProximoContato(Date dtProximoContato) {
+        this.dtProximoContato = dtProximoContato;
+    }
+
+    public double getPercReducFatAtac() {
+        return percReducFatAtac;
+    }
+
+    public void setPercReducFatAtac(double percReducFatAtac) {
+        this.percReducFatAtac = percReducFatAtac;
+    }
+
+    public double getPercReducFatVare() {
+        return percReducFatVare;
+    }
+
+    public void setPercReducFatVare(double percReducFatVare) {
+        this.percReducFatVare = percReducFatVare;
+    }
+
+    public double getValorMinimoAgrup() {
+        return valorMinimoAgrup;
+    }
+
+    public void setValorMinimoAgrup(double valorMinimoAgrup) {
+        this.valorMinimoAgrup = valorMinimoAgrup;
+    }
+
+    public double getValorMaximoAgrup() {
+        return valorMaximoAgrup;
+    }
+
+    public void setValorMaximoAgrup(double valorMaximoAgrup) {
+        this.valorMaximoAgrup = valorMaximoAgrup;
+    }
+
+    public int getDiasAtrazo() {
+        return diasAtrazo;
+    }
+
+    public void setDiasAtrazo(int diasAtrazo) {
+        this.diasAtrazo = diasAtrazo;
+    }
+
+    public int getDiasCarencia() {
+        return diasCarencia;
+    }
+
+    public void setDiasCarencia(int diasCarencia) {
+        this.diasCarencia = diasCarencia;
+    }
+
+    public double getJurosDiario() {
+        return jurosDiario;
+    }
+
+    public void setJurosDiario(double jurosDiario) {
+        this.jurosDiario = jurosDiario;
+    }
+
+    public String getAtacadoVarejo() {
+        return atacadoVarejo;
+    }
+
+    public void setAtacadoVarejo(String atacadoVarejo) {
+        this.atacadoVarejo = atacadoVarejo;
+    }
+
+    public String getVistaPrazo() {
+        return vistaPrazo;
+    }
+
+    public void setVistaPrazo(String vistaPrazo) {
+        this.vistaPrazo = vistaPrazo;
+    }
+
+    public String getFaturaVlMin() {
+        return faturaVlMin;
+    }
+
+    public void setFaturaVlMin(String faturaVlMin) {
+        this.faturaVlMin = faturaVlMin;
+    }
+
+    public String getParcelaEmAberto() {
+        return parcelaEmAberto;
+    }
+
+    public void setParcelaEmAberto(String parcelaEmAberto) {
+        this.parcelaEmAberto = parcelaEmAberto;
+    }
+
+    public String getCapitaliza() {
+        return capitaliza;
+    }
+
+    public void setCapitaliza(String capitaliza) {
+        this.capitaliza = capitaliza;
+    }
+
+    public String getBloqueiaTit() {
+        return bloqueiaTit;
+    }
+
+    public void setBloqueiaTit(String bloqueiaTit) {
+        this.bloqueiaTit = bloqueiaTit;
+    }
+
+    public String getBloqueiaBol() {
+        return bloqueiaBol;
+    }
+
+    public void setBloqueiaBol(String bloqueiaBol) {
+        this.bloqueiaBol = bloqueiaBol;
+    }
+
+    public String getBloqueiaReq() {
+        return bloqueiaReq;
+    }
+
+    public void setBloqueiaReq(String bloqueiaReq) {
+        this.bloqueiaReq = bloqueiaReq;
+    }
+
+    public String getBloqueiaChq() {
+        return bloqueiaChq;
+    }
+
+    public void setBloqueiaChq(String bloqueiaChq) {
+        this.bloqueiaChq = bloqueiaChq;
+    }
+
+    public double getJurosFactory() {
+        return jurosFactory;
+    }
+
+    public void setJurosFactory(double jurosFactory) {
+        this.jurosFactory = jurosFactory;
+    }
+
+    public String getFuncoesMobile() {
+        return funcoesMobile;
+    }
+
+    public void setFuncoesMobile(String funcoesMobile) {
+        this.funcoesMobile = funcoesMobile;
+    }
+
 }

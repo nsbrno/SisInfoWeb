@@ -10,9 +10,9 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import lombok.Data;
 
-@Data
 @Entity
 @Table(name = "SMAUSURL")
+@Data
 public class SmausurlEntity {
 
     @Id
@@ -75,5 +75,126 @@ public class SmausurlEntity {
 
     @Basic(optional = false)
     @Column(name = "COPIAS", table = "SMAUSURL", nullable = false)
-    private Integer copias;
+    private int copias;
+
+    public Integer getIdSmausurl() {
+        return idSmausurl;
+    }
+
+    public void setIdSmausurl(Integer idSmausurl) {
+        this.idSmausurl = idSmausurl;
+    }
+
+    public Integer getIdSmaarqui() {
+        return idSmaarqui;
+    }
+
+    public void setIdSmaarqui(Integer idSmaarqui) {
+        this.idSmaarqui = idSmaarqui;
+    }
+
+    public Integer getIdSmarelat() {
+        return idSmarelat;
+    }
+
+    public void setIdSmarelat(Integer idSmarelat) {
+        this.idSmarelat = idSmarelat;
+    }
+
+    public Integer getIdSmausuar() {
+        return idSmausuar;
+    }
+
+    public void setIdSmausuar(Integer idSmausuar) {
+        this.idSmausuar = idSmausuar;
+    }
+
+    public String getGuid() {
+        return guid;
+    }
+
+    public void setGuid(String guid) {
+        this.guid = guid;
+    }
+
+    public String getUsCad() {
+        return usCad;
+    }
+
+    public void setUsCad(String usCad) {
+        this.usCad = usCad;
+    }
+
+    public Date getDtCad() {
+        return dtCad;
+    }
+
+    public void setDtCad(Date dtCad) {
+        this.dtCad = dtCad;
+    }
+
+    public Date getDtAlt() {
+        return dtAlt;
+    }
+
+    public void setDtAlt(Date dtAlt) {
+        this.dtAlt = dtAlt;
+    }
+
+    public Integer getCtInteg() {
+        return ctInteg;
+    }
+
+    public void setCtInteg(Integer ctInteg) {
+        this.ctInteg = ctInteg;
+    }
+
+    public String getComandoImpressao() {
+        return comandoImpressao;
+    }
+
+    public void setComandoImpressao(String comandoImpressao) {
+        this.comandoImpressao = comandoImpressao;
+    }
+
+    public String getPedeSaida() {
+        return pedeSaida;
+    }
+
+    public void setPedeSaida(String pedeSaida) {
+        this.pedeSaida = pedeSaida;
+    }
+
+    public String getSalvaTela() {
+        return salvaTela;
+    }
+
+    public void setSalvaTela(String salvaTela) {
+        this.salvaTela = salvaTela;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getUsuarioConfigura() {
+        return usuarioConfigura;
+    }
+
+    public void setUsuarioConfigura(String usuarioConfigura) {
+        this.usuarioConfigura = usuarioConfigura;
+    }
+
+    public int getCopias() {
+        return copias;
+    }
+
+    public void setCopias(int copias) {
+        this.copias = copias;
+    }
+
 }

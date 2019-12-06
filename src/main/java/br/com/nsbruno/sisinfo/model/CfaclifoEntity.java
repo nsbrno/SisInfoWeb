@@ -11,9 +11,9 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import lombok.Data;
 
-@Data
 @Entity
 @Table(name = "CFACLIFO")
+@Data
 public class CfaclifoEntity {
 
     @Id
@@ -132,7 +132,6 @@ public class CfaclifoEntity {
     @Column(name = "ID_PASTORAL_GOSTARIA", table = "CFACLIFO")
     private Integer idPastoralGostaria;
 
-    @Basic(optional = false)
     @Column(name = "GUID", table = "CFACLIFO", nullable = false, length = 16)
     private String guid;
 
@@ -158,9 +157,8 @@ public class CfaclifoEntity {
     @Column(name = "CPF_CGC", table = "CFACLIFO", length = 18)
     private String cpfCgc;
 
-    @Basic(optional = false)
     @Column(name = "CPF_CGC_SEQ", table = "CFACLIFO", nullable = false)
-    private Integer cpfCgcSeq;
+    private int cpfCgcSeq;
 
     @Basic
     @Column(name = "IE_RG", table = "CFACLIFO", length = 18)
@@ -170,7 +168,6 @@ public class CfaclifoEntity {
     @Column(name = "ORGAO_EMISSOR", table = "CFACLIFO", length = 3)
     private String orgaoEmissor;
 
-    @Basic(optional = false)
     @Column(name = "NOME_RAZAO", table = "CFACLIFO", nullable = false, length = 60)
     private String nomeRazao;
 
@@ -272,27 +269,21 @@ public class CfaclifoEntity {
     @Column(name = "COMPLEMENTO_CARGO", table = "CFACLIFO")
     private byte[] complementoCargo;
 
-    @Basic(optional = false)
     @Column(name = "RENDA_MES_GIRO", table = "CFACLIFO", nullable = false)
     private double rendaMesGiro;
 
-    @Basic(optional = false)
     @Column(name = "CAPITAL_SOCIAL", table = "CFACLIFO", nullable = false)
     private double capitalSocial;
 
-    @Basic(optional = false)
     @Column(name = "EST_MERCADORIAS", table = "CFACLIFO", nullable = false)
     private double estMercadorias;
 
-    @Basic(optional = false)
     @Column(name = "EST_MAT_PRIMA", table = "CFACLIFO", nullable = false)
     private double estMatPrima;
 
-    @Basic(optional = false)
     @Column(name = "MOVTO_VENDAS", table = "CFACLIFO", nullable = false)
     private double movtoVendas;
 
-    @Basic(optional = false)
     @Column(name = "DESPESAS", table = "CFACLIFO", nullable = false)
     private double despesas;
 
@@ -403,25 +394,20 @@ public class CfaclifoEntity {
     @Column(name = "AREAS_INTERESSE", table = "CFACLIFO", length = 128)
     private String areasInteresse;
 
-    @Basic(optional = false)
     @Column(name = "QTDE_FUNCIONARIOS", table = "CFACLIFO", nullable = false)
-    private Integer qtdeFuncionarios;
+    private int qtdeFuncionarios;
 
-    @Basic(optional = false)
     @Column(name = "OUTRAS_RENDAS", table = "CFACLIFO", nullable = false)
     private double outrasRendas;
 
-    @Basic(optional = false)
     @Column(name = "LIMITE_CARTAO", table = "CFACLIFO", nullable = false)
     private double limiteCartao;
 
-    @Basic(optional = false)
     @Column(name = "NUM_DEP_MAIOR", table = "CFACLIFO", nullable = false)
-    private Integer numDepMaior;
+    private int numDepMaior;
 
-    @Basic(optional = false)
     @Column(name = "NUM_DEP_MENOR", table = "CFACLIFO", nullable = false)
-    private Integer numDepMenor;
+    private int numDepMenor;
 
     @Lob
     @Basic
@@ -436,7 +422,6 @@ public class CfaclifoEntity {
     @Column(name = "ORGAO_EMISSOR_CONJ", table = "CFACLIFO", length = 3)
     private String orgaoEmissorConj;
 
-    @Basic(optional = false)
     @Column(name = "LIMITE_CONJUGE", table = "CFACLIFO", nullable = false)
     private double limiteConjuge;
 
@@ -449,7 +434,6 @@ public class CfaclifoEntity {
     @Temporal(TemporalType.DATE)
     private Date admissaoConjuge;
 
-    @Basic(optional = false)
     @Column(name = "RENDA_CONJUGE", table = "CFACLIFO", nullable = false)
     private double rendaConjuge;
 
@@ -537,21 +521,17 @@ public class CfaclifoEntity {
     @Column(name = "LOCAL_TRABALHO", table = "CFACLIFO", length = 60)
     private String localTrabalho;
 
-    @Basic(optional = false)
     @Column(name = "MANEQUIM", table = "CFACLIFO", nullable = false)
-    private Integer manequim;
+    private int manequim;
 
-    @Basic(optional = false)
     @Column(name = "MANEQUIM_CONJUGE", table = "CFACLIFO", nullable = false)
-    private Integer manequimConjuge;
+    private int manequimConjuge;
 
-    @Basic(optional = false)
     @Column(name = "CALCADO", table = "CFACLIFO", nullable = false)
-    private Integer calcado;
+    private int calcado;
 
-    @Basic(optional = false)
     @Column(name = "CALCADO_CONJUGE", table = "CFACLIFO", nullable = false)
-    private Integer calcadoConjuge;
+    private int calcadoConjuge;
 
     @Basic
     @Column(name = "TIPO_FUNCIONARIO", table = "CFACLIFO", length = 18)
@@ -561,7 +541,6 @@ public class CfaclifoEntity {
     @Column(name = "SENHA", table = "CFACLIFO", length = 20)
     private String senha;
 
-    @Basic(optional = false)
     @Column(name = "ATIVO", table = "CFACLIFO", nullable = false)
     private String ativo;
 
@@ -864,9 +843,8 @@ public class CfaclifoEntity {
     @Temporal(TemporalType.DATE)
     private Date dtValidadeSuframa;
 
-    @Basic(optional = false)
     @Column(name = "QTDE_LICENCA_MOVEL", table = "CFACLIFO", nullable = false)
-    private Integer qtdeLicencaMovel;
+    private int qtdeLicencaMovel;
 
     @Basic
     @Column(name = "VERSAO_SAVARE", table = "CFACLIFO", length = 20)
@@ -892,9 +870,9 @@ public class CfaclifoEntity {
     @Column(name = "CAMINHO_BANCO_SISINFO", table = "CFACLIFO", length = 128)
     private String caminhoBancoSisinfo;
 
-    @Basic
-    @Column(name = "PORTA_BANCO_SISINFO", table = "CFACLIFO")
-    private Integer portaBancoSisinfo;
+    
+    @Column(name = "PORTA_BANCO_SISINFO", table = "CFACLIFO", nullable = false)
+    private int portaBancoSisinfo;
 
     @Basic
     @Column(name = "MODO_CONEXAO_WEBSERVICE", table = "CFACLIFO")
