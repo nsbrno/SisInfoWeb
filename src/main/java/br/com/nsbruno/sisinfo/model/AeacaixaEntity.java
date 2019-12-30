@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "AEACAIXA")
+@Data
 public class AeacaixaEntity {
 
     @Id
@@ -19,11 +21,11 @@ public class AeacaixaEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEACAIXA", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO_FUNC", table = "AEACAIXA", nullable = false)
-    private int idCfaclifoFunc;
+    private Integer idCfaclifoFunc;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEACAIXA", nullable = false, length = 16)
@@ -107,189 +109,4 @@ public class AeacaixaEntity {
     @Basic
     @Column(name = "FC_VL_MOVTO", table = "AEACAIXA", precision = 15)
     private Double fcVlMovto;
-
-    public Integer getIdAeacaixa() {
-        return idAeacaixa;
-    }
-
-    public void setIdAeacaixa(Integer idAeacaixa) {
-        this.idAeacaixa = idAeacaixa;
-    }
-
-    public int getIdSmaempre() {
-        return idSmaempre;
-    }
-
-    public void setIdSmaempre(int idSmaempre) {
-        this.idSmaempre = idSmaempre;
-    }
-
-    public int getIdCfaclifoFunc() {
-        return idCfaclifoFunc;
-    }
-
-    public void setIdCfaclifoFunc(int idCfaclifoFunc) {
-        this.idCfaclifoFunc = idCfaclifoFunc;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public Integer getNumero() {
-        return numero;
-    }
-
-    public void setNumero(Integer numero) {
-        this.numero = numero;
-    }
-
-    public Date getDtMovimento() {
-        return dtMovimento;
-    }
-
-    public void setDtMovimento(Date dtMovimento) {
-        this.dtMovimento = dtMovimento;
-    }
-
-    public String getTurno() {
-        return turno;
-    }
-
-    public void setTurno(String turno) {
-        this.turno = turno;
-    }
-
-    public double getVlRecebimentos() {
-        return vlRecebimentos;
-    }
-
-    public void setVlRecebimentos(double vlRecebimentos) {
-        this.vlRecebimentos = vlRecebimentos;
-    }
-
-    public double getVlCartao() {
-        return vlCartao;
-    }
-
-    public void setVlCartao(double vlCartao) {
-        this.vlCartao = vlCartao;
-    }
-
-    public double getVlNotas() {
-        return vlNotas;
-    }
-
-    public void setVlNotas(double vlNotas) {
-        this.vlNotas = vlNotas;
-    }
-
-    public double getVlChequeVista() {
-        return vlChequeVista;
-    }
-
-    public void setVlChequeVista(double vlChequeVista) {
-        this.vlChequeVista = vlChequeVista;
-    }
-
-    public double getVlChequePrazo() {
-        return vlChequePrazo;
-    }
-
-    public void setVlChequePrazo(double vlChequePrazo) {
-        this.vlChequePrazo = vlChequePrazo;
-    }
-
-    public double getVlDinheiro() {
-        return vlDinheiro;
-    }
-
-    public void setVlDinheiro(double vlDinheiro) {
-        this.vlDinheiro = vlDinheiro;
-    }
-
-    public double getVlSaidas() {
-        return vlSaidas;
-    }
-
-    public void setVlSaidas(double vlSaidas) {
-        this.vlSaidas = vlSaidas;
-    }
-
-    public double getVlEncerrante() {
-        return vlEncerrante;
-    }
-
-    public void setVlEncerrante(double vlEncerrante) {
-        this.vlEncerrante = vlEncerrante;
-    }
-
-    public double getVlVendas() {
-        return vlVendas;
-    }
-
-    public void setVlVendas(double vlVendas) {
-        this.vlVendas = vlVendas;
-    }
-
-    public short getFechado() {
-        return fechado;
-    }
-
-    public void setFechado(short fechado) {
-        this.fechado = fechado;
-    }
-
-    public Double getFcVlCaixa() {
-        return fcVlCaixa;
-    }
-
-    public void setFcVlCaixa(Double fcVlCaixa) {
-        this.fcVlCaixa = fcVlCaixa;
-    }
-
-    public Double getFcVlMovto() {
-        return fcVlMovto;
-    }
-
-    public void setFcVlMovto(Double fcVlMovto) {
-        this.fcVlMovto = fcVlMovto;
-    }
-
 }

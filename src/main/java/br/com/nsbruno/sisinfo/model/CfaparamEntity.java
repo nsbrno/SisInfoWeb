@@ -22,11 +22,11 @@ public class CfaparamEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO", table = "CFAPARAM", nullable = false)
-    private int idCfaclifo;
+    private Integer idCfaclifo;
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "CFAPARAM", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic
     @Column(name = "ID_CFACLIFO_VENDE", table = "CFAPARAM")
@@ -136,39 +136,39 @@ public class CfaparamEntity {
 
     @Basic(optional = false)
     @Column(name = "DIA_VENCTO1", table = "CFAPARAM", nullable = false)
-    private int diaVencto1;
+    private Integer diaVencto1;
 
     @Basic(optional = false)
     @Column(name = "DIA_VENCTO2", table = "CFAPARAM", nullable = false)
-    private int diaVencto2;
+    private Integer diaVencto2;
 
     @Basic(optional = false)
     @Column(name = "DIA_VENCTO3", table = "CFAPARAM", nullable = false)
-    private int diaVencto3;
+    private Integer diaVencto3;
 
     @Basic(optional = false)
     @Column(name = "DIA_VENCTO4", table = "CFAPARAM", nullable = false)
-    private int diaVencto4;
+    private Integer diaVencto4;
 
     @Basic(optional = false)
     @Column(name = "DIA_VENCTO_SEMANA1", table = "CFAPARAM", nullable = false)
-    private int diaVenctoSemana1;
+    private Integer diaVenctoSemana1;
 
     @Basic(optional = false)
     @Column(name = "DIA_VENCTO_SEMANA2", table = "CFAPARAM", nullable = false)
-    private int diaVenctoSemana2;
+    private Integer diaVenctoSemana2;
 
     @Basic(optional = false)
     @Column(name = "ROTEIRO", table = "CFAPARAM", nullable = false)
-    private int roteiro;
+    private Integer roteiro;
 
     @Basic(optional = false)
     @Column(name = "FREQUENCIA", table = "CFAPARAM", nullable = false)
-    private int frequencia;
+    private Integer frequencia;
 
     @Basic(optional = false)
     @Column(name = "POSICAO_ROTEIRO", table = "CFAPARAM", nullable = false)
-    private int posicaoRoteiro;
+    private Integer posicaoRoteiro;
 
     @Basic
     @Column(name = "DT_ULT_COMPRA", table = "CFAPARAM")
@@ -213,11 +213,11 @@ public class CfaparamEntity {
 
     @Basic(optional = false)
     @Column(name = "DIAS_ATRAZO", table = "CFAPARAM", nullable = false)
-    private int diasAtrazo;
+    private Integer diasAtrazo;
 
     @Basic(optional = false)
     @Column(name = "DIAS_CARENCIA", table = "CFAPARAM", nullable = false)
-    private int diasCarencia;
+    private Integer diasCarencia;
 
     @Basic(optional = false)
     @Column(name = "JUROS_DIARIO", table = "CFAPARAM", nullable = false)
@@ -275,19 +275,19 @@ public class CfaparamEntity {
         this.idCfaparam = idCfaparam;
     }
 
-    public int getIdCfaclifo() {
+    public Integer getIdCfaclifo() {
         return idCfaclifo;
     }
 
-    public void setIdCfaclifo(int idCfaclifo) {
+    public void setIdCfaclifo(Integer idCfaclifo) {
         this.idCfaclifo = idCfaclifo;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
@@ -499,75 +499,75 @@ public class CfaparamEntity {
         this.descPromocao = descPromocao;
     }
 
-    public int getDiaVencto1() {
+    public Integer getDiaVencto1() {
         return diaVencto1;
     }
 
-    public void setDiaVencto1(int diaVencto1) {
+    public void setDiaVencto1(Integer diaVencto1) {
         this.diaVencto1 = diaVencto1;
     }
 
-    public int getDiaVencto2() {
+    public Integer getDiaVencto2() {
         return diaVencto2;
     }
 
-    public void setDiaVencto2(int diaVencto2) {
+    public void setDiaVencto2(Integer diaVencto2) {
         this.diaVencto2 = diaVencto2;
     }
 
-    public int getDiaVencto3() {
+    public Integer getDiaVencto3() {
         return diaVencto3;
     }
 
-    public void setDiaVencto3(int diaVencto3) {
+    public void setDiaVencto3(Integer diaVencto3) {
         this.diaVencto3 = diaVencto3;
     }
 
-    public int getDiaVencto4() {
+    public Integer getDiaVencto4() {
         return diaVencto4;
     }
 
-    public void setDiaVencto4(int diaVencto4) {
+    public void setDiaVencto4(Integer diaVencto4) {
         this.diaVencto4 = diaVencto4;
     }
 
-    public int getDiaVenctoSemana1() {
+    public Integer getDiaVenctoSemana1() {
         return diaVenctoSemana1;
     }
 
-    public void setDiaVenctoSemana1(int diaVenctoSemana1) {
+    public void setDiaVenctoSemana1(Integer diaVenctoSemana1) {
         this.diaVenctoSemana1 = diaVenctoSemana1;
     }
 
-    public int getDiaVenctoSemana2() {
+    public Integer getDiaVenctoSemana2() {
         return diaVenctoSemana2;
     }
 
-    public void setDiaVenctoSemana2(int diaVenctoSemana2) {
+    public void setDiaVenctoSemana2(Integer diaVenctoSemana2) {
         this.diaVenctoSemana2 = diaVenctoSemana2;
     }
 
-    public int getRoteiro() {
+    public Integer getRoteiro() {
         return roteiro;
     }
 
-    public void setRoteiro(int roteiro) {
+    public void setRoteiro(Integer roteiro) {
         this.roteiro = roteiro;
     }
 
-    public int getFrequencia() {
+    public Integer getFrequencia() {
         return frequencia;
     }
 
-    public void setFrequencia(int frequencia) {
+    public void setFrequencia(Integer frequencia) {
         this.frequencia = frequencia;
     }
 
-    public int getPosicaoRoteiro() {
+    public Integer getPosicaoRoteiro() {
         return posicaoRoteiro;
     }
 
-    public void setPosicaoRoteiro(int posicaoRoteiro) {
+    public void setPosicaoRoteiro(Integer posicaoRoteiro) {
         this.posicaoRoteiro = posicaoRoteiro;
     }
 
@@ -643,19 +643,19 @@ public class CfaparamEntity {
         this.valorMaximoAgrup = valorMaximoAgrup;
     }
 
-    public int getDiasAtrazo() {
+    public Integer getDiasAtrazo() {
         return diasAtrazo;
     }
 
-    public void setDiasAtrazo(int diasAtrazo) {
+    public void setDiasAtrazo(Integer diasAtrazo) {
         this.diasAtrazo = diasAtrazo;
     }
 
-    public int getDiasCarencia() {
+    public Integer getDiasCarencia() {
         return diasCarencia;
     }
 
-    public void setDiasCarencia(int diasCarencia) {
+    public void setDiasCarencia(Integer diasCarencia) {
         this.diasCarencia = diasCarencia;
     }
 

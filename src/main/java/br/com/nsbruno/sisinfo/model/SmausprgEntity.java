@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
-@Table(name = "SMAUSPRG")
+@Table(name = "SMAUSPRG") 
+@Data
 public class SmausprgEntity {
 
     @Id
@@ -19,7 +21,7 @@ public class SmausprgEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAUSUAR", table = "SMAUSPRG", nullable = false)
-    private int idSmausuar;
+    private Integer idSmausuar;
 
     @Basic
     @Column(name = "ID_SMAMENUS", table = "SMAUSPRG")
@@ -57,94 +59,5 @@ public class SmausprgEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "SMAUSPRG", nullable = false)
-    private int sequencia;
-
-    public Integer getIdSmausprg() {
-        return idSmausprg;
-    }
-
-    public void setIdSmausprg(Integer idSmausprg) {
-        this.idSmausprg = idSmausprg;
-    }
-
-    public int getIdSmausuar() {
-        return idSmausuar;
-    }
-
-    public void setIdSmausuar(int idSmausuar) {
-        this.idSmausuar = idSmausuar;
-    }
-
-    public Integer getIdSmamenus() {
-        return idSmamenus;
-    }
-
-    public void setIdSmamenus(Integer idSmamenus) {
-        this.idSmamenus = idSmamenus;
-    }
-
-    public Integer getIdSmamnprg() {
-        return idSmamnprg;
-    }
-
-    public void setIdSmamnprg(Integer idSmamnprg) {
-        this.idSmamnprg = idSmamnprg;
-    }
-
-    public Integer getIdSmamnprgTela() {
-        return idSmamnprgTela;
-    }
-
-    public void setIdSmamnprgTela(Integer idSmamnprgTela) {
-        this.idSmamnprgTela = idSmamnprgTela;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public int getSequencia() {
-        return sequencia;
-    }
-
-    public void setSequencia(int sequencia) {
-        this.sequencia = sequencia;
-    }
-
+    private Integer sequencia;
 }

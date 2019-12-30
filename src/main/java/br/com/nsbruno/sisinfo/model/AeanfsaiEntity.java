@@ -21,11 +21,11 @@ public class AeanfsaiEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEANFSAI", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "ID_AEASERIE", table = "AEANFSAI", nullable = false)
-    private int idAeaserie;
+    private Integer idAeaserie;
 
     @Basic
     @Column(name = "ID_AEASERIE_NF", table = "AEANFSAI")
@@ -344,7 +344,7 @@ public class AeanfsaiEntity {
 
     @Basic(optional = false)
     @Column(name = "NUM_EMISSOES", table = "AEANFSAI", nullable = false)
-    private int numEmissoes;
+    private Integer numEmissoes;
 
     @Basic(optional = false)
     @Column(name = "GERANDO", table = "AEANFSAI", nullable = false)
@@ -428,19 +428,19 @@ public class AeanfsaiEntity {
         this.idAeanfsai = idAeanfsai;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
-    public int getIdAeaserie() {
+    public Integer getIdAeaserie() {
         return idAeaserie;
     }
 
-    public void setIdAeaserie(int idAeaserie) {
+    public void setIdAeaserie(Integer idAeaserie) {
         this.idAeaserie = idAeaserie;
     }
 
@@ -1060,11 +1060,11 @@ public class AeanfsaiEntity {
         this.tipoBaixa = tipoBaixa;
     }
 
-    public int getNumEmissoes() {
+    public Integer getNumEmissoes() {
         return numEmissoes;
     }
 
-    public void setNumEmissoes(int numEmissoes) {
+    public void setNumEmissoes(Integer numEmissoes) {
         this.numEmissoes = numEmissoes;
     }
 

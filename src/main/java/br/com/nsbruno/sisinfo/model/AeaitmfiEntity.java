@@ -19,11 +19,11 @@ public class AeaitmfiEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAMAPAF", table = "AEAITMFI", nullable = false)
-    private int idAeamapaf;
+    private Integer idAeamapaf;
 
     @Basic(optional = false)
     @Column(name = "ID_AEASERIE", table = "AEAITMFI", nullable = false)
-    private int idAeaserie;
+    private Integer idAeaserie;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEAITMFI", nullable = false, length = 16)
@@ -151,19 +151,19 @@ public class AeaitmfiEntity {
         this.idAeaitmfi = idAeaitmfi;
     }
 
-    public int getIdAeamapaf() {
+    public Integer getIdAeamapaf() {
         return idAeamapaf;
     }
 
-    public void setIdAeamapaf(int idAeamapaf) {
+    public void setIdAeamapaf(Integer idAeamapaf) {
         this.idAeamapaf = idAeamapaf;
     }
 
-    public int getIdAeaserie() {
+    public Integer getIdAeaserie() {
         return idAeaserie;
     }
 
-    public void setIdAeaserie(int idAeaserie) {
+    public void setIdAeaserie(Integer idAeaserie) {
         this.idAeaserie = idAeaserie;
     }
 

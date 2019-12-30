@@ -9,10 +9,12 @@ import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 
 @Entity
 @Table(name = "RPAPRORO")
+@Data
 public class RpaproroEntity {
 
     @Id
@@ -21,7 +23,7 @@ public class RpaproroEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_RPAPARCE", table = "RPAPRORO", nullable = false)
-    private int idRpaparce;
+    private Integer idRpaparce;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "RPAPRORO", nullable = false, length = 16)
@@ -68,101 +70,4 @@ public class RpaproroEntity {
     @Basic
     @Column(name = "OBS", table = "RPAPRORO")
     private byte[] obs;
-
-    public Integer getIdRpaproro() {
-        return idRpaproro;
-    }
-
-    public void setIdRpaproro(Integer idRpaproro) {
-        this.idRpaproro = idRpaproro;
-    }
-
-    public int getIdRpaparce() {
-        return idRpaparce;
-    }
-
-    public void setIdRpaparce(int idRpaparce) {
-        this.idRpaparce = idRpaparce;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public Date getDtMovimento() {
-        return dtMovimento;
-    }
-
-    public void setDtMovimento(Date dtMovimento) {
-        this.dtMovimento = dtMovimento;
-    }
-
-    public Date getDtVencimento() {
-        return dtVencimento;
-    }
-
-    public void setDtVencimento(Date dtVencimento) {
-        this.dtVencimento = dtVencimento;
-    }
-
-    public Date getDtVencimentoAnt() {
-        return dtVencimentoAnt;
-    }
-
-    public void setDtVencimentoAnt(Date dtVencimentoAnt) {
-        this.dtVencimentoAnt = dtVencimentoAnt;
-    }
-
-    public double getVlJuros() {
-        return vlJuros;
-    }
-
-    public void setVlJuros(double vlJuros) {
-        this.vlJuros = vlJuros;
-    }
-
-    public byte[] getObs() {
-        return obs;
-    }
-
-    public void setObs(byte[] obs) {
-        this.obs = obs;
-    }
-
 }

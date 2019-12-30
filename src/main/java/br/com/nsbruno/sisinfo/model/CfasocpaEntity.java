@@ -20,7 +20,7 @@ public class CfasocpaEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO", table = "CFASOCPA", nullable = false)
-    private int idCfaclifo;
+    private Integer idCfaclifo;
 
     @Basic
     @Column(name = "ID_CFAESTAD", table = "CFASOCPA")
@@ -114,11 +114,11 @@ public class CfasocpaEntity {
         this.idCfasocpa = idCfasocpa;
     }
 
-    public int getIdCfaclifo() {
+    public Integer getIdCfaclifo() {
         return idCfaclifo;
     }
 
-    public void setIdCfaclifo(int idCfaclifo) {
+    public void setIdCfaclifo(Integer idCfaclifo) {
         this.idCfaclifo = idCfaclifo;
     }
 

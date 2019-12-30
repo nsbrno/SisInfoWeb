@@ -139,7 +139,7 @@ public class ApalbatiEntity {
 
     @Basic(optional = false)
     @Column(name = "IMPRESSOES", table = "APALBATI", nullable = false)
-    private int impressoes;
+    private Integer impressoes;
 
     @Basic
     @Column(name = "PAROCO", table = "APALBATI", length = 60)
@@ -377,11 +377,11 @@ public class ApalbatiEntity {
         this.obs = obs;
     }
 
-    public int getImpressoes() {
+    public Integer getImpressoes() {
         return impressoes;
     }
 
-    public void setImpressoes(int impressoes) {
+    public void setImpressoes(Integer impressoes) {
         this.impressoes = impressoes;
     }
 

@@ -96,7 +96,7 @@ public class AparecibEntity {
 
     @Basic(optional = false)
     @Column(name = "NUM_EMISSOES", table = "APARECIB", nullable = false)
-    private int numEmissoes;
+    private Integer numEmissoes;
 
     @Basic
     @Column(name = "DT_CANCELAMENTO", table = "APARECIB")
@@ -255,11 +255,11 @@ public class AparecibEntity {
         this.origem = origem;
     }
 
-    public int getNumEmissoes() {
+    public Integer getNumEmissoes() {
         return numEmissoes;
     }
 
-    public void setNumEmissoes(int numEmissoes) {
+    public void setNumEmissoes(Integer numEmissoes) {
         this.numEmissoes = numEmissoes;
     }
 

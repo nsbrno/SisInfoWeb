@@ -20,7 +20,7 @@ public class CfacorcfEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFACORES", table = "CFACORCF", nullable = false)
-    private int idCfacores;
+    private Integer idCfacores;
 
     @Basic
     @Column(name = "ID_CFACLIFO_CONJ", table = "CFACORCF")
@@ -60,11 +60,11 @@ public class CfacorcfEntity {
         this.idCfacorcf = idCfacorcf;
     }
 
-    public int getIdCfacores() {
+    public Integer getIdCfacores() {
         return idCfacores;
     }
 
-    public void setIdCfacores(int idCfacores) {
+    public void setIdCfacores(Integer idCfacores) {
         this.idCfacores = idCfacores;
     }
 

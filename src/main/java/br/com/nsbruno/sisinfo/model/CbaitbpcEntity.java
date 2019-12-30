@@ -19,7 +19,7 @@ public class CbaitbpcEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CBATBPCT", table = "CBAITBPC", nullable = false)
-    private int idCbatbpct;
+    private Integer idCbatbpct;
 
     @Basic
     @Column(name = "ID_CBANUMCX", table = "CBAITBPC")
@@ -53,7 +53,7 @@ public class CbaitbpcEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "CBAITBPC", nullable = false)
-    private int sequencia;
+    private Integer sequencia;
 
     @Basic
     @Column(name = "CALCULO", table = "CBAITBPC")
@@ -65,7 +65,7 @@ public class CbaitbpcEntity {
 
     @Basic(optional = false)
     @Column(name = "NIVEL", table = "CBAITBPC", nullable = false)
-    private int nivel;
+    private Integer nivel;
 
     @Basic
     @Column(name = "NEGRITA", table = "CBAITBPC")
@@ -103,11 +103,11 @@ public class CbaitbpcEntity {
         this.idCbaitbpc = idCbaitbpc;
     }
 
-    public int getIdCbatbpct() {
+    public Integer getIdCbatbpct() {
         return idCbatbpct;
     }
 
-    public void setIdCbatbpct(int idCbatbpct) {
+    public void setIdCbatbpct(Integer idCbatbpct) {
         this.idCbatbpct = idCbatbpct;
     }
 
@@ -167,11 +167,11 @@ public class CbaitbpcEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getSequencia() {
+    public Integer getSequencia() {
         return sequencia;
     }
 
-    public void setSequencia(int sequencia) {
+    public void setSequencia(Integer sequencia) {
         this.sequencia = sequencia;
     }
 
@@ -191,11 +191,11 @@ public class CbaitbpcEntity {
         this.subtotal = subtotal;
     }
 
-    public int getNivel() {
+    public Integer getNivel() {
         return nivel;
     }
 
-    public void setNivel(int nivel) {
+    public void setNivel(Integer nivel) {
         this.nivel = nivel;
     }
 

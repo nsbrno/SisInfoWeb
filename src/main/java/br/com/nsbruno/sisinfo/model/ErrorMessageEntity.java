@@ -5,7 +5,6 @@
  */
 package br.com.nsbruno.sisinfo.model;
 
-import java.util.Date;
 import lombok.Data;
 
 /**
@@ -17,8 +16,8 @@ import lombok.Data;
 @Data
 public class ErrorMessageEntity{
 
-    private Date timestamp;
-    private int status;
+    private String timestamp;
+    private Integer status;
     private String error;
     private String message;
     private String trace;

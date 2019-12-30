@@ -21,11 +21,11 @@ public class AeaitpedEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAPEDID", table = "AEAITPED", nullable = false)
-    private int idAeapedid;
+    private Integer idAeapedid;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAPLOJA", table = "AEAITPED", nullable = false)
-    private int idAeaploja;
+    private Integer idAeaploja;
 
     @Basic
     @Column(name = "ID_AEAGRDPL", table = "AEAITPED")
@@ -33,7 +33,7 @@ public class AeaitpedEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAUNVEN", table = "AEAITPED", nullable = false)
-    private int idAeaunven;
+    private Integer idAeaunven;
 
     @Basic
     @Column(name = "ID_AEAITENT", table = "AEAITPED")
@@ -68,7 +68,7 @@ public class AeaitpedEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "AEAITPED", nullable = false)
-    private int sequencia;
+    private Integer sequencia;
 
     @Basic(optional = false)
     @Column(name = "VL_PRODUTO", table = "AEAITPED", nullable = false)
@@ -107,19 +107,19 @@ public class AeaitpedEntity {
         this.idAeaitped = idAeaitped;
     }
 
-    public int getIdAeapedid() {
+    public Integer getIdAeapedid() {
         return idAeapedid;
     }
 
-    public void setIdAeapedid(int idAeapedid) {
+    public void setIdAeapedid(Integer idAeapedid) {
         this.idAeapedid = idAeapedid;
     }
 
-    public int getIdAeaploja() {
+    public Integer getIdAeaploja() {
         return idAeaploja;
     }
 
-    public void setIdAeaploja(int idAeaploja) {
+    public void setIdAeaploja(Integer idAeaploja) {
         this.idAeaploja = idAeaploja;
     }
 
@@ -131,11 +131,11 @@ public class AeaitpedEntity {
         this.idAeagrdpl = idAeagrdpl;
     }
 
-    public int getIdAeaunven() {
+    public Integer getIdAeaunven() {
         return idAeaunven;
     }
 
-    public void setIdAeaunven(int idAeaunven) {
+    public void setIdAeaunven(Integer idAeaunven) {
         this.idAeaunven = idAeaunven;
     }
 
@@ -195,11 +195,11 @@ public class AeaitpedEntity {
         this.dtPedido = dtPedido;
     }
 
-    public int getSequencia() {
+    public Integer getSequencia() {
         return sequencia;
     }
 
-    public void setSequencia(int sequencia) {
+    public void setSequencia(Integer sequencia) {
         this.sequencia = sequencia;
     }
 

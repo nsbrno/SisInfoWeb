@@ -20,7 +20,7 @@ public class CfatpdocEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "CFATPDOC", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic
     @Column(name = "ID_SMAARQUI", table = "CFATPDOC")
@@ -114,7 +114,7 @@ public class CfatpdocEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "CFATPDOC", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic
     @Column(name = "DESCRICAO", table = "CFATPDOC", length = 40)
@@ -148,11 +148,11 @@ public class CfatpdocEntity {
         this.idCfatpdoc = idCfatpdoc;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
@@ -332,11 +332,11 @@ public class CfatpdocEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

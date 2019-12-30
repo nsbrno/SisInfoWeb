@@ -23,7 +23,7 @@ public class CpaitedtEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CPAAPONT", table = "CPAITEDT", nullable = false)
-    private int idCpaapont;
+    private Integer idCpaapont;
 
     @Basic
     @Column(name = "US_CAD", table = "CPAITEDT", length = 20)
@@ -63,11 +63,11 @@ public class CpaitedtEntity {
         this.idCpaedita = idCpaedita;
     }
 
-    public int getIdCpaapont() {
+    public Integer getIdCpaapont() {
         return idCpaapont;
     }
 
-    public void setIdCpaapont(int idCpaapont) {
+    public void setIdCpaapont(Integer idCpaapont) {
         this.idCpaapont = idCpaapont;
     }
 

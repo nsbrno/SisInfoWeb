@@ -55,7 +55,7 @@ public class AeaobsprEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "AEAOBSPR", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Lob
     @Basic(optional = false)
@@ -198,11 +198,11 @@ public class AeaobsprEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

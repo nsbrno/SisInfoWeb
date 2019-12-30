@@ -87,7 +87,7 @@ public class ApadizimEntity {
 
     @Basic(optional = false)
     @Column(name = "NUMERO", table = "APADIZIM", nullable = false)
-    private int numero;
+    private Integer numero;
 
     @Basic
     @Column(name = "TELEFONE", table = "APADIZIM", length = 15)
@@ -366,7 +366,7 @@ public class ApadizimEntity {
 
     @Basic
     @Column(name = "IS_CONTRIBUINTE", table = "APADIZIM")
-    private String isContribuinte;
+    private String isContribuIntegere;
 
     public Integer getIdApadizim() {
         return idApadizim;
@@ -504,11 +504,11 @@ public class ApadizimEntity {
         this.complemento = complemento;
     }
 
-    public int getNumero() {
+    public Integer getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(Integer numero) {
         this.numero = numero;
     }
 
@@ -1032,12 +1032,12 @@ public class ApadizimEntity {
         this.isFuneraria = isFuneraria;
     }
 
-    public String getIsContribuinte() {
-        return isContribuinte;
+    public String getIsContribuIntegere() {
+        return isContribuIntegere;
     }
 
-    public void setIsContribuinte(String isContribuinte) {
-        this.isContribuinte = isContribuinte;
+    public void setIsContribuIntegere(String isContribuIntegere) {
+        this.isContribuIntegere = isContribuIntegere;
     }
 
 }

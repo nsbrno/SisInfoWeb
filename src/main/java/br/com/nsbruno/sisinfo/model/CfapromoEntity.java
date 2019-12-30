@@ -66,11 +66,11 @@ public class CfapromoEntity {
 
     @Basic(optional = false)
     @Column(name = "IMPRESSOES", table = "CFAPROMO", nullable = false)
-    private int impressoes;
+    private Integer impressoes;
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "CFAPROMO", nullable = false)
-    private int sequencia;
+    private Integer sequencia;
 
     public Integer getIdCfapromo() {
         return idCfapromo;
@@ -168,19 +168,19 @@ public class CfapromoEntity {
         this.fechado = fechado;
     }
 
-    public int getImpressoes() {
+    public Integer getImpressoes() {
         return impressoes;
     }
 
-    public void setImpressoes(int impressoes) {
+    public void setImpressoes(Integer impressoes) {
         this.impressoes = impressoes;
     }
 
-    public int getSequencia() {
+    public Integer getSequencia() {
         return sequencia;
     }
 
-    public void setSequencia(int sequencia) {
+    public void setSequencia(Integer sequencia) {
         this.sequencia = sequencia;
     }
 

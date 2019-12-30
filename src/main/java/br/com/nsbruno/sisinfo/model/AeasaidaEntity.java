@@ -21,11 +21,11 @@ public class AeasaidaEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEASAIDA", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "ID_AEASERIE", table = "AEASAIDA", nullable = false)
-    private int idAeaserie;
+    private Integer idAeaserie;
 
     @Basic
     @Column(name = "ID_CFAMOEDA", table = "AEASAIDA")
@@ -95,7 +95,7 @@ public class AeasaidaEntity {
 
     @Basic(optional = false)
     @Column(name = "NUMERO", table = "AEASAIDA", nullable = false)
-    private int numero;
+    private Integer numero;
 
     @Basic(optional = false)
     @Column(name = "DT_VENDA", table = "AEASAIDA", nullable = false)
@@ -240,7 +240,7 @@ public class AeasaidaEntity {
 
     @Basic(optional = false)
     @Column(name = "NUM_EMISSOES", table = "AEASAIDA", nullable = false)
-    private int numEmissoes;
+    private Integer numEmissoes;
 
     @Basic(optional = false)
     @Column(name = "SITUACAO", table = "AEASAIDA", nullable = false)
@@ -343,19 +343,19 @@ public class AeasaidaEntity {
         this.idAeasaida = idAeasaida;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
-    public int getIdAeaserie() {
+    public Integer getIdAeaserie() {
         return idAeaserie;
     }
 
-    public void setIdAeaserie(int idAeaserie) {
+    public void setIdAeaserie(Integer idAeaserie) {
         this.idAeaserie = idAeaserie;
     }
 
@@ -487,11 +487,11 @@ public class AeasaidaEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getNumero() {
+    public Integer getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(Integer numero) {
         this.numero = numero;
     }
 
@@ -767,11 +767,11 @@ public class AeasaidaEntity {
         this.percDescGerencia = percDescGerencia;
     }
 
-    public int getNumEmissoes() {
+    public Integer getNumEmissoes() {
         return numEmissoes;
     }
 
-    public void setNumEmissoes(int numEmissoes) {
+    public void setNumEmissoes(Integer numEmissoes) {
         this.numEmissoes = numEmissoes;
     }
 

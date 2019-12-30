@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "SMAITLAC")
+@Data
 public class SmaitlacEntity {
 
     @Id
@@ -41,61 +43,4 @@ public class SmaitlacEntity {
     @Basic
     @Column(name = "ARQUIVO", table = "SMAITLAC", length = 12)
     private String arquivo;
-
-    public Integer getIdSmaitlac() {
-        return idSmaitlac;
-    }
-
-    public void setIdSmaitlac(Integer idSmaitlac) {
-        this.idSmaitlac = idSmaitlac;
-    }
-
-    public Integer getIdSmalogac() {
-        return idSmalogac;
-    }
-
-    public void setIdSmalogac(Integer idSmalogac) {
-        this.idSmalogac = idSmalogac;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getIdArquivo() {
-        return idArquivo;
-    }
-
-    public void setIdArquivo(Integer idArquivo) {
-        this.idArquivo = idArquivo;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getAcao() {
-        return acao;
-    }
-
-    public void setAcao(String acao) {
-        this.acao = acao;
-    }
-
-    public String getArquivo() {
-        return arquivo;
-    }
-
-    public void setArquivo(String arquivo) {
-        this.arquivo = arquivo;
-    }
-
 }

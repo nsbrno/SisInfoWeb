@@ -20,15 +20,15 @@ public class CbatransEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CBACAIXA", table = "CBATRANS", nullable = false)
-    private int idCbacaixa;
+    private Integer idCbacaixa;
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA_NUMCX", table = "CBATRANS", nullable = false)
-    private int idCbaplctaNumcx;
+    private Integer idCbaplctaNumcx;
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA_TROCO", table = "CBATRANS", nullable = false)
-    private int idCbaplctaTroco;
+    private Integer idCbaplctaTroco;
 
     @Basic
     @Column(name = "ID_AEACAIXA", table = "CBATRANS")
@@ -58,7 +58,7 @@ public class CbatransEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "CBATRANS", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic(optional = false)
     @Column(name = "SITUACAO", table = "CBATRANS", nullable = false)
@@ -92,27 +92,27 @@ public class CbatransEntity {
         this.idCbatrans = idCbatrans;
     }
 
-    public int getIdCbacaixa() {
+    public Integer getIdCbacaixa() {
         return idCbacaixa;
     }
 
-    public void setIdCbacaixa(int idCbacaixa) {
+    public void setIdCbacaixa(Integer idCbacaixa) {
         this.idCbacaixa = idCbacaixa;
     }
 
-    public int getIdCbaplctaNumcx() {
+    public Integer getIdCbaplctaNumcx() {
         return idCbaplctaNumcx;
     }
 
-    public void setIdCbaplctaNumcx(int idCbaplctaNumcx) {
+    public void setIdCbaplctaNumcx(Integer idCbaplctaNumcx) {
         this.idCbaplctaNumcx = idCbaplctaNumcx;
     }
 
-    public int getIdCbaplctaTroco() {
+    public Integer getIdCbaplctaTroco() {
         return idCbaplctaTroco;
     }
 
-    public void setIdCbaplctaTroco(int idCbaplctaTroco) {
+    public void setIdCbaplctaTroco(Integer idCbaplctaTroco) {
         this.idCbaplctaTroco = idCbaplctaTroco;
     }
 
@@ -164,11 +164,11 @@ public class CbatransEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

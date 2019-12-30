@@ -28,7 +28,7 @@ public class CpaapontEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CPAESPEC", table = "CPAAPONT", nullable = false)
-    private int idCpaespec;
+    private Integer idCpaespec;
 
     @Basic
     @Column(name = "ID_CPALIQUI", table = "CPAAPONT")
@@ -352,11 +352,11 @@ public class CpaapontEntity {
 
     @Basic(optional = false)
     @Column(name = "GEROU_INF_PROT", table = "CPAAPONT", nullable = false)
-    private int gerouInfProt;
+    private Integer gerouInfProt;
 
     @Basic(optional = false)
     @Column(name = "GEROU_INF_CANC", table = "CPAAPONT", nullable = false)
-    private int gerouInfCanc;
+    private Integer gerouInfCanc;
 
     @Basic(optional = false)
     @Column(name = "VL_UNIT_INF_PRO", table = "CPAAPONT", nullable = false)
@@ -390,11 +390,11 @@ public class CpaapontEntity {
         this.idCpamotiv = idCpamotiv;
     }
 
-    public int getIdCpaespec() {
+    public Integer getIdCpaespec() {
         return idCpaespec;
     }
 
-    public void setIdCpaespec(int idCpaespec) {
+    public void setIdCpaespec(Integer idCpaespec) {
         this.idCpaespec = idCpaespec;
     }
 
@@ -1014,19 +1014,19 @@ public class CpaapontEntity {
         this.obsDevCh = obsDevCh;
     }
 
-    public int getGerouInfProt() {
+    public Integer getGerouInfProt() {
         return gerouInfProt;
     }
 
-    public void setGerouInfProt(int gerouInfProt) {
+    public void setGerouInfProt(Integer gerouInfProt) {
         this.gerouInfProt = gerouInfProt;
     }
 
-    public int getGerouInfCanc() {
+    public Integer getGerouInfCanc() {
         return gerouInfCanc;
     }
 
-    public void setGerouInfCanc(int gerouInfCanc) {
+    public void setGerouInfCanc(Integer gerouInfCanc) {
         this.gerouInfCanc = gerouInfCanc;
     }
 

@@ -46,7 +46,7 @@ public class AeatotpaEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQ", table = "AEATOTPA", nullable = false)
-    private int seq;
+    private Integer seq;
 
     @Basic(optional = false)
     @Column(name = "ALIQUOTA", table = "AEATOTPA", nullable = false)
@@ -112,11 +112,11 @@ public class AeatotpaEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getSeq() {
+    public Integer getSeq() {
         return seq;
     }
 
-    public void setSeq(int seq) {
+    public void setSeq(Integer seq) {
         this.seq = seq;
     }
 

@@ -5,28 +5,29 @@
  */
 package br.com.nsbruno.sisinfo.function;
 
+import br.com.nsbruno.sisinfo.beans.PageableBeans;
 import br.com.nsbruno.sisinfo.configuration.DefaultMessageConfiguration;
 import br.com.nsbruno.sisinfo.configuration.GeneralConfiguration;
 import br.com.nsbruno.sisinfo.handler.exception.BaseMyException;
 import java.io.UnsupportedEncodingException;
+import java.lang.reflect.Field;
 import java.nio.charset.StandardCharsets;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
-import java.util.stream.Stream;
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.servlet.http.HttpServletRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 
 /**
  *
@@ -37,8 +38,12 @@ public class CustomFunction {
     public static String KEY_USERNAME = "username";
     public static String KEY_PASSWORD = "password";
     public static String KEY_DEVICE = "device";
+    public static String KEY_INSERT = "I";
+    public static String KEY_UPDATE = "U";
     public final static int KEY_ENCRYPT = 0,
-            KEY_DECRYPT = 1;
+            KEY_DECRYPT = 1,
+            KEY_NAO = 0,
+            KEY_SIM = 1;
     protected static final byte PAD_DEFAULT = '=';
     private static final byte[] DECODE_TABLE = {
         //   0   1   2   3   4   5   6   7   8   9   A   B   C   D   E   F
@@ -100,7 +105,9 @@ public class CustomFunction {
 
                     return Base64.getEncoder().encode(cipher.doFinal(texto.getBytes("UTF-8")));
                 }
-                if ((encriptaDecripta == KEY_DECRYPT) && (isBase64(texto.getBytes("UTF-8")))) {
+                if ((encriptaDecripta == KEY_DECRYPT)
+                        && (isBase64(texto.getBytes("UTF-8")))
+                        && (texto.length() % 4 == 0)) {
                     byte[] textoEncriptado = Base64.getDecoder().decode(texto);
                     cipher.init(Cipher.DECRYPT_MODE, keySecretKeySpec, new IvParameterSpec(GeneralConfiguration.IV_DEFAULT_ENCRYPT_DECRYPT.getBytes("UTF-8")));
 
@@ -171,52 +178,158 @@ public class CustomFunction {
         }
     }
 
-    public String constructSelect(String table, String where, Pageable pageable) {
+    public String constructSelect(String table, PageableBeans pageable) {
+        return constructSelect(table, pageable, KEY_NAO);
+    }
+
+    public String constructSelectForCount(String table, PageableBeans pageable) {
+        return constructSelect(table, pageable, KEY_SIM);
+    }
+
+    private String constructSelect(String table, PageableBeans pageable, Integer forCount) {
         StringBuilder query = new StringBuilder();
         try {
             // Checa se o nome da tabela foi enviado
             if ((table != null) && (!table.isEmpty())) {
-                // Verifica se foi passado paginacao
-                if ((pageable != null)){
+                // Checa se eh para construir um select de count
+                if ((forCount != null) && (forCount.equals(KEY_SIM))) {
+                    query.append("SELECT COUNT(*) FROM ");
+                    // Verifica se foi passado paginacao
+                } else if ((pageable != null)) {
                     query
                             .append("SELECT FIRST ")
                             .append(pageable.getPageSize())
-                            .append(" SKYP ")
+                            .append(" SKIP ")
                             .append(pageable.getPageNumber() * pageable.getPageSize())
-                            .append(" ");
+                            .append(" * FROM ");
                 } else {
-                    query.append("SELECT ");
+                    query.append("SELECT * FROM ");
                 }
-                query.append(" * FROM ");
                 query.append(table);
                 // Checa se foi pasado um where
-                if ((where != null) && (!where.isEmpty())) {
-                    query.append(" WHERE (").append(where.replace("+", " ")).append(")");
+                if ((pageable != null) && (pageable.getWhere() != null) && (!pageable.getWhere().isEmpty())) {
+                    query.append(" WHERE (").append(pageable.getWhere().replace("+", " ")).append(")");
                 }
                 // Checa se foi passado alguma ordenacao
-                if ((pageable != null) && (!pageable.getSort().isUnsorted())){
+                if ((pageable != null) && (pageable.getSort() != null)
+                        && (!pageable.getSort().isEmpty()) && (((forCount != null) && (!forCount.equals(KEY_SIM))) || (forCount == null))) {
                     query.append(" ORDER BY ");
-                    String s1 = pageable.getSort().getOrderFor("nome").getProperty();
-                    Sort sort1 = pageable.getSort();
-                    Iterator<Sort.Order> sort = sort1.iterator();
-                    String s2 = "";
-                    while (sort.hasNext()) {
-                        s2 += sort.next().getProperty() + " #"+ sort.next().getDirection() + ", ";
-                    }
-                    String s3 = sort.toString();
-                    String s4 = pageable.getSort().toString();
-                    Stream<Sort.Order> sort2 = sort1.get();
-                    String s5 = "";
-                    for (Sort.Order order : sort1) {
-                        s5 += order.getProperty() + " " + order.getDirection();
-                    }
-                    Integer count1 = (int) sort2.count();
+                    query.append(pageable.getSort());
+                    query.append(" ");
                 }
                 query.append(";");
             }
         } catch (Exception e) {
             throw new BaseMyException(e);
         }
-        return query.toString();
+        return query.toString().toUpperCase();
+    }
+
+    public String constructUpdateFromEntity(Object entityClass) {
+        return constructInsertOrUpdateFromEntity(KEY_UPDATE, entityClass);
+    }
+    
+    public String constructInsertFromEntity(Object entityClass){
+        return constructInsertOrUpdateFromEntity(KEY_INSERT, entityClass);
+    }
+
+    private String constructInsertOrUpdateFromEntity(String insertOrUpdate, Object entityClass) {
+        StringBuilder sql = new StringBuilder();
+        StringBuilder valuesColumns = new StringBuilder();
+        String idReturn = null;
+        Integer idForUpdate = null;
+        try {
+            if (entityClass.getClass().isAnnotationPresent(Entity.class)) {
+                String nameTable = entityClass.getClass().getSimpleName().toUpperCase().replace("ENTITY", "");
+                if (insertOrUpdate.equalsIgnoreCase(KEY_INSERT)) {
+                    sql.append("INSERT");
+                    sql.append(" INTO ");
+                    sql.append(nameTable);
+                    sql.append("(");
+                } else if (insertOrUpdate.equalsIgnoreCase(KEY_UPDATE)) {
+                    sql.append("UPDATE ");
+                    sql.append(nameTable);
+                    sql.append(" SET ");
+                }
+                Field[] fields = entityClass.getClass().getDeclaredFields();
+
+                int i = 0;
+                for (Field field : fields) {
+                    field.setAccessible(true);
+                    // Checa se tem alguma anotacao de coluna de banco
+                    if (field.isAnnotationPresent(Column.class)) {
+                        Column column = field.getAnnotation(Column.class);
+                        Object value = field.get(entityClass);
+                        //sql.append(((i > 0) && (value != null) && (value.toString().length() > 0)) ? ", " : "");
+                        //sql.append(((value != null) && (value.toString().length() > 0)) ? column.name() : "");
+                        if ( ((value != null) && (value.toString().length() > 0) && (!(value instanceof byte[])) && (!(value instanceof Byte[])) )
+                                || ((value != null) && ((value instanceof byte[]) || (value instanceof Byte[])) && (((byte[]) value).length > 0))) {
+                            // Adiciona um virgula se nao for a primeira coluna
+                            sql.append((i > 0) ? ", " : "");
+                            valuesColumns.append((i > 0) ? ", " : "");
+
+                            if (insertOrUpdate.equalsIgnoreCase(KEY_INSERT)) {
+                                // Adiciona o nome da coluna
+                                sql.append(column.name());
+                            } else if (insertOrUpdate.equalsIgnoreCase(KEY_UPDATE)) {
+                                sql.append(column.name()).append(" = ");
+                            }
+                            if (((value.getClass().equals(String.class)) || (value.getClass().equals(CharSequence.class)))
+                                    && (!(((value.toString().contains("SELECT")) && (value.toString().contains("FROM")))
+                                    || ((value.toString().contains("select")) && (value.toString().contains("from")))))) {
+                                // Checa se esta tentando construir um insert
+                                if (insertOrUpdate.equalsIgnoreCase(KEY_INSERT)) {
+                                    // Adiciona o nome da coluna
+                                    valuesColumns.append("'").append(value.toString()).append("'");
+                                    // Checa se esta tentando construir um update
+                                } else if (insertOrUpdate.equalsIgnoreCase(KEY_UPDATE)) {
+                                    sql.append("'").append(value.toString()).append("'");
+                                }
+                                // Checa se o value esta em byte[]
+                            } else if ( (value instanceof byte[]) || (value instanceof Byte[]) ) {
+                                // Checa se esta tentando construir um insert
+                                if (insertOrUpdate.equalsIgnoreCase(KEY_INSERT)) {
+                                    // Adiciona o nome da coluna
+                                    valuesColumns.append("'").append(value.toString()).append("'");
+                                    // Checa se esta tentando construir um update
+                                } else if (insertOrUpdate.equalsIgnoreCase(KEY_UPDATE)) {
+                                    sql.append("'").append(value.toString()).append("'");
+                                }
+                            } else {
+                                // Checa se esta tentando construir um insert
+                                if (insertOrUpdate.equalsIgnoreCase(KEY_INSERT)) {
+                                    // Adiciona o nome da coluna
+                                    valuesColumns.append(value.toString());
+                                    // Checa se esta tentando construir um update
+                                } else if (insertOrUpdate.equalsIgnoreCase(KEY_UPDATE)) {
+                                    sql.append(value.toString());
+                                }
+                            }
+                            i++;
+                        }
+                    }
+                    if ((field.isAnnotationPresent(Id.class)) && (idReturn == null)) {
+                        idReturn = " RETURNING " + field.getAnnotation(Column.class).name();
+                        idForUpdate = (Integer) field.get(entityClass);
+                    }
+                }
+                // Checa se esta tentando construir um insert
+                if (insertOrUpdate.equalsIgnoreCase(KEY_INSERT)) {
+                    // Adiciona os valores do insert
+                    sql.append(") VALUES (").append(valuesColumns.toString()).append(")");
+                    // Checa se esta tentando construir um update. Nao checa se tem algum id para nao criar um update para todos os registros
+                    // Assim força a criar um update sempre com where
+                } else if (insertOrUpdate.equalsIgnoreCase(KEY_UPDATE)) {
+                    sql.append(" WHERE ID_").append(nameTable).append(" = ").append(idForUpdate);
+                }
+
+                if ((idReturn != null) && (!idReturn.isEmpty())) {
+                    sql.append(idReturn);
+                }
+            }
+        } catch (IllegalAccessException | IllegalArgumentException | SecurityException e) {
+            throw new BaseMyException(DefaultMessageConfiguration.ERROR_CONSTRUCT_SQL + " | NESTE CASO NAO FOI CONSTRUIDO O INSERT DE UMA ENTITY. " + e.getMessage());
+        }
+        return sql.toString();
     }
 }

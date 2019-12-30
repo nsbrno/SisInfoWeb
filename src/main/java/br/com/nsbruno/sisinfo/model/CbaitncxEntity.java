@@ -20,11 +20,11 @@ public class CbaitncxEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CBANUMCX", table = "CBAITNCX", nullable = false)
-    private int idCbanumcx;
+    private Integer idCbanumcx;
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA", table = "CBAITNCX", nullable = false)
-    private int idCbaplcta;
+    private Integer idCbaplcta;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "CBAITNCX", nullable = false, length = 16)
@@ -56,19 +56,19 @@ public class CbaitncxEntity {
         this.idCbaitncx = idCbaitncx;
     }
 
-    public int getIdCbanumcx() {
+    public Integer getIdCbanumcx() {
         return idCbanumcx;
     }
 
-    public void setIdCbanumcx(int idCbanumcx) {
+    public void setIdCbanumcx(Integer idCbanumcx) {
         this.idCbanumcx = idCbanumcx;
     }
 
-    public int getIdCbaplcta() {
+    public Integer getIdCbaplcta() {
         return idCbaplcta;
     }
 
-    public void setIdCbaplcta(int idCbaplcta) {
+    public void setIdCbaplcta(Integer idCbaplcta) {
         this.idCbaplcta = idCbaplcta;
     }
 

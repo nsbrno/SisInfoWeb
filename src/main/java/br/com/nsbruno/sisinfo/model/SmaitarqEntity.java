@@ -9,10 +9,12 @@ import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 
 @Entity
 @Table(name = "SMAITARQ")
+@Data
 public class SmaitarqEntity {
 
     @Id
@@ -21,7 +23,7 @@ public class SmaitarqEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAARQUI", table = "SMAITARQ", nullable = false)
-    private int idSmaarqui;
+    private Integer idSmaarqui;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "SMAITARQ", nullable = false, length = 16)
@@ -72,11 +74,11 @@ public class SmaitarqEntity {
 
     @Basic(optional = false)
     @Column(name = "TAMANHO", table = "SMAITARQ", nullable = false)
-    private int tamanho;
+    private Integer tamanho;
 
     @Basic(optional = false)
     @Column(name = "DECIMAIS", table = "SMAITARQ", nullable = false)
-    private int decimais;
+    private Integer decimais;
 
     @Lob
     @Basic
@@ -119,197 +121,4 @@ public class SmaitarqEntity {
     @Basic
     @Column(name = "INDICENATIVO", table = "SMAITARQ")
     private String indicenativo;
-
-    public Integer getIdSmaitarq() {
-        return idSmaitarq;
-    }
-
-    public void setIdSmaitarq(Integer idSmaitarq) {
-        this.idSmaitarq = idSmaitarq;
-    }
-
-    public int getIdSmaarqui() {
-        return idSmaarqui;
-    }
-
-    public void setIdSmaarqui(int idSmaarqui) {
-        this.idSmaarqui = idSmaarqui;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public String getCampo() {
-        return campo;
-    }
-
-    public void setCampo(String campo) {
-        this.campo = campo;
-    }
-
-    public byte[] getIndice() {
-        return indice;
-    }
-
-    public void setIndice(byte[] indice) {
-        this.indice = indice;
-    }
-
-    public String getDatatype() {
-        return datatype;
-    }
-
-    public void setDatatype(String datatype) {
-        this.datatype = datatype;
-    }
-
-    public String getAutofind() {
-        return autofind;
-    }
-
-    public void setAutofind(String autofind) {
-        this.autofind = autofind;
-    }
-
-    public String getCapslock() {
-        return capslock;
-    }
-
-    public void setCapslock(String capslock) {
-        this.capslock = capslock;
-    }
-
-    public String getRequerido() {
-        return requerido;
-    }
-
-    public void setRequerido(String requerido) {
-        this.requerido = requerido;
-    }
-
-    public int getTamanho() {
-        return tamanho;
-    }
-
-    public void setTamanho(int tamanho) {
-        this.tamanho = tamanho;
-    }
-
-    public int getDecimais() {
-        return decimais;
-    }
-
-    public void setDecimais(int decimais) {
-        this.decimais = decimais;
-    }
-
-    public byte[] getMsgerro() {
-        return msgerro;
-    }
-
-    public void setMsgerro(byte[] msgerro) {
-        this.msgerro = msgerro;
-    }
-
-    public byte[] getMsgexplicativa() {
-        return msgexplicativa;
-    }
-
-    public void setMsgexplicativa(byte[] msgexplicativa) {
-        this.msgexplicativa = msgexplicativa;
-    }
-
-    public byte[] getValordefault() {
-        return valordefault;
-    }
-
-    public void setValordefault(byte[] valordefault) {
-        this.valordefault = valordefault;
-    }
-
-    public byte[] getOpcaotela() {
-        return opcaotela;
-    }
-
-    public void setOpcaotela(byte[] opcaotela) {
-        this.opcaotela = opcaotela;
-    }
-
-    public byte[] getOpcaobase() {
-        return opcaobase;
-    }
-
-    public void setOpcaobase(byte[] opcaobase) {
-        this.opcaobase = opcaobase;
-    }
-
-    public String getFoundrequerido() {
-        return foundrequerido;
-    }
-
-    public void setFoundrequerido(String foundrequerido) {
-        this.foundrequerido = foundrequerido;
-    }
-
-    public byte[] getNomecampo() {
-        return nomecampo;
-    }
-
-    public void setNomecampo(byte[] nomecampo) {
-        this.nomecampo = nomecampo;
-    }
-
-    public String getMascara() {
-        return mascara;
-    }
-
-    public void setMascara(String mascara) {
-        this.mascara = mascara;
-    }
-
-    public String getIndicenativo() {
-        return indicenativo;
-    }
-
-    public void setIndicenativo(String indicenativo) {
-        this.indicenativo = indicenativo;
-    }
-
 }

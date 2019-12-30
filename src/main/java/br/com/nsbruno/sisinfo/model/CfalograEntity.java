@@ -20,15 +20,15 @@ public class CfalograEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFACIDAD", table = "CFALOGRA", nullable = false)
-    private int idCfacidad;
+    private Integer idCfacidad;
 
     @Basic(optional = false)
     @Column(name = "ID_CFABAIRO", table = "CFALOGRA", nullable = false)
-    private int idCfabairo;
+    private Integer idCfabairo;
 
     @Basic(optional = false)
     @Column(name = "ID_CFATPLOG", table = "CFALOGRA", nullable = false)
-    private int idCfatplog;
+    private Integer idCfatplog;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "CFALOGRA", nullable = false, length = 16)
@@ -89,27 +89,27 @@ public class CfalograEntity {
         this.idCfalogra = idCfalogra;
     }
 
-    public int getIdCfacidad() {
+    public Integer getIdCfacidad() {
         return idCfacidad;
     }
 
-    public void setIdCfacidad(int idCfacidad) {
+    public void setIdCfacidad(Integer idCfacidad) {
         this.idCfacidad = idCfacidad;
     }
 
-    public int getIdCfabairo() {
+    public Integer getIdCfabairo() {
         return idCfabairo;
     }
 
-    public void setIdCfabairo(int idCfabairo) {
+    public void setIdCfabairo(Integer idCfabairo) {
         this.idCfabairo = idCfabairo;
     }
 
-    public int getIdCfatplog() {
+    public Integer getIdCfatplog() {
         return idCfatplog;
     }
 
-    public void setIdCfatplog(int idCfatplog) {
+    public void setIdCfatplog(Integer idCfatplog) {
         this.idCfatplog = idCfatplog;
     }
 

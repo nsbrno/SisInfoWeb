@@ -9,10 +9,12 @@ import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 
 @Entity
 @Table(name = "RPALCPAR")
+@Data
 public class RpalcparEntity {
 
     @Id
@@ -21,7 +23,7 @@ public class RpalcparEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_RPAPARCE", table = "RPALCPAR", nullable = false)
-    private int idRpaparce;
+    private Integer idRpaparce;
 
     @Basic
     @Column(name = "ID_CBAITMOV", table = "RPALCPAR")
@@ -73,7 +75,7 @@ public class RpalcparEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "RPALCPAR", nullable = false)
-    private int sequencia;
+    private Integer sequencia;
 
     @Basic
     @Column(name = "D_C", table = "RPALCPAR")
@@ -103,173 +105,4 @@ public class RpalcparEntity {
     @Basic
     @Column(name = "OBS", table = "RPALCPAR")
     private byte[] obs;
-
-    public Integer getIdRpalcpar() {
-        return idRpalcpar;
-    }
-
-    public void setIdRpalcpar(Integer idRpalcpar) {
-        this.idRpalcpar = idRpalcpar;
-    }
-
-    public int getIdRpaparce() {
-        return idRpaparce;
-    }
-
-    public void setIdRpaparce(int idRpaparce) {
-        this.idRpaparce = idRpaparce;
-    }
-
-    public Integer getIdCbaitmov() {
-        return idCbaitmov;
-    }
-
-    public void setIdCbaitmov(Integer idCbaitmov) {
-        this.idCbaitmov = idCbaitmov;
-    }
-
-    public Integer getIdCbaplcta() {
-        return idCbaplcta;
-    }
-
-    public void setIdCbaplcta(Integer idCbaplcta) {
-        this.idCbaplcta = idCbaplcta;
-    }
-
-    public Integer getIdCfatpdocAnt() {
-        return idCfatpdocAnt;
-    }
-
-    public void setIdCfatpdocAnt(Integer idCfatpdocAnt) {
-        this.idCfatpdocAnt = idCfatpdocAnt;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public Date getDtImportacao() {
-        return dtImportacao;
-    }
-
-    public void setDtImportacao(Date dtImportacao) {
-        this.dtImportacao = dtImportacao;
-    }
-
-    public Date getDtMovimento() {
-        return dtMovimento;
-    }
-
-    public void setDtMovimento(Date dtMovimento) {
-        this.dtMovimento = dtMovimento;
-    }
-
-    public int getSequencia() {
-        return sequencia;
-    }
-
-    public void setSequencia(int sequencia) {
-        this.sequencia = sequencia;
-    }
-
-    public String getDC() {
-        return dC;
-    }
-
-    public void setDC(String dC) {
-        this.dC = dC;
-    }
-
-    public double getVlPago() {
-        return vlPago;
-    }
-
-    public void setVlPago(double vlPago) {
-        this.vlPago = vlPago;
-    }
-
-    public double getVlJurosProrrog() {
-        return vlJurosProrrog;
-    }
-
-    public void setVlJurosProrrog(double vlJurosProrrog) {
-        this.vlJurosProrrog = vlJurosProrrog;
-    }
-
-    public double getVlJuros() {
-        return vlJuros;
-    }
-
-    public void setVlJuros(double vlJuros) {
-        this.vlJuros = vlJuros;
-    }
-
-    public double getVlDesconto() {
-        return vlDesconto;
-    }
-
-    public void setVlDesconto(double vlDesconto) {
-        this.vlDesconto = vlDesconto;
-    }
-
-    public Double getFcVlPagoTotal() {
-        return fcVlPagoTotal;
-    }
-
-    public void setFcVlPagoTotal(Double fcVlPagoTotal) {
-        this.fcVlPagoTotal = fcVlPagoTotal;
-    }
-
-    public byte[] getObs() {
-        return obs;
-    }
-
-    public void setObs(byte[] obs) {
-        this.obs = obs;
-    }
-
 }

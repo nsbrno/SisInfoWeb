@@ -8,10 +8,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 
 @Entity
 @Table(name = "SMAREPLI")
+@Data
 public class SmarepliEntity {
 
     @Id
@@ -55,85 +57,4 @@ public class SmarepliEntity {
     @Basic
     @Column(name = "CAMPO", table = "SMAREPLI", length = 40)
     private String campo;
-
-    public Integer getIdSmarepli() {
-        return idSmarepli;
-    }
-
-    public void setIdSmarepli(Integer idSmarepli) {
-        this.idSmarepli = idSmarepli;
-    }
-
-    public Integer getIdSmaarqui() {
-        return idSmaarqui;
-    }
-
-    public void setIdSmaarqui(Integer idSmaarqui) {
-        this.idSmaarqui = idSmaarqui;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public Integer getSequencia() {
-        return sequencia;
-    }
-
-    public void setSequencia(Integer sequencia) {
-        this.sequencia = sequencia;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public String getCampo() {
-        return campo;
-    }
-
-    public void setCampo(String campo) {
-        this.campo = campo;
-    }
-
 }

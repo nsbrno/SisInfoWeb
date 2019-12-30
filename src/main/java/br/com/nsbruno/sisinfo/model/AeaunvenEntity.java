@@ -54,7 +54,7 @@ public class AeaunvenEntity {
 
     @Basic(optional = false)
     @Column(name = "DECIMAIS", table = "AEAUNVEN", nullable = false)
-    private int decimais;
+    private Integer decimais;
 
     public Integer getIdAeaunven() {
         return idAeaunven;
@@ -128,11 +128,11 @@ public class AeaunvenEntity {
         this.descricaoSingular = descricaoSingular;
     }
 
-    public int getDecimais() {
+    public Integer getDecimais() {
         return decimais;
     }
 
-    public void setDecimais(int decimais) {
+    public void setDecimais(Integer decimais) {
         this.decimais = decimais;
     }
 

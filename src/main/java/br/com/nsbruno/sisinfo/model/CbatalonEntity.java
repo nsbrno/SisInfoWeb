@@ -20,7 +20,7 @@ public class CbatalonEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CBACONTA", table = "CBATALON", nullable = false)
-    private int idCbaconta;
+    private Integer idCbaconta;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "CBATALON", nullable = false, length = 16)
@@ -50,15 +50,15 @@ public class CbatalonEntity {
 
     @Basic(optional = false)
     @Column(name = "NUMERO_INI", table = "CBATALON", nullable = false)
-    private int numeroIni;
+    private Integer numeroIni;
 
     @Basic(optional = false)
     @Column(name = "NUMERO_FIM", table = "CBATALON", nullable = false)
-    private int numeroFim;
+    private Integer numeroFim;
 
     @Basic(optional = false)
     @Column(name = "USADOS", table = "CBATALON", nullable = false)
-    private int usados;
+    private Integer usados;
 
     @Basic
     @Column(name = "FC_NUM_CHEQUES", table = "CBATALON")
@@ -72,11 +72,11 @@ public class CbatalonEntity {
         this.idCbatalon = idCbatalon;
     }
 
-    public int getIdCbaconta() {
+    public Integer getIdCbaconta() {
         return idCbaconta;
     }
 
-    public void setIdCbaconta(int idCbaconta) {
+    public void setIdCbaconta(Integer idCbaconta) {
         this.idCbaconta = idCbaconta;
     }
 
@@ -128,27 +128,27 @@ public class CbatalonEntity {
         this.serie = serie;
     }
 
-    public int getNumeroIni() {
+    public Integer getNumeroIni() {
         return numeroIni;
     }
 
-    public void setNumeroIni(int numeroIni) {
+    public void setNumeroIni(Integer numeroIni) {
         this.numeroIni = numeroIni;
     }
 
-    public int getNumeroFim() {
+    public Integer getNumeroFim() {
         return numeroFim;
     }
 
-    public void setNumeroFim(int numeroFim) {
+    public void setNumeroFim(Integer numeroFim) {
         this.numeroFim = numeroFim;
     }
 
-    public int getUsados() {
+    public Integer getUsados() {
         return usados;
     }
 
-    public void setUsados(int usados) {
+    public void setUsados(Integer usados) {
         this.usados = usados;
     }
 

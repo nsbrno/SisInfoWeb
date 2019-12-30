@@ -19,19 +19,19 @@ public class AeaittraEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEATRANS", table = "AEAITTRA", nullable = false)
-    private int idAeatrans;
+    private Integer idAeatrans;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAESTOQ_ORIGEM", table = "AEAITTRA", nullable = false)
-    private int idAeaestoqOrigem;
+    private Integer idAeaestoqOrigem;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAESTOQ_DESTINO", table = "AEAITTRA", nullable = false)
-    private int idAeaestoqDestino;
+    private Integer idAeaestoqDestino;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAUNVEN", table = "AEAITTRA", nullable = false)
-    private int idAeaunven;
+    private Integer idAeaunven;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEAITTRA", nullable = false, length = 16)
@@ -66,7 +66,7 @@ public class AeaittraEntity {
 
     @Basic(optional = false)
     @Column(name = "FLAG", table = "AEAITTRA", nullable = false)
-    private int flag;
+    private Integer flag;
 
     @Basic
     @Column(name = "EST_ORIGEM", table = "AEAITTRA")
@@ -84,35 +84,35 @@ public class AeaittraEntity {
         this.idAeaittra = idAeaittra;
     }
 
-    public int getIdAeatrans() {
+    public Integer getIdAeatrans() {
         return idAeatrans;
     }
 
-    public void setIdAeatrans(int idAeatrans) {
+    public void setIdAeatrans(Integer idAeatrans) {
         this.idAeatrans = idAeatrans;
     }
 
-    public int getIdAeaestoqOrigem() {
+    public Integer getIdAeaestoqOrigem() {
         return idAeaestoqOrigem;
     }
 
-    public void setIdAeaestoqOrigem(int idAeaestoqOrigem) {
+    public void setIdAeaestoqOrigem(Integer idAeaestoqOrigem) {
         this.idAeaestoqOrigem = idAeaestoqOrigem;
     }
 
-    public int getIdAeaestoqDestino() {
+    public Integer getIdAeaestoqDestino() {
         return idAeaestoqDestino;
     }
 
-    public void setIdAeaestoqDestino(int idAeaestoqDestino) {
+    public void setIdAeaestoqDestino(Integer idAeaestoqDestino) {
         this.idAeaestoqDestino = idAeaestoqDestino;
     }
 
-    public int getIdAeaunven() {
+    public Integer getIdAeaunven() {
         return idAeaunven;
     }
 
-    public void setIdAeaunven(int idAeaunven) {
+    public void setIdAeaunven(Integer idAeaunven) {
         this.idAeaunven = idAeaunven;
     }
 
@@ -172,11 +172,11 @@ public class AeaittraEntity {
         this.quantidade = quantidade;
     }
 
-    public int getFlag() {
+    public Integer getFlag() {
         return flag;
     }
 
-    public void setFlag(int flag) {
+    public void setFlag(Integer flag) {
         this.flag = flag;
     }
 

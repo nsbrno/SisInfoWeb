@@ -27,7 +27,7 @@ public class AeanatopEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFANATOP", table = "AEANATOP", nullable = false)
-    private int idCfanatop;
+    private Integer idCfanatop;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEANATOP", nullable = false, length = 16)
@@ -53,7 +53,7 @@ public class AeanatopEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "AEANATOP", nullable = false)
-    private int sequencia;
+    private Integer sequencia;
 
     @Basic(optional = false)
     @Column(name = "ALIQUOTA_ICMS", table = "AEANATOP", nullable = false)
@@ -123,11 +123,11 @@ public class AeanatopEntity {
         this.idAeanfsai = idAeanfsai;
     }
 
-    public int getIdCfanatop() {
+    public Integer getIdCfanatop() {
         return idCfanatop;
     }
 
-    public void setIdCfanatop(int idCfanatop) {
+    public void setIdCfanatop(Integer idCfanatop) {
         this.idCfanatop = idCfanatop;
     }
 
@@ -171,11 +171,11 @@ public class AeanatopEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getSequencia() {
+    public Integer getSequencia() {
         return sequencia;
     }
 
-    public void setSequencia(int sequencia) {
+    public void setSequencia(Integer sequencia) {
         this.sequencia = sequencia;
     }
 

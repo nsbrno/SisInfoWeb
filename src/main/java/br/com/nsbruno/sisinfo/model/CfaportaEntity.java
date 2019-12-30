@@ -51,7 +51,7 @@ public class CfaportaEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "CFAPORTA", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic
     @Column(name = "DG", table = "CFAPORTA")
@@ -142,11 +142,11 @@ public class CfaportaEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

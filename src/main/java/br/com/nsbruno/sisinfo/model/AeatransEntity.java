@@ -21,7 +21,7 @@ public class AeatransEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEATRANS", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic
     @Column(name = "ID_SMAEMPRE_D", table = "AEATRANS")
@@ -51,7 +51,7 @@ public class AeatransEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "AEATRANS", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic(optional = false)
     @Column(name = "DT_TRANSF", table = "AEATRANS", nullable = false)
@@ -95,11 +95,11 @@ public class AeatransEntity {
         this.idAeatrans = idAeatrans;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
@@ -151,11 +151,11 @@ public class AeatransEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

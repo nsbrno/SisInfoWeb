@@ -9,9 +9,11 @@ import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "SMARELAT")
+@Data
 public class SmarelatEntity {
 
     @Id
@@ -60,93 +62,4 @@ public class SmarelatEntity {
     @Basic
     @Column(name = "USAR_ORIGINAL", table = "SMARELAT")
     private String usarOriginal;
-
-    public Integer getIdSmarelat() {
-        return idSmarelat;
-    }
-
-    public void setIdSmarelat(Integer idSmarelat) {
-        this.idSmarelat = idSmarelat;
-    }
-
-    public Integer getIdSmaarqui() {
-        return idSmaarqui;
-    }
-
-    public void setIdSmaarqui(Integer idSmaarqui) {
-        this.idSmaarqui = idSmaarqui;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public byte[] getRelatorio() {
-        return relatorio;
-    }
-
-    public void setRelatorio(byte[] relatorio) {
-        this.relatorio = relatorio;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public String getPrincipal() {
-        return principal;
-    }
-
-    public void setPrincipal(String principal) {
-        this.principal = principal;
-    }
-
-    public String getUsarOriginal() {
-        return usarOriginal;
-    }
-
-    public void setUsarOriginal(String usarOriginal) {
-        this.usarOriginal = usarOriginal;
-    }
-
 }

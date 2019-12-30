@@ -20,7 +20,7 @@ public class AeaitgprEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAAGPPR", table = "AEAITGPR", nullable = false)
-    private int idAeaagppr;
+    private Integer idAeaagppr;
 
     @Basic
     @Column(name = "ID_AEAMARCA", table = "AEAITGPR")
@@ -70,7 +70,7 @@ public class AeaitgprEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "AEAITGPR", nullable = false)
-    private int sequencia;
+    private Integer sequencia;
 
     public Integer getIdAeaitgpr() {
         return idAeaitgpr;
@@ -80,11 +80,11 @@ public class AeaitgprEntity {
         this.idAeaitgpr = idAeaitgpr;
     }
 
-    public int getIdAeaagppr() {
+    public Integer getIdAeaagppr() {
         return idAeaagppr;
     }
 
-    public void setIdAeaagppr(int idAeaagppr) {
+    public void setIdAeaagppr(Integer idAeaagppr) {
         this.idAeaagppr = idAeaagppr;
     }
 
@@ -176,11 +176,11 @@ public class AeaitgprEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getSequencia() {
+    public Integer getSequencia() {
         return sequencia;
     }
 
-    public void setSequencia(int sequencia) {
+    public void setSequencia(Integer sequencia) {
         this.sequencia = sequencia;
     }
 

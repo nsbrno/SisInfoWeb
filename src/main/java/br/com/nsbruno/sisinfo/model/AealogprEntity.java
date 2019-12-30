@@ -19,7 +19,7 @@ public class AealogprEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAPLOJA", table = "AEALOGPR", nullable = false)
-    private int idAeaploja;
+    private Integer idAeaploja;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEALOGPR", nullable = false, length = 16)
@@ -147,11 +147,11 @@ public class AealogprEntity {
         this.idAealogpr = idAealogpr;
     }
 
-    public int getIdAeaploja() {
+    public Integer getIdAeaploja() {
         return idAeaploja;
     }
 
-    public void setIdAeaploja(int idAeaploja) {
+    public void setIdAeaploja(Integer idAeaploja) {
         this.idAeaploja = idAeaploja;
     }
 

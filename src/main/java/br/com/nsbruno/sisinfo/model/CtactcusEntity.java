@@ -19,11 +19,11 @@ public class CtactcusEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "CTACTCUS", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "ID_CTAGRUPO", table = "CTACTCUS", nullable = false)
-    private int idCtagrupo;
+    private Integer idCtagrupo;
 
     @Basic
     @Column(name = "ID_CTACTCUS_ANT", table = "CTACTCUS")
@@ -53,7 +53,7 @@ public class CtactcusEntity {
 
     @Basic(optional = false)
     @Column(name = "COD_REDUZ", table = "CTACTCUS", nullable = false)
-    private int codReduz;
+    private Integer codReduz;
 
     @Basic(optional = false)
     @Column(name = "COD_ESTRUTURAL", table = "CTACTCUS", nullable = false, length = 26)
@@ -73,7 +73,7 @@ public class CtactcusEntity {
 
     @Basic(optional = false)
     @Column(name = "NIVEL", table = "CTACTCUS", nullable = false)
-    private int nivel;
+    private Integer nivel;
 
     @Basic(optional = false)
     @Column(name = "A_S", table = "CTACTCUS", nullable = false)
@@ -87,19 +87,19 @@ public class CtactcusEntity {
         this.idCtactcus = idCtactcus;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
-    public int getIdCtagrupo() {
+    public Integer getIdCtagrupo() {
         return idCtagrupo;
     }
 
-    public void setIdCtagrupo(int idCtagrupo) {
+    public void setIdCtagrupo(Integer idCtagrupo) {
         this.idCtagrupo = idCtagrupo;
     }
 
@@ -151,11 +151,11 @@ public class CtactcusEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodReduz() {
+    public Integer getCodReduz() {
         return codReduz;
     }
 
-    public void setCodReduz(int codReduz) {
+    public void setCodReduz(Integer codReduz) {
         this.codReduz = codReduz;
     }
 
@@ -191,11 +191,11 @@ public class CtactcusEntity {
         this.dc = dc;
     }
 
-    public int getNivel() {
+    public Integer getNivel() {
         return nivel;
     }
 
-    public void setNivel(int nivel) {
+    public void setNivel(Integer nivel) {
         this.nivel = nivel;
     }
 

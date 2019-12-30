@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "SMAREGEX")
+@Data
 public class SmaregexEntity {
 
     @Id
@@ -37,53 +39,4 @@ public class SmaregexEntity {
     @Basic(optional = false)
     @Column(name = "GUIDEXCLUIDO", table = "SMAREGEX", nullable = false, length = 16)
     private String guidexcluido;
-
-    public Integer getIdSmaregex() {
-        return idSmaregex;
-    }
-
-    public void setIdSmaregex(Integer idSmaregex) {
-        this.idSmaregex = idSmaregex;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public String getArquivo() {
-        return arquivo;
-    }
-
-    public void setArquivo(String arquivo) {
-        this.arquivo = arquivo;
-    }
-
-    public Integer getIdexcluido() {
-        return idexcluido;
-    }
-
-    public void setIdexcluido(Integer idexcluido) {
-        this.idexcluido = idexcluido;
-    }
-
-    public String getGuidexcluido() {
-        return guidexcluido;
-    }
-
-    public void setGuidexcluido(String guidexcluido) {
-        this.guidexcluido = guidexcluido;
-    }
-
 }

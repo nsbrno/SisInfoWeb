@@ -3,18 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.nsbruno.sisinfo.controller.admin.v1;
+package br.com.nsbruno.sisinfo.controller.v1;
 
 import br.com.nsbruno.sisinfo.configuration.DefaultMessageConfiguration;
 import br.com.nsbruno.sisinfo.controller.BaseMyController;
+import static br.com.nsbruno.sisinfo.controller.BaseMyController.MAPPING_CLIENT_V1;
+import br.com.nsbruno.sisinfo.handler.exception.BaseMyException;
 import br.com.nsbruno.sisinfo.model.ErrorMessageEntity;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSyntaxException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.time.ZonedDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -47,7 +49,7 @@ import org.springframework.web.servlet.HandlerMapping;
  * @author Nogueira
  */
 @RestController
-@RequestMapping( value = {BaseMyController.MAPPING_ADMIN_V1 + "/Properties"})
+@RequestMapping(value = {BaseMyController.MAPPING_ADMIN_V1 + "/Properties"})
 public class PropertiesController {
 
     @Autowired
@@ -57,38 +59,45 @@ public class PropertiesController {
     public ResponseEntity<?> getAllProps(Pageable pageable, HttpServletRequest request) {
         // Variavel para retorna um erro caso necessario
         ErrorMessageEntity errorMessageEntity = new ErrorMessageEntity();
-        errorMessageEntity.setTimestamp(new Date());
+        errorMessageEntity.setTimestamp(ZonedDateTime.now().toString());
         errorMessageEntity.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
         errorMessageEntity.setError(HttpStatus.INTERNAL_SERVER_ERROR.name());
         errorMessageEntity.setPath((String) request.getAttribute(HandlerMapping.PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE));
         try {
-            // Pega o arquivo de propriedades
-            Resource resource = new ClassPathResource("application.properties");
-            // Checa se achou o arquivo
-            if (resource != null) {
-                // Pega tosa as propriedade do arquivo
-                Properties props = PropertiesLoaderUtils.loadProperties(resource);
-                // Checa se foi achado alguma propriedade
-                if ((props != null) && (props.size() > 0)) {
-                    // Cria uma lista para retornar como page
-                    List<Object> listProps = new ArrayList<>();
-                    Map<String, String> someMap = new HashMap<>();
-                    // Passa por todas as propriedades
-                    for (Object key : props.keySet()) {
-                        someMap.put(key.toString(), props.getProperty(key.toString()));
+            // Checa qual eh a rota que esta fazendo a solicitacao
+            if ((request.getRequestURI() != null) && (request.getRequestURI().toLowerCase().contains(BaseMyController.MAPPING_ADMIN_V1))) {
+                // Pega o arquivo de propriedades
+                Resource resource = new ClassPathResource("application.properties");
+                // Checa se achou o arquivo
+                if (resource != null) {
+                    // Pega tosa as propriedade do arquivo
+                    Properties props = PropertiesLoaderUtils.loadProperties(resource);
+                    // Checa se foi achado alguma propriedade
+                    if ((props != null) && (props.size() > 0)) {
+                        // Cria uma lista para retornar como page
+                        List<Object> listProps = new ArrayList<>();
+                        Map<String, String> someMap = new HashMap<>();
+                        // Passa por todas as propriedades
+                        for (Object key : props.keySet()) {
+                            someMap.put(key.toString(), props.getProperty(key.toString()));
+                        }
+                        listProps.add(0, someMap);
+                        // Cria uma page para retorna no padrao do spring boot
+                        Page<Object> page = new PageImpl<Object>(listProps);
+                        return new ResponseEntity<>(page, HttpStatus.OK);
+                    } else {
+                        errorMessageEntity.setMessage(DefaultMessageConfiguration.FILE_CONFIG_NOT_PROPS);
+                        return new ResponseEntity<>(errorMessageEntity, HttpStatus.INTERNAL_SERVER_ERROR);
                     }
-                    listProps.add(0, someMap);
-                    // Cria uma page para retorna no padrao do spring boot
-                    Page<Object> page = new PageImpl<Object>(listProps);
-                    return new ResponseEntity<>(page, HttpStatus.OK);
                 } else {
-                    errorMessageEntity.setMessage(DefaultMessageConfiguration.FILE_CONFIG_NOT_PROPS);
+                    errorMessageEntity.setMessage(DefaultMessageConfiguration.FILE_CONFIG_NOT_FOUND);
                     return new ResponseEntity<>(errorMessageEntity, HttpStatus.INTERNAL_SERVER_ERROR);
                 }
             } else {
-                errorMessageEntity.setMessage(DefaultMessageConfiguration.FILE_CONFIG_NOT_FOUND);
-                return new ResponseEntity<>(errorMessageEntity, HttpStatus.INTERNAL_SERVER_ERROR);
+                //return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+                throw new BaseMyException(DefaultMessageConfiguration.BAD_REQUEST + " - URL:" + request.getRequestURI());
             }
+
         } catch (Exception e) {
             Logger.getLogger(PropertiesController.class.getName()).log(Level.SEVERE, null, e);
             errorMessageEntity.setMessage((e.getLocalizedMessage() != null) ? e.getLocalizedMessage() : e.toString());
@@ -100,7 +109,7 @@ public class PropertiesController {
     public ResponseEntity<?> getOneById(@PathVariable("key") String key, HttpServletRequest request) {
         // Variavel para retorna um erro caso necessario
         ErrorMessageEntity errorMessageEntity = new ErrorMessageEntity();
-        errorMessageEntity.setTimestamp(new Date());
+        errorMessageEntity.setTimestamp(ZonedDateTime.now().toString());
         errorMessageEntity.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
         errorMessageEntity.setError(HttpStatus.INTERNAL_SERVER_ERROR.name());
         errorMessageEntity.setPath((String) request.getAttribute(HandlerMapping.PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE));
@@ -144,7 +153,7 @@ public class PropertiesController {
     @RequestMapping(method = {RequestMethod.POST, RequestMethod.PUT}, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> save(@RequestBody String entity, HttpServletRequest request) {
         ErrorMessageEntity errorMessageEntity = new ErrorMessageEntity();
-        errorMessageEntity.setTimestamp(new Date());
+        errorMessageEntity.setTimestamp(ZonedDateTime.now().toString());
         errorMessageEntity.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
         errorMessageEntity.setError(HttpStatus.INTERNAL_SERVER_ERROR.name());
         errorMessageEntity.setPath((String) request.getAttribute(HandlerMapping.PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE));
@@ -175,9 +184,9 @@ public class PropertiesController {
                         Map<String, String> someMap = new HashMap<>();
                         someMap.put(dadosBody.get("key").getAsString(),
                                 PropertiesLoaderUtils.loadProperties(resource).getProperty(dadosBody.get("key").getAsString()));
-                        Logger.getLogger(PropertiesController.class.getName()).log(Level.INFO, 
-                                    " - Chave/key: " + dadosBody.get("key").getAsString() + 
-                                    " - Valor: " +PropertiesLoaderUtils.loadProperties(resource).getProperty(dadosBody.get("key").getAsString()));
+                        Logger.getLogger(PropertiesController.class.getName()).log(Level.INFO,
+                                " - Chave/key: " + dadosBody.get("key").getAsString()
+                                + " - Valor: " + PropertiesLoaderUtils.loadProperties(resource).getProperty(dadosBody.get("key").getAsString()));
                         return new ResponseEntity<>(someMap, HttpStatus.OK);
                     } else {
                         errorMessageEntity.setMessage(DefaultMessageConfiguration.FILE_CONFIG_NOT_PROPS);
@@ -206,7 +215,7 @@ public class PropertiesController {
     @RequestMapping(path = {"/{key}"}, method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> deleteById(@PathVariable("key") String key, HttpServletRequest request) {
         ErrorMessageEntity errorMessageEntity = new ErrorMessageEntity();
-        errorMessageEntity.setTimestamp(new Date());
+        errorMessageEntity.setTimestamp(ZonedDateTime.now().toString());
         errorMessageEntity.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
         errorMessageEntity.setError(HttpStatus.INTERNAL_SERVER_ERROR.name());
         errorMessageEntity.setPath((String) request.getAttribute(HandlerMapping.PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE));
@@ -227,13 +236,13 @@ public class PropertiesController {
                             Object ob = props.remove(key);
                             // Salva todas as propriedades no arquivo
                             props.store(new FileOutputStream(resource.getFile()), null);
-                            
+
                             Logger.getLogger(PropertiesController.class.getName()).log(Level.INFO, "Chave deletada: " + key);
                             // Retorna apenas um ok de sucesso na delecao
                             return new ResponseEntity<>(HttpStatus.OK);
                         } else {
                             errorMessageEntity.setMessage(DefaultMessageConfiguration.ERROR_NOT_FOUND_KEY_PROPERTIE);
-                            Logger.getLogger(PropertiesController.class.getName()).log(Level.INFO, 
+                            Logger.getLogger(PropertiesController.class.getName()).log(Level.INFO,
                                     DefaultMessageConfiguration.ERROR_NOT_FOUND_KEY_PROPERTIE + " - Chave/key: " + key);
                             return new ResponseEntity<>(errorMessageEntity, HttpStatus.INTERNAL_SERVER_ERROR);
                         }

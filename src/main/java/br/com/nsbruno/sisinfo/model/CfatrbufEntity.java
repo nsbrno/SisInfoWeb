@@ -19,7 +19,7 @@ public class CfatrbufEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFATRBPR", table = "CFATRBUF", nullable = false)
-    private int idCfatrbpr;
+    private Integer idCfatrbpr;
 
     @Basic
     @Column(name = "ID_CFAESTAD", table = "CFATRBUF")
@@ -107,11 +107,11 @@ public class CfatrbufEntity {
         this.idCfatrbuf = idCfatrbuf;
     }
 
-    public int getIdCfatrbpr() {
+    public Integer getIdCfatrbpr() {
         return idCfatrbpr;
     }
 
-    public void setIdCfatrbpr(int idCfatrbpr) {
+    public void setIdCfatrbpr(Integer idCfatrbpr) {
         this.idCfatrbpr = idCfatrbpr;
     }
 

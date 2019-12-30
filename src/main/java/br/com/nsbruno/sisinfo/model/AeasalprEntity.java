@@ -20,7 +20,7 @@ public class AeasalprEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAPLOJA", table = "AEASALPR", nullable = false)
-    private int idAeaploja;
+    private Integer idAeaploja;
 
     @Basic
     @Column(name = "ID_AEAGRDPL", table = "AEASALPR")
@@ -28,7 +28,7 @@ public class AeasalprEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAESTOQ", table = "AEASALPR", nullable = false)
-    private int idAeaestoq;
+    private Integer idAeaestoq;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEASALPR", nullable = false, length = 16)
@@ -110,11 +110,11 @@ public class AeasalprEntity {
         this.idAeasalpr = idAeasalpr;
     }
 
-    public int getIdAeaploja() {
+    public Integer getIdAeaploja() {
         return idAeaploja;
     }
 
-    public void setIdAeaploja(int idAeaploja) {
+    public void setIdAeaploja(Integer idAeaploja) {
         this.idAeaploja = idAeaploja;
     }
 
@@ -126,11 +126,11 @@ public class AeasalprEntity {
         this.idAeagrdpl = idAeagrdpl;
     }
 
-    public int getIdAeaestoq() {
+    public Integer getIdAeaestoq() {
         return idAeaestoq;
     }
 
-    public void setIdAeaestoq(int idAeaestoq) {
+    public void setIdAeaestoq(Integer idAeaestoq) {
         this.idAeaestoq = idAeaestoq;
     }
 

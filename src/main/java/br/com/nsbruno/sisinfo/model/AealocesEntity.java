@@ -20,7 +20,7 @@ public class AealocesEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEALOCES", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic
     @Column(name = "ID_CFACLIFO", table = "AEALOCES")
@@ -50,7 +50,7 @@ public class AealocesEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "AEALOCES", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic(optional = false)
     @Column(name = "DESCRICAO", table = "AEALOCES", nullable = false, length = 40)
@@ -76,11 +76,11 @@ public class AealocesEntity {
         this.idAealoces = idAealoces;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
@@ -132,11 +132,11 @@ public class AealocesEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

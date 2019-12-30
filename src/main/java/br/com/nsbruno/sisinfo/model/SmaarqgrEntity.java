@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "SMAARQGR")
+@Data
 public class SmaarqgrEntity {
 
     @Id
@@ -74,125 +76,4 @@ public class SmaarqgrEntity {
     @Basic
     @Column(name = "ACESSA_CADASTRO", table = "SMAARQGR")
     private String acessaCadastro;
-
-    public Integer getIdSmaarqgr() {
-        return idSmaarqgr;
-    }
-
-    public void setIdSmaarqgr(Integer idSmaarqgr) {
-        this.idSmaarqgr = idSmaarqgr;
-    }
-
-    public Integer getIdSmagrupo() {
-        return idSmagrupo;
-    }
-
-    public void setIdSmagrupo(Integer idSmagrupo) {
-        this.idSmagrupo = idSmagrupo;
-    }
-
-    public Integer getIdSmausuar() {
-        return idSmausuar;
-    }
-
-    public void setIdSmausuar(Integer idSmausuar) {
-        this.idSmausuar = idSmausuar;
-    }
-
-    public Integer getIdSmaarqui() {
-        return idSmaarqui;
-    }
-
-    public void setIdSmaarqui(Integer idSmaarqui) {
-        this.idSmaarqui = idSmaarqui;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public String getAcessa() {
-        return acessa;
-    }
-
-    public void setAcessa(String acessa) {
-        this.acessa = acessa;
-    }
-
-    public String getLibera() {
-        return libera;
-    }
-
-    public void setLibera(String libera) {
-        this.libera = libera;
-    }
-
-    public String getInclui() {
-        return inclui;
-    }
-
-    public void setInclui(String inclui) {
-        this.inclui = inclui;
-    }
-
-    public String getAltera() {
-        return altera;
-    }
-
-    public void setAltera(String altera) {
-        this.altera = altera;
-    }
-
-    public String getExclui() {
-        return exclui;
-    }
-
-    public void setExclui(String exclui) {
-        this.exclui = exclui;
-    }
-
-    public String getAcessaCadastro() {
-        return acessaCadastro;
-    }
-
-    public void setAcessaCadastro(String acessaCadastro) {
-        this.acessaCadastro = acessaCadastro;
-    }
-
 }

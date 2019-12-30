@@ -19,11 +19,11 @@ public class AeausplpEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAPLPGT", table = "AEAUSPLP", nullable = false)
-    private int idAeaplpgt;
+    private Integer idAeaplpgt;
 
     @Basic(optional = false)
     @Column(name = "ID_SMAUSUAR", table = "AEAUSPLP", nullable = false)
-    private int idSmausuar;
+    private Integer idSmausuar;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEAUSPLP", nullable = false, length = 16)
@@ -59,19 +59,19 @@ public class AeausplpEntity {
         this.idAeausplp = idAeausplp;
     }
 
-    public int getIdAeaplpgt() {
+    public Integer getIdAeaplpgt() {
         return idAeaplpgt;
     }
 
-    public void setIdAeaplpgt(int idAeaplpgt) {
+    public void setIdAeaplpgt(Integer idAeaplpgt) {
         this.idAeaplpgt = idAeaplpgt;
     }
 
-    public int getIdSmausuar() {
+    public Integer getIdSmausuar() {
         return idSmausuar;
     }
 
-    public void setIdSmausuar(int idSmausuar) {
+    public void setIdSmausuar(Integer idSmausuar) {
         this.idSmausuar = idSmausuar;
     }
 

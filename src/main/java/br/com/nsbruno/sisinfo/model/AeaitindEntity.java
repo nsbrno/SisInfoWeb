@@ -19,27 +19,27 @@ public class AeaitindEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAOSIND", table = "AEAITIND", nullable = false)
-    private int idAeaosind;
+    private Integer idAeaosind;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAPRODU", table = "AEAITIND", nullable = false)
-    private int idAeaprodu;
+    private Integer idAeaprodu;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAUNVEN", table = "AEAITIND", nullable = false)
-    private int idAeaunven;
+    private Integer idAeaunven;
 
     @Basic(optional = false)
     @Column(name = "ID_AEALOCES_ORIG", table = "AEAITIND", nullable = false)
-    private int idAealocesOrig;
+    private Integer idAealocesOrig;
 
     @Basic(optional = false)
     @Column(name = "ID_AEALOCES_DEST", table = "AEAITIND", nullable = false)
-    private int idAealocesDest;
+    private Integer idAealocesDest;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAESTOQ_DEST", table = "AEAITIND", nullable = false)
-    private int idAeaestoqDest;
+    private Integer idAeaestoqDest;
 
     @Basic
     @Column(name = "US_CAD", table = "AEAITIND", length = 20)
@@ -94,51 +94,51 @@ public class AeaitindEntity {
         this.idAeaitind = idAeaitind;
     }
 
-    public int getIdAeaosind() {
+    public Integer getIdAeaosind() {
         return idAeaosind;
     }
 
-    public void setIdAeaosind(int idAeaosind) {
+    public void setIdAeaosind(Integer idAeaosind) {
         this.idAeaosind = idAeaosind;
     }
 
-    public int getIdAeaprodu() {
+    public Integer getIdAeaprodu() {
         return idAeaprodu;
     }
 
-    public void setIdAeaprodu(int idAeaprodu) {
+    public void setIdAeaprodu(Integer idAeaprodu) {
         this.idAeaprodu = idAeaprodu;
     }
 
-    public int getIdAeaunven() {
+    public Integer getIdAeaunven() {
         return idAeaunven;
     }
 
-    public void setIdAeaunven(int idAeaunven) {
+    public void setIdAeaunven(Integer idAeaunven) {
         this.idAeaunven = idAeaunven;
     }
 
-    public int getIdAealocesOrig() {
+    public Integer getIdAealocesOrig() {
         return idAealocesOrig;
     }
 
-    public void setIdAealocesOrig(int idAealocesOrig) {
+    public void setIdAealocesOrig(Integer idAealocesOrig) {
         this.idAealocesOrig = idAealocesOrig;
     }
 
-    public int getIdAealocesDest() {
+    public Integer getIdAealocesDest() {
         return idAealocesDest;
     }
 
-    public void setIdAealocesDest(int idAealocesDest) {
+    public void setIdAealocesDest(Integer idAealocesDest) {
         this.idAealocesDest = idAealocesDest;
     }
 
-    public int getIdAeaestoqDest() {
+    public Integer getIdAeaestoqDest() {
         return idAeaestoqDest;
     }
 
-    public void setIdAeaestoqDest(int idAeaestoqDest) {
+    public void setIdAeaestoqDest(Integer idAeaestoqDest) {
         this.idAeaestoqDest = idAeaestoqDest;
     }
 

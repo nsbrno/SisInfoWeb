@@ -22,7 +22,7 @@ public class AeasgrupEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAGRUPO", table = "AEASGRUP", nullable = false)
-    private int idAeagrupo;
+    private Integer idAeagrupo;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEASGRUP", nullable = false, length = 16)
@@ -48,7 +48,7 @@ public class AeasgrupEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "AEASGRUP", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic(optional = false)
     @Column(name = "DESCRICAO", table = "AEASGRUP", nullable = false, length = 60)
@@ -62,11 +62,11 @@ public class AeasgrupEntity {
         this.idAeasgrup = idAeasgrup;
     }
 
-    public int getIdAeagrupo() {
+    public Integer getIdAeagrupo() {
         return idAeagrupo;
     }
 
-    public void setIdAeagrupo(int idAeagrupo) {
+    public void setIdAeagrupo(Integer idAeagrupo) {
         this.idAeagrupo = idAeagrupo;
     }
 
@@ -110,11 +110,11 @@ public class AeasgrupEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

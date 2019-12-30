@@ -43,7 +43,7 @@ public class AeaproduEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAUNVEN", table = "AEAPRODU", nullable = false)
-    private int idAeaunven;
+    private Integer idAeaunven;
 
     @Basic
     @Column(name = "ID_AEAPESOS", table = "AEAPRODU")
@@ -55,7 +55,7 @@ public class AeaproduEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEACODOM", table = "AEAPRODU", nullable = false)
-    private int idAeacodom;
+    private Integer idAeacodom;
 
     @Basic
     @Column(name = "ID_CFAMODEQ", table = "AEAPRODU")
@@ -110,7 +110,7 @@ public class AeaproduEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "AEAPRODU", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic
     @Column(name = "CODIGO_ESTRUTURAL", table = "AEAPRODU", length = 20)
@@ -260,11 +260,11 @@ public class AeaproduEntity {
         this.idAeamarca = idAeamarca;
     }
 
-    public int getIdAeaunven() {
+    public Integer getIdAeaunven() {
         return idAeaunven;
     }
 
-    public void setIdAeaunven(int idAeaunven) {
+    public void setIdAeaunven(Integer idAeaunven) {
         this.idAeaunven = idAeaunven;
     }
 
@@ -284,11 +284,11 @@ public class AeaproduEntity {
         this.idAeatpgrd = idAeatpgrd;
     }
 
-    public int getIdAeacodom() {
+    public Integer getIdAeacodom() {
         return idAeacodom;
     }
 
-    public void setIdAeacodom(int idAeacodom) {
+    public void setIdAeacodom(Integer idAeacodom) {
         this.idAeacodom = idAeacodom;
     }
 
@@ -388,11 +388,11 @@ public class AeaproduEntity {
         this.descricaoMascara = descricaoMascara;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

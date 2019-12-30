@@ -20,7 +20,7 @@ public class CfacidadEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFAESTAD", table = "CFACIDAD", nullable = false)
-    private int idCfaestad;
+    private Integer idCfaestad;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "CFACIDAD", nullable = false, length = 16)
@@ -68,11 +68,11 @@ public class CfacidadEntity {
         this.idCfacidad = idCfacidad;
     }
 
-    public int getIdCfaestad() {
+    public Integer getIdCfaestad() {
         return idCfaestad;
     }
 
-    public void setIdCfaestad(int idCfaestad) {
+    public void setIdCfaestad(Integer idCfaestad) {
         this.idCfaestad = idCfaestad;
     }
 

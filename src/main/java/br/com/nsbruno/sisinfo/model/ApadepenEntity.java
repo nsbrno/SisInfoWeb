@@ -67,7 +67,7 @@ public class ApadepenEntity {
 
     @Basic
     @Column(name = "CONTRIBUINTE", table = "APADEPEN")
-    private String contribuinte;
+    private String contribuIntegere;
 
     @Basic
     @Column(name = "TEMPO_CONTRIBUICAO", table = "APADEPEN", length = 40)
@@ -178,12 +178,12 @@ public class ApadepenEntity {
         this.dtNascimento = dtNascimento;
     }
 
-    public String getContribuinte() {
-        return contribuinte;
+    public String getContribuIntegere() {
+        return contribuIntegere;
     }
 
-    public void setContribuinte(String contribuinte) {
-        this.contribuinte = contribuinte;
+    public void setContribuIntegere(String contribuIntegere) {
+        this.contribuIntegere = contribuIntegere;
     }
 
     public String getTempoContribuicao() {

@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "AEACOIND")
+@Data
 public class AeacoindEntity {
 
     @Id
@@ -51,77 +53,4 @@ public class AeacoindEntity {
     @Basic(optional = false)
     @Column(name = "QUANTIDADE", table = "AEACOIND", nullable = false)
     private double quantidade;
-
-    public Integer getIdAeacoind() {
-        return idAeacoind;
-    }
-
-    public void setIdAeacoind(Integer idAeacoind) {
-        this.idAeacoind = idAeacoind;
-    }
-
-    public Integer getIdAeaitind() {
-        return idAeaitind;
-    }
-
-    public void setIdAeaitind(Integer idAeaitind) {
-        this.idAeaitind = idAeaitind;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public Date getDtConcluido() {
-        return dtConcluido;
-    }
-
-    public void setDtConcluido(Date dtConcluido) {
-        this.dtConcluido = dtConcluido;
-    }
-
-    public double getQuantidade() {
-        return quantidade;
-    }
-
-    public void setQuantidade(double quantidade) {
-        this.quantidade = quantidade;
-    }
-
 }

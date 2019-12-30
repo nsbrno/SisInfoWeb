@@ -9,9 +9,11 @@ import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "SMALOGMV")
+@Data
 public class SmalogmvEntity {
 
     @Id
@@ -56,85 +58,4 @@ public class SmalogmvEntity {
     @Basic
     @Column(name = "LOG", table = "SMALOGMV")
     private byte[] log;
-
-    public Integer getIdSmalogmv() {
-        return idSmalogmv;
-    }
-
-    public void setIdSmalogmv(Integer idSmalogmv) {
-        this.idSmalogmv = idSmalogmv;
-    }
-
-    public Integer getIdArquivo() {
-        return idArquivo;
-    }
-
-    public void setIdArquivo(Integer idArquivo) {
-        this.idArquivo = idArquivo;
-    }
-
-    public String getArquivo() {
-        return arquivo;
-    }
-
-    public void setArquivo(String arquivo) {
-        this.arquivo = arquivo;
-    }
-
-    public String getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public Date getDtUltAltArquivo() {
-        return dtUltAltArquivo;
-    }
-
-    public void setDtUltAltArquivo(Date dtUltAltArquivo) {
-        this.dtUltAltArquivo = dtUltAltArquivo;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public byte[] getLog() {
-        return log;
-    }
-
-    public void setLog(byte[] log) {
-        this.log = log;
-    }
-
 }

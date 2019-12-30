@@ -59,11 +59,11 @@ public class ApacontrEntity {
 
     @Basic(optional = false)
     @Column(name = "ANO", table = "APACONTR", nullable = false)
-    private int ano;
+    private Integer ano;
 
     @Basic(optional = false)
     @Column(name = "MES", table = "APACONTR", nullable = false)
-    private int mes;
+    private Integer mes;
 
     @Basic(optional = false)
     @Column(name = "VALOR", table = "APACONTR", nullable = false)
@@ -171,19 +171,19 @@ public class ApacontrEntity {
         this.dtContribuicao = dtContribuicao;
     }
 
-    public int getAno() {
+    public Integer getAno() {
         return ano;
     }
 
-    public void setAno(int ano) {
+    public void setAno(Integer ano) {
         this.ano = ano;
     }
 
-    public int getMes() {
+    public Integer getMes() {
         return mes;
     }
 
-    public void setMes(int mes) {
+    public void setMes(Integer mes) {
         this.mes = mes;
     }
 

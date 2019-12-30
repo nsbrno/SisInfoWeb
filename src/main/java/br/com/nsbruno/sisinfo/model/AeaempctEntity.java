@@ -8,10 +8,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 
 @Entity
 @Table(name = "AEAEMPCT")
+@Data
 public class AeaempctEntity {
 
     @Id
@@ -51,77 +53,4 @@ public class AeaempctEntity {
     @Basic
     @Column(name = "CT_INTEG", table = "AEAEMPCT")
     private Integer ctInteg;
-
-    public Integer getIdAeaempct() {
-        return idAeaempct;
-    }
-
-    public void setIdAeaempct(Integer idAeaempct) {
-        this.idAeaempct = idAeaempct;
-    }
-
-    public Integer getIdSmaempre() {
-        return idSmaempre;
-    }
-
-    public void setIdSmaempre(Integer idSmaempre) {
-        this.idSmaempre = idSmaempre;
-    }
-
-    public Integer getIdAeacodst() {
-        return idAeacodst;
-    }
-
-    public void setIdAeacodst(Integer idAeacodst) {
-        this.idAeacodst = idAeacodst;
-    }
-
-    public Integer getIdAeaobspr() {
-        return idAeaobspr;
-    }
-
-    public void setIdAeaobspr(Integer idAeaobspr) {
-        this.idAeaobspr = idAeaobspr;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
 }

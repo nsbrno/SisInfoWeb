@@ -20,11 +20,11 @@ public class AeagrdplEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAPLOJA", table = "AEAGRDPL", nullable = false)
-    private int idAeaploja;
+    private Integer idAeaploja;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAGRDPR", table = "AEAGRDPL", nullable = false)
-    private int idAeagrdpr;
+    private Integer idAeagrdpr;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEAGRDPL", nullable = false, length = 16)
@@ -133,7 +133,7 @@ public class AeagrdplEntity {
 
     @Basic(optional = false)
     @Column(name = "NUM_COMPRAS", table = "AEAGRDPL", nullable = false)
-    private int numCompras;
+    private Integer numCompras;
 
     @Basic(optional = false)
     @Column(name = "TEMPO_PED_ENTREGA", table = "AEAGRDPL", nullable = false)
@@ -151,19 +151,19 @@ public class AeagrdplEntity {
         this.idAeagrdpl = idAeagrdpl;
     }
 
-    public int getIdAeaploja() {
+    public Integer getIdAeaploja() {
         return idAeaploja;
     }
 
-    public void setIdAeaploja(int idAeaploja) {
+    public void setIdAeaploja(Integer idAeaploja) {
         this.idAeaploja = idAeaploja;
     }
 
-    public int getIdAeagrdpr() {
+    public Integer getIdAeagrdpr() {
         return idAeagrdpr;
     }
 
-    public void setIdAeagrdpr(int idAeagrdpr) {
+    public void setIdAeagrdpr(Integer idAeagrdpr) {
         this.idAeagrdpr = idAeagrdpr;
     }
 
@@ -351,11 +351,11 @@ public class AeagrdplEntity {
         this.maximo = maximo;
     }
 
-    public int getNumCompras() {
+    public Integer getNumCompras() {
         return numCompras;
     }
 
-    public void setNumCompras(int numCompras) {
+    public void setNumCompras(Integer numCompras) {
         this.numCompras = numCompras;
     }
 

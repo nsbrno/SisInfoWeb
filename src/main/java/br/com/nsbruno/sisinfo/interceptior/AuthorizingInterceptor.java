@@ -15,13 +15,10 @@ import br.com.nsbruno.sisinfo.repository.BaseMyRepositoryImpl;
 import br.com.nsbruno.sisinfo.service.CfaclifoService;
 import br.com.nsbruno.sisinfo.service.SmadispoService;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.security.Principal;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.util.Base64;
-import java.util.Date;
-import java.util.Enumeration;
+import java.sql.SQLException;
+import java.time.ZonedDateTime;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -48,7 +45,7 @@ public class AuthorizingInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         ErrorMessageEntity errorMessageEntity = new ErrorMessageEntity();
-        errorMessageEntity.setTimestamp(new Date());
+        errorMessageEntity.setTimestamp(ZonedDateTime.now().toString());
         errorMessageEntity.setStatus(HttpStatus.UNAUTHORIZED.value());
         errorMessageEntity.setError(HttpStatus.UNAUTHORIZED.name());
         errorMessageEntity.setPath((String) request.getAttribute(HandlerMapping.PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE));
@@ -58,8 +55,9 @@ public class AuthorizingInterceptor implements HandlerInterceptor {
         try {
             // Checa se foi passado o dispositivo
             if (request.getHeader(CustomFunction.KEY_DEVICE) != null) {
+                // Checa se foi passado o usuario de autenticação, o Basic Auth, no Header da requisição
                 if ((request.getHeader("Authorization") != null) && (request.getHeader("Authorization").toLowerCase().startsWith("basic"))) {
-                    // Usa um metodo para pegar os dados de usuario e senha
+                    // Usa um metodo para pegar os dados de usuario e senha que foi passado como Basic Auth
                     Map<String, String> auth = new CustomFunction().getUserAndPassowordFromAuth(request);
                     // Checa pegou os dodos de autorizacao
                     if (auth.size() > 0) {
@@ -88,8 +86,8 @@ public class AuthorizingInterceptor implements HandlerInterceptor {
                                 Class.forName(BaseMyRepositoryImpl.DRIVE_FIREBIRD);
                                 connection = DriverManager.getConnection(
                                         BaseMyRepositoryImpl.PROTOCOL_FIREBIRD + ":" + cfaclifoEntity.getIpServidorSisinfo() + "/" + cfaclifoEntity.getPortaBancoSisinfo() + ":" + cfaclifoEntity.getCaminhoBancoSisinfo() + "?" + BaseMyRepositoryImpl.PARAM_CONNECTION_FIREBIRD,
-                                        auth.get(CustomFunction.KEY_USERNAME),
-                                        auth.get(CustomFunction.KEY_PASSWORD));
+                                        auth.get(CustomFunction.KEY_USERNAME),  // Usuário que foi passado por parametro no Basic Auth
+                                        auth.get(CustomFunction.KEY_PASSWORD)); // Senha que foi passado por parametro no Basic Auth
                                 //System.out.println("#####  DEU CERTO #######");
                                 // Checa se tem alguma conexao aberta. Caso esteja aberta significa que conectou com sucesso
                                 return ((connection != null) && (!connection.isClosed()));
@@ -124,7 +122,7 @@ public class AuthorizingInterceptor implements HandlerInterceptor {
                 response.getWriter().write(new Gson().toJson(errorMessageEntity));
                 return false;
             }
-        } catch (Exception ex) {
+        } catch (IOException | ClassNotFoundException | SQLException ex) {
             response.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
             errorMessageEntity.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
             errorMessageEntity.setError(HttpStatus.INTERNAL_SERVER_ERROR.name());

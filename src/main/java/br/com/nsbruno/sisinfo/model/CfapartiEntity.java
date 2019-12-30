@@ -42,7 +42,7 @@ public class CfapartiEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "CFAPARTI", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic(optional = false)
     @Column(name = "DESCRICAO", table = "CFAPARTI", nullable = false, length = 60)
@@ -100,11 +100,11 @@ public class CfapartiEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

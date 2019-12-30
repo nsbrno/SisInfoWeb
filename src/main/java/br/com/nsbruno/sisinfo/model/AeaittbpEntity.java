@@ -19,7 +19,7 @@ public class AeaittbpEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEATBPRO", table = "AEAITTBP", nullable = false)
-    private int idAeatbpro;
+    private Integer idAeatbpro;
 
     @Basic
     @Column(name = "ID_AEAAGPPR", table = "AEAITTBP")
@@ -199,11 +199,11 @@ public class AeaittbpEntity {
         this.idAeaittbp = idAeaittbp;
     }
 
-    public int getIdAeatbpro() {
+    public Integer getIdAeatbpro() {
         return idAeatbpro;
     }
 
-    public void setIdAeatbpro(int idAeatbpro) {
+    public void setIdAeatbpro(Integer idAeatbpro) {
         this.idAeatbpro = idAeatbpro;
     }
 

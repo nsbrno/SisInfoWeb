@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "AEABICMV")
+@Data
 public class AeabicmvEntity {
 
     @Id
@@ -70,7 +72,7 @@ public class AeabicmvEntity {
 
     @Basic(optional = false)
     @Column(name = "NUMERO", table = "AEABICMV", nullable = false)
-    private int numero;
+    private Integer numero;
 
     @Basic
     @Column(name = "MOT_INTERV", table = "AEABICMV", length = 40)
@@ -111,197 +113,4 @@ public class AeabicmvEntity {
     @Basic
     @Column(name = "FC_VL_VENDA", table = "AEABICMV", precision = 15)
     private Double fcVlVenda;
-
-    public Integer getIdAeabicmv() {
-        return idAeabicmv;
-    }
-
-    public void setIdAeabicmv(Integer idAeabicmv) {
-        this.idAeabicmv = idAeabicmv;
-    }
-
-    public Integer getIdAeacaixa() {
-        return idAeacaixa;
-    }
-
-    public void setIdAeacaixa(Integer idAeacaixa) {
-        this.idAeacaixa = idAeacaixa;
-    }
-
-    public Integer getIdAeatanqu() {
-        return idAeatanqu;
-    }
-
-    public void setIdAeatanqu(Integer idAeatanqu) {
-        this.idAeatanqu = idAeatanqu;
-    }
-
-    public Integer getIdAeabicos() {
-        return idAeabicos;
-    }
-
-    public void setIdAeabicos(Integer idAeabicos) {
-        this.idAeabicos = idAeabicos;
-    }
-
-    public Integer getIdAeaitent() {
-        return idAeaitent;
-    }
-
-    public void setIdAeaitent(Integer idAeaitent) {
-        this.idAeaitent = idAeaitent;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public Date getDtMovimento() {
-        return dtMovimento;
-    }
-
-    public void setDtMovimento(Date dtMovimento) {
-        this.dtMovimento = dtMovimento;
-    }
-
-    public double getQtde() {
-        return qtde;
-    }
-
-    public void setQtde(double qtde) {
-        this.qtde = qtde;
-    }
-
-    public int getNumero() {
-        return numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
-    public String getMotInterv() {
-        return motInterv;
-    }
-
-    public void setMotInterv(String motInterv) {
-        this.motInterv = motInterv;
-    }
-
-    public String getNomInterv() {
-        return nomInterv;
-    }
-
-    public void setNomInterv(String nomInterv) {
-        this.nomInterv = nomInterv;
-    }
-
-    public String getCnpjInterv() {
-        return cnpjInterv;
-    }
-
-    public void setCnpjInterv(String cnpjInterv) {
-        this.cnpjInterv = cnpjInterv;
-    }
-
-    public String getCpfInterv() {
-        return cpfInterv;
-    }
-
-    public void setCpfInterv(String cpfInterv) {
-        this.cpfInterv = cpfInterv;
-    }
-
-    public double getValFecha() {
-        return valFecha;
-    }
-
-    public void setValFecha(double valFecha) {
-        this.valFecha = valFecha;
-    }
-
-    public double getValAbert() {
-        return valAbert;
-    }
-
-    public void setValAbert(double valAbert) {
-        this.valAbert = valAbert;
-    }
-
-    public double getVolAferi() {
-        return volAferi;
-    }
-
-    public void setVolAferi(double volAferi) {
-        this.volAferi = volAferi;
-    }
-
-    public double getVlUnit() {
-        return vlUnit;
-    }
-
-    public void setVlUnit(double vlUnit) {
-        this.vlUnit = vlUnit;
-    }
-
-    public Double getFcVolVendas() {
-        return fcVolVendas;
-    }
-
-    public void setFcVolVendas(Double fcVolVendas) {
-        this.fcVolVendas = fcVolVendas;
-    }
-
-    public Double getFcVlVenda() {
-        return fcVlVenda;
-    }
-
-    public void setFcVlVenda(Double fcVlVenda) {
-        this.fcVlVenda = fcVlVenda;
-    }
-
 }

@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "AEAESTOQ")
+@Data
 public class AeaestoqEntity {
 
     @Id
@@ -19,7 +21,7 @@ public class AeaestoqEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAPLOJA", table = "AEAESTOQ", nullable = false)
-    private int idAeaploja;
+    private Integer idAeaploja;
 
     @Basic
     @Column(name = "ID_AEAGRDPL", table = "AEAESTOQ")
@@ -27,7 +29,7 @@ public class AeaestoqEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEALOCES", table = "AEAESTOQ", nullable = false)
-    private int idAealoces;
+    private Integer idAealoces;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEAESTOQ", nullable = false, length = 16)
@@ -70,117 +72,4 @@ public class AeaestoqEntity {
     @Basic
     @Column(name = "LOCACAO_RESERVA", table = "AEAESTOQ", length = 18)
     private String locacaoReserva;
-
-    public Integer getIdAeaestoq() {
-        return idAeaestoq;
-    }
-
-    public void setIdAeaestoq(Integer idAeaestoq) {
-        this.idAeaestoq = idAeaestoq;
-    }
-
-    public int getIdAeaploja() {
-        return idAeaploja;
-    }
-
-    public void setIdAeaploja(int idAeaploja) {
-        this.idAeaploja = idAeaploja;
-    }
-
-    public Integer getIdAeagrdpl() {
-        return idAeagrdpl;
-    }
-
-    public void setIdAeagrdpl(Integer idAeagrdpl) {
-        this.idAeagrdpl = idAeagrdpl;
-    }
-
-    public int getIdAealoces() {
-        return idAealoces;
-    }
-
-    public void setIdAealoces(int idAealoces) {
-        this.idAealoces = idAealoces;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public double getEstoque() {
-        return estoque;
-    }
-
-    public void setEstoque(double estoque) {
-        this.estoque = estoque;
-    }
-
-    public double getRetido() {
-        return retido;
-    }
-
-    public void setRetido(double retido) {
-        this.retido = retido;
-    }
-
-    public String getAtivo() {
-        return ativo;
-    }
-
-    public void setAtivo(String ativo) {
-        this.ativo = ativo;
-    }
-
-    public String getLocacaoAtiva() {
-        return locacaoAtiva;
-    }
-
-    public void setLocacaoAtiva(String locacaoAtiva) {
-        this.locacaoAtiva = locacaoAtiva;
-    }
-
-    public String getLocacaoReserva() {
-        return locacaoReserva;
-    }
-
-    public void setLocacaoReserva(String locacaoReserva) {
-        this.locacaoReserva = locacaoReserva;
-    }
-
 }

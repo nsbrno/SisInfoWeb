@@ -9,9 +9,11 @@ import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "SMAANEXO")
+@Data
 public class SmaanexoEntity {
 
     @Id
@@ -20,7 +22,7 @@ public class SmaanexoEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAMENSA", table = "SMAANEXO", nullable = false)
-    private int idSmamensa;
+    private Integer idSmamensa;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "SMAANEXO", nullable = false, length = 16)
@@ -52,77 +54,4 @@ public class SmaanexoEntity {
     @Basic
     @Column(name = "NOME", table = "SMAANEXO", length = 128)
     private String nome;
-
-    public Integer getIdSmaanexo() {
-        return idSmaanexo;
-    }
-
-    public void setIdSmaanexo(Integer idSmaanexo) {
-        this.idSmaanexo = idSmaanexo;
-    }
-
-    public int getIdSmamensa() {
-        return idSmamensa;
-    }
-
-    public void setIdSmamensa(int idSmamensa) {
-        this.idSmamensa = idSmamensa;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public byte[] getAnexo() {
-        return anexo;
-    }
-
-    public void setAnexo(byte[] anexo) {
-        this.anexo = anexo;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
 }

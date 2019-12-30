@@ -9,10 +9,12 @@ import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 
 @Entity
 @Table(name = "RPAHIPAD")
+@Data
 public class RpahipadEntity {
 
     @Id
@@ -43,75 +45,10 @@ public class RpahipadEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "RPAHIPAD", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Lob
     @Basic
     @Column(name = "DESCRICAO", table = "RPAHIPAD")
     private byte[] descricao;
-
-    public Integer getIdRpahipad() {
-        return idRpahipad;
-    }
-
-    public void setIdRpahipad(Integer idRpahipad) {
-        this.idRpahipad = idRpahipad;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public int getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
-    }
-
-    public byte[] getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(byte[] descricao) {
-        this.descricao = descricao;
-    }
-
 }

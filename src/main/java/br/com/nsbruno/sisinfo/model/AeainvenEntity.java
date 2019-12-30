@@ -19,7 +19,7 @@ public class AeainvenEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEAINVEN", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic
     @Column(name = "ID_AEAAGINV", table = "AEAINVEN")
@@ -54,7 +54,7 @@ public class AeainvenEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "AEAINVEN", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic(optional = false)
     @Column(name = "ABERTO", table = "AEAINVEN", nullable = false)
@@ -76,11 +76,11 @@ public class AeainvenEntity {
         this.idAeainven = idAeainven;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
@@ -140,11 +140,11 @@ public class AeainvenEntity {
         this.dtMovimento = dtMovimento;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

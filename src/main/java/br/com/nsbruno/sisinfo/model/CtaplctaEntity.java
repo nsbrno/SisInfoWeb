@@ -81,7 +81,7 @@ public class CtaplctaEntity {
 
     @Basic(optional = false)
     @Column(name = "NIVEL", table = "CTAPLCTA", nullable = false)
-    private int nivel;
+    private Integer nivel;
 
     @Basic
     @Column(name = "A_S", table = "CTAPLCTA")
@@ -215,11 +215,11 @@ public class CtaplctaEntity {
         this.dg = dg;
     }
 
-    public int getNivel() {
+    public Integer getNivel() {
         return nivel;
     }
 
-    public void setNivel(int nivel) {
+    public void setNivel(Integer nivel) {
         this.nivel = nivel;
     }
 

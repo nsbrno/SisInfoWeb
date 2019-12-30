@@ -8,10 +8,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 
 @Entity
 @Table(name = "AEAAGPPR")
+@Data
 public class AeaagpprEntity {
 
     @Id
@@ -43,61 +45,4 @@ public class AeaagpprEntity {
     @Basic(optional = false)
     @Column(name = "DESCRICAO", table = "AEAAGPPR", nullable = false, length = 50)
     private String descricao;
-
-    public Integer getIdAeaagppr() {
-        return idAeaagppr;
-    }
-
-    public void setIdAeaagppr(Integer idAeaagppr) {
-        this.idAeaagppr = idAeaagppr;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
 }

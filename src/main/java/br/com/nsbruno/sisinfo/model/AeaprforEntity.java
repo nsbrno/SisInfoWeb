@@ -58,11 +58,11 @@ public class AeaprforEntity {
 
     @Basic(optional = false)
     @Column(name = "NUM_COMPRAS", table = "AEAPRFOR", nullable = false)
-    private int numCompras;
+    private Integer numCompras;
 
     @Basic(optional = false)
     @Column(name = "PED_ENTREGA", table = "AEAPRFOR", nullable = false)
-    private int pedEntrega;
+    private Integer pedEntrega;
 
     @Basic(optional = false)
     @Column(name = "QUANTIDADE", table = "AEAPRFOR", nullable = false)
@@ -172,19 +172,19 @@ public class AeaprforEntity {
         this.dtUltCompra = dtUltCompra;
     }
 
-    public int getNumCompras() {
+    public Integer getNumCompras() {
         return numCompras;
     }
 
-    public void setNumCompras(int numCompras) {
+    public void setNumCompras(Integer numCompras) {
         this.numCompras = numCompras;
     }
 
-    public int getPedEntrega() {
+    public Integer getPedEntrega() {
         return pedEntrega;
     }
 
-    public void setPedEntrega(int pedEntrega) {
+    public void setPedEntrega(Integer pedEntrega) {
         this.pedEntrega = pedEntrega;
     }
 

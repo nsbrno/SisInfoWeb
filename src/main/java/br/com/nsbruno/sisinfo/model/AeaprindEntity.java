@@ -19,15 +19,15 @@ public class AeaprindEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAITIND", table = "AEAPRIND", nullable = false)
-    private int idAeaitind;
+    private Integer idAeaitind;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAESTOQ_ORIG", table = "AEAPRIND", nullable = false)
-    private int idAeaestoqOrig;
+    private Integer idAeaestoqOrig;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAUNVEN", table = "AEAPRIND", nullable = false)
-    private int idAeaunven;
+    private Integer idAeaunven;
 
     @Basic
     @Column(name = "US_CAD", table = "AEAPRIND", length = 20)
@@ -84,27 +84,27 @@ public class AeaprindEntity {
         this.idAeaprind = idAeaprind;
     }
 
-    public int getIdAeaitind() {
+    public Integer getIdAeaitind() {
         return idAeaitind;
     }
 
-    public void setIdAeaitind(int idAeaitind) {
+    public void setIdAeaitind(Integer idAeaitind) {
         this.idAeaitind = idAeaitind;
     }
 
-    public int getIdAeaestoqOrig() {
+    public Integer getIdAeaestoqOrig() {
         return idAeaestoqOrig;
     }
 
-    public void setIdAeaestoqOrig(int idAeaestoqOrig) {
+    public void setIdAeaestoqOrig(Integer idAeaestoqOrig) {
         this.idAeaestoqOrig = idAeaestoqOrig;
     }
 
-    public int getIdAeaunven() {
+    public Integer getIdAeaunven() {
         return idAeaunven;
     }
 
-    public void setIdAeaunven(int idAeaunven) {
+    public void setIdAeaunven(Integer idAeaunven) {
         this.idAeaunven = idAeaunven;
     }
 

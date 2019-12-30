@@ -50,7 +50,7 @@ public class CfaccredEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "CFACCRED", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic(optional = false)
     @Column(name = "DESCRICAO", table = "CFACCRED", nullable = false, length = 40)
@@ -58,15 +58,15 @@ public class CfaccredEntity {
 
     @Basic(optional = false)
     @Column(name = "PARCELA_FIM1", table = "CFACCRED", nullable = false)
-    private int parcelaFim1;
+    private Integer parcelaFim1;
 
     @Basic(optional = false)
     @Column(name = "PARCELA_FIM2", table = "CFACCRED", nullable = false)
-    private int parcelaFim2;
+    private Integer parcelaFim2;
 
     @Basic(optional = false)
     @Column(name = "PARCELA_FIM3", table = "CFACCRED", nullable = false)
-    private int parcelaFim3;
+    private Integer parcelaFim3;
 
     @Basic(optional = false)
     @Column(name = "TAXA1", table = "CFACCRED", nullable = false)
@@ -86,11 +86,11 @@ public class CfaccredEntity {
 
     @Basic(optional = false)
     @Column(name = "DIAS_DEB", table = "CFACCRED", nullable = false)
-    private int diasDeb;
+    private Integer diasDeb;
 
     @Basic(optional = false)
     @Column(name = "DIAS_CRE", table = "CFACCRED", nullable = false)
-    private int diasCre;
+    private Integer diasCre;
 
     @Basic
     @Column(name = "ANTECIPA", table = "CFACCRED")
@@ -168,11 +168,11 @@ public class CfaccredEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 
@@ -184,27 +184,27 @@ public class CfaccredEntity {
         this.descricao = descricao;
     }
 
-    public int getParcelaFim1() {
+    public Integer getParcelaFim1() {
         return parcelaFim1;
     }
 
-    public void setParcelaFim1(int parcelaFim1) {
+    public void setParcelaFim1(Integer parcelaFim1) {
         this.parcelaFim1 = parcelaFim1;
     }
 
-    public int getParcelaFim2() {
+    public Integer getParcelaFim2() {
         return parcelaFim2;
     }
 
-    public void setParcelaFim2(int parcelaFim2) {
+    public void setParcelaFim2(Integer parcelaFim2) {
         this.parcelaFim2 = parcelaFim2;
     }
 
-    public int getParcelaFim3() {
+    public Integer getParcelaFim3() {
         return parcelaFim3;
     }
 
-    public void setParcelaFim3(int parcelaFim3) {
+    public void setParcelaFim3(Integer parcelaFim3) {
         this.parcelaFim3 = parcelaFim3;
     }
 
@@ -240,19 +240,19 @@ public class CfaccredEntity {
         this.taxaDeb = taxaDeb;
     }
 
-    public int getDiasDeb() {
+    public Integer getDiasDeb() {
         return diasDeb;
     }
 
-    public void setDiasDeb(int diasDeb) {
+    public void setDiasDeb(Integer diasDeb) {
         this.diasDeb = diasDeb;
     }
 
-    public int getDiasCre() {
+    public Integer getDiasCre() {
         return diasCre;
     }
 
-    public void setDiasCre(int diasCre) {
+    public void setDiasCre(Integer diasCre) {
         this.diasCre = diasCre;
     }
 

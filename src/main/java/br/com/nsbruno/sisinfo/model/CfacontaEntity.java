@@ -32,7 +32,7 @@ public class CfacontaEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO", table = "CFACONTA", nullable = false)
-    private int idCfaclifo;
+    private Integer idCfaclifo;
 
     @Basic
     @Column(name = "ID_CFATIMEF", table = "CFACONTA")
@@ -117,11 +117,11 @@ public class CfacontaEntity {
         this.idCfaparti = idCfaparti;
     }
 
-    public int getIdCfaclifo() {
+    public Integer getIdCfaclifo() {
         return idCfaclifo;
     }
 
-    public void setIdCfaclifo(int idCfaclifo) {
+    public void setIdCfaclifo(Integer idCfaclifo) {
         this.idCfaclifo = idCfaclifo;
     }
 

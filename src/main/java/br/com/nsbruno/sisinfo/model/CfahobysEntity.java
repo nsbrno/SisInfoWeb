@@ -23,7 +23,7 @@ public class CfahobysEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFAHOBBY", table = "CFAHOBYS", nullable = false)
-    private int idCfahobby;
+    private Integer idCfahobby;
 
     @Basic
     @Column(name = "ID_CFADEPEN", table = "CFAHOBYS")
@@ -71,11 +71,11 @@ public class CfahobysEntity {
         this.idCfaconta = idCfaconta;
     }
 
-    public int getIdCfahobby() {
+    public Integer getIdCfahobby() {
         return idCfahobby;
     }
 
-    public void setIdCfahobby(int idCfahobby) {
+    public void setIdCfahobby(Integer idCfahobby) {
         this.idCfahobby = idCfahobby;
     }
 

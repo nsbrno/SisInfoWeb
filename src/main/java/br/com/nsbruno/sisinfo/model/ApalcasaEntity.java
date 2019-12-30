@@ -135,7 +135,7 @@ public class ApalcasaEntity {
 
     @Basic(optional = false)
     @Column(name = "NOIVA_IDADE", table = "APALCASA", nullable = false)
-    private int noivaIdade;
+    private Integer noivaIdade;
 
     @Basic
     @Column(name = "NOIVA_BATIZADA", table = "APALCASA", length = 40)
@@ -269,7 +269,7 @@ public class ApalcasaEntity {
 
     @Basic(optional = false)
     @Column(name = "NOIVO_IDADE", table = "APALCASA", nullable = false)
-    private int noivoIdade;
+    private Integer noivoIdade;
 
     @Basic
     @Column(name = "NOIVO_BATIZADO", table = "APALCASA", length = 40)
@@ -407,7 +407,7 @@ public class ApalcasaEntity {
 
     @Basic(optional = false)
     @Column(name = "IMPRESSOES", table = "APALCASA", nullable = false)
-    private int impressoes;
+    private Integer impressoes;
 
     @Basic
     @Column(name = "DT_DIALOGO", table = "APALCASA")
@@ -463,7 +463,7 @@ public class ApalcasaEntity {
 
     @Basic(optional = false)
     @Column(name = "CIVIL_TESTEMUNHA1_IDADE", table = "APALCASA", nullable = false)
-    private int civilTestemunha1Idade;
+    private Integer civilTestemunha1Idade;
 
     @Basic
     @Column(name = "CIVIL_TESTEMUNHA_PROFISSAO", table = "APALCASA", length = 40)
@@ -483,7 +483,7 @@ public class ApalcasaEntity {
 
     @Basic(optional = false)
     @Column(name = "CIVIL_TESTEMUNHA2_IDADE", table = "APALCASA", nullable = false)
-    private int civilTestemunha2Idade;
+    private Integer civilTestemunha2Idade;
 
     @Basic
     @Column(name = "CIVIL_TESTEMUNHA2_PROFISSAO", table = "APALCASA", length = 40)
@@ -832,11 +832,11 @@ public class ApalcasaEntity {
         this.noivaNatural = noivaNatural;
     }
 
-    public int getNoivaIdade() {
+    public Integer getNoivaIdade() {
         return noivaIdade;
     }
 
-    public void setNoivaIdade(int noivaIdade) {
+    public void setNoivaIdade(Integer noivaIdade) {
         this.noivaIdade = noivaIdade;
     }
 
@@ -1096,11 +1096,11 @@ public class ApalcasaEntity {
         this.noivoNatural = noivoNatural;
     }
 
-    public int getNoivoIdade() {
+    public Integer getNoivoIdade() {
         return noivoIdade;
     }
 
-    public void setNoivoIdade(int noivoIdade) {
+    public void setNoivoIdade(Integer noivoIdade) {
         this.noivoIdade = noivoIdade;
     }
 
@@ -1368,11 +1368,11 @@ public class ApalcasaEntity {
         this.testemunhas = testemunhas;
     }
 
-    public int getImpressoes() {
+    public Integer getImpressoes() {
         return impressoes;
     }
 
-    public void setImpressoes(int impressoes) {
+    public void setImpressoes(Integer impressoes) {
         this.impressoes = impressoes;
     }
 
@@ -1472,11 +1472,11 @@ public class ApalcasaEntity {
         this.civilTestemunha1EstCivil = civilTestemunha1EstCivil;
     }
 
-    public int getCivilTestemunha1Idade() {
+    public Integer getCivilTestemunha1Idade() {
         return civilTestemunha1Idade;
     }
 
-    public void setCivilTestemunha1Idade(int civilTestemunha1Idade) {
+    public void setCivilTestemunha1Idade(Integer civilTestemunha1Idade) {
         this.civilTestemunha1Idade = civilTestemunha1Idade;
     }
 
@@ -1512,11 +1512,11 @@ public class ApalcasaEntity {
         this.civilTestemunha2EstCivil = civilTestemunha2EstCivil;
     }
 
-    public int getCivilTestemunha2Idade() {
+    public Integer getCivilTestemunha2Idade() {
         return civilTestemunha2Idade;
     }
 
-    public void setCivilTestemunha2Idade(int civilTestemunha2Idade) {
+    public void setCivilTestemunha2Idade(Integer civilTestemunha2Idade) {
         this.civilTestemunha2Idade = civilTestemunha2Idade;
     }
 

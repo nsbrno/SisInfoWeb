@@ -42,7 +42,7 @@ public class CbahipadEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "CBAHIPAD", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Lob
     @Basic
@@ -97,11 +97,11 @@ public class CbahipadEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

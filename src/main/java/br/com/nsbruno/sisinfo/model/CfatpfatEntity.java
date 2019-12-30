@@ -20,15 +20,15 @@ public class CfatpfatEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "CFATPFAT", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA_CTA_TRANS", table = "CFATPFAT", nullable = false)
-    private int idCbaplctaCtaTrans;
+    private Integer idCbaplctaCtaTrans;
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA_VISTA", table = "CFATPFAT", nullable = false)
-    private int idCbaplctaVista;
+    private Integer idCbaplctaVista;
 
     @Basic
     @Column(name = "ID_CBAPLCTA_PRAZO", table = "CFATPFAT")
@@ -62,7 +62,7 @@ public class CfatpfatEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "CFATPFAT", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic(optional = false)
     @Column(name = "DESCRICAO", table = "CFATPFAT", nullable = false, length = 40)
@@ -92,27 +92,27 @@ public class CfatpfatEntity {
         this.idCfatpfat = idCfatpfat;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
-    public int getIdCbaplctaCtaTrans() {
+    public Integer getIdCbaplctaCtaTrans() {
         return idCbaplctaCtaTrans;
     }
 
-    public void setIdCbaplctaCtaTrans(int idCbaplctaCtaTrans) {
+    public void setIdCbaplctaCtaTrans(Integer idCbaplctaCtaTrans) {
         this.idCbaplctaCtaTrans = idCbaplctaCtaTrans;
     }
 
-    public int getIdCbaplctaVista() {
+    public Integer getIdCbaplctaVista() {
         return idCbaplctaVista;
     }
 
-    public void setIdCbaplctaVista(int idCbaplctaVista) {
+    public void setIdCbaplctaVista(Integer idCbaplctaVista) {
         this.idCbaplctaVista = idCbaplctaVista;
     }
 
@@ -172,11 +172,11 @@ public class CfatpfatEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

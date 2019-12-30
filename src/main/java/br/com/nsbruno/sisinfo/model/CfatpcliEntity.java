@@ -42,7 +42,7 @@ public class CfatpcliEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "CFATPCLI", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic(optional = false)
     @Column(name = "DESCRICAO", table = "CFATPCLI", nullable = false, length = 40)
@@ -128,11 +128,11 @@ public class CfatpcliEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

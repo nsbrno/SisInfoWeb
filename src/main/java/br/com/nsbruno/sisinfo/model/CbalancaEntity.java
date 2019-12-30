@@ -21,19 +21,19 @@ public class CbalancaEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "CBALANCA", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "ID_CBALOTES", table = "CBALANCA", nullable = false)
-    private int idCbalotes;
+    private Integer idCbalotes;
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA_CRE", table = "CBALANCA", nullable = false)
-    private int idCbaplctaCre;
+    private Integer idCbaplctaCre;
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA_DEB", table = "CBALANCA", nullable = false)
-    private int idCbaplctaDeb;
+    private Integer idCbaplctaDeb;
 
     @Basic
     @Column(name = "ID_CBAITMOV", table = "CBALANCA")
@@ -75,7 +75,7 @@ public class CbalancaEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "CBALANCA", nullable = false)
-    private int sequencia;
+    private Integer sequencia;
 
     @Basic(optional = false)
     @Column(name = "DT_MOVIMENTO", table = "CBALANCA", nullable = false)
@@ -137,35 +137,35 @@ public class CbalancaEntity {
         this.idCbalanca = idCbalanca;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
-    public int getIdCbalotes() {
+    public Integer getIdCbalotes() {
         return idCbalotes;
     }
 
-    public void setIdCbalotes(int idCbalotes) {
+    public void setIdCbalotes(Integer idCbalotes) {
         this.idCbalotes = idCbalotes;
     }
 
-    public int getIdCbaplctaCre() {
+    public Integer getIdCbaplctaCre() {
         return idCbaplctaCre;
     }
 
-    public void setIdCbaplctaCre(int idCbaplctaCre) {
+    public void setIdCbaplctaCre(Integer idCbaplctaCre) {
         this.idCbaplctaCre = idCbaplctaCre;
     }
 
-    public int getIdCbaplctaDeb() {
+    public Integer getIdCbaplctaDeb() {
         return idCbaplctaDeb;
     }
 
-    public void setIdCbaplctaDeb(int idCbaplctaDeb) {
+    public void setIdCbaplctaDeb(Integer idCbaplctaDeb) {
         this.idCbaplctaDeb = idCbaplctaDeb;
     }
 
@@ -241,11 +241,11 @@ public class CbalancaEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getSequencia() {
+    public Integer getSequencia() {
         return sequencia;
     }
 
-    public void setSequencia(int sequencia) {
+    public void setSequencia(Integer sequencia) {
         this.sequencia = sequencia;
     }
 

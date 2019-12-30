@@ -9,10 +9,12 @@ import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 
 @Entity
 @Table(name = "RPATMP02")
+@Data
 public class Rpatmp02Entity {
 
     @Id
@@ -45,7 +47,7 @@ public class Rpatmp02Entity {
 
     @Basic(optional = false)
     @Column(name = "DIAS", table = "RPATMP02", nullable = false)
-    private int dias;
+    private Integer dias;
 
     @Basic(optional = false)
     @Column(name = "VALOR", table = "RPATMP02", nullable = false)
@@ -108,189 +110,4 @@ public class Rpatmp02Entity {
     @Basic
     @Column(name = "OBS", table = "RPATMP02")
     private byte[] obs;
-
-    public Integer getIdRpatmp02() {
-        return idRpatmp02;
-    }
-
-    public void setIdRpatmp02(Integer idRpatmp02) {
-        this.idRpatmp02 = idRpatmp02;
-    }
-
-    public Integer getIdCfatpdoc() {
-        return idCfatpdoc;
-    }
-
-    public void setIdCfatpdoc(Integer idCfatpdoc) {
-        this.idCfatpdoc = idCfatpdoc;
-    }
-
-    public Integer getIdCfatpcob() {
-        return idCfatpcob;
-    }
-
-    public void setIdCfatpcob(Integer idCfatpcob) {
-        this.idCfatpcob = idCfatpcob;
-    }
-
-    public Integer getIdCfaporta() {
-        return idCfaporta;
-    }
-
-    public void setIdCfaporta(Integer idCfaporta) {
-        this.idCfaporta = idCfaporta;
-    }
-
-    public Integer getIdCfaccred() {
-        return idCfaccred;
-    }
-
-    public void setIdCfaccred(Integer idCfaccred) {
-        this.idCfaccred = idCfaccred;
-    }
-
-    public Integer getIdCfaestadOrgao() {
-        return idCfaestadOrgao;
-    }
-
-    public void setIdCfaestadOrgao(Integer idCfaestadOrgao) {
-        this.idCfaestadOrgao = idCfaestadOrgao;
-    }
-
-    public Integer getChaveId() {
-        return chaveId;
-    }
-
-    public void setChaveId(Integer chaveId) {
-        this.chaveId = chaveId;
-    }
-
-    public int getDias() {
-        return dias;
-    }
-
-    public void setDias(int dias) {
-        this.dias = dias;
-    }
-
-    public double getValor() {
-        return valor;
-    }
-
-    public void setValor(double valor) {
-        this.valor = valor;
-    }
-
-    public Date getData() {
-        return data;
-    }
-
-    public void setData(Date data) {
-        this.data = data;
-    }
-
-    public Integer getIdAux1() {
-        return idAux1;
-    }
-
-    public void setIdAux1(Integer idAux1) {
-        this.idAux1 = idAux1;
-    }
-
-    public Integer getAgencia() {
-        return agencia;
-    }
-
-    public void setAgencia(Integer agencia) {
-        this.agencia = agencia;
-    }
-
-    public String getDgAg() {
-        return dgAg;
-    }
-
-    public void setDgAg(String dgAg) {
-        this.dgAg = dgAg;
-    }
-
-    public Integer getConta() {
-        return conta;
-    }
-
-    public void setConta(Integer conta) {
-        this.conta = conta;
-    }
-
-    public String getDgCt() {
-        return dgCt;
-    }
-
-    public void setDgCt(String dgCt) {
-        this.dgCt = dgCt;
-    }
-
-    public String getSerie() {
-        return serie;
-    }
-
-    public void setSerie(String serie) {
-        this.serie = serie;
-    }
-
-    public String getNumero() {
-        return numero;
-    }
-
-    public void setNumero(String numero) {
-        this.numero = numero;
-    }
-
-    public String getControle() {
-        return controle;
-    }
-
-    public void setControle(String controle) {
-        this.controle = controle;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCpfCgc() {
-        return cpfCgc;
-    }
-
-    public void setCpfCgc(String cpfCgc) {
-        this.cpfCgc = cpfCgc;
-    }
-
-    public String getIeRg() {
-        return ieRg;
-    }
-
-    public void setIeRg(String ieRg) {
-        this.ieRg = ieRg;
-    }
-
-    public String getOrgaoEmissor() {
-        return orgaoEmissor;
-    }
-
-    public void setOrgaoEmissor(String orgaoEmissor) {
-        this.orgaoEmissor = orgaoEmissor;
-    }
-
-    public byte[] getObs() {
-        return obs;
-    }
-
-    public void setObs(byte[] obs) {
-        this.obs = obs;
-    }
-
 }

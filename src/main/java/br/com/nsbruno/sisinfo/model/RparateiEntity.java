@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "RPARATEI")
+@Data
 public class RparateiEntity {
 
     @Id
@@ -51,77 +53,4 @@ public class RparateiEntity {
     @Basic(optional = false)
     @Column(name = "VL_RATEADO", table = "RPARATEI", nullable = false)
     private double vlRateado;
-
-    public Integer getIdRparatei() {
-        return idRparatei;
-    }
-
-    public void setIdRparatei(Integer idRparatei) {
-        this.idRparatei = idRparatei;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public Date getDtMovimento() {
-        return dtMovimento;
-    }
-
-    public void setDtMovimento(Date dtMovimento) {
-        this.dtMovimento = dtMovimento;
-    }
-
-    public String getDc() {
-        return dc;
-    }
-
-    public void setDc(String dc) {
-        this.dc = dc;
-    }
-
-    public double getVlRateado() {
-        return vlRateado;
-    }
-
-    public void setVlRateado(double vlRateado) {
-        this.vlRateado = vlRateado;
-    }
-
 }

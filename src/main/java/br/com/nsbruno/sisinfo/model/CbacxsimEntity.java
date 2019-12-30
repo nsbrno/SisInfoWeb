@@ -19,15 +19,15 @@ public class CbacxsimEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "CBACXSIM", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "ID_CBANUMCX", table = "CBACXSIM", nullable = false)
-    private int idCbanumcx;
+    private Integer idCbanumcx;
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA", table = "CBACXSIM", nullable = false)
-    private int idCbaplcta;
+    private Integer idCbaplcta;
 
     @Basic
     @Column(name = "ID_CBACTCUS", table = "CBACXSIM")
@@ -80,27 +80,27 @@ public class CbacxsimEntity {
         this.idCbacxsim = idCbacxsim;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
-    public int getIdCbanumcx() {
+    public Integer getIdCbanumcx() {
         return idCbanumcx;
     }
 
-    public void setIdCbanumcx(int idCbanumcx) {
+    public void setIdCbanumcx(Integer idCbanumcx) {
         this.idCbanumcx = idCbanumcx;
     }
 
-    public int getIdCbaplcta() {
+    public Integer getIdCbaplcta() {
         return idCbaplcta;
     }
 
-    public void setIdCbaplcta(int idCbaplcta) {
+    public void setIdCbaplcta(Integer idCbaplcta) {
         this.idCbaplcta = idCbaplcta;
     }
 

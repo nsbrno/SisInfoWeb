@@ -28,11 +28,11 @@ public class AeaserieEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAMODDF", table = "AEASERIE", nullable = false)
-    private int idAeamoddf;
+    private Integer idAeamoddf;
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEASERIE", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic
     @Column(name = "ID_AEALOCES", table = "AEASERIE")
@@ -110,7 +110,7 @@ public class AeaserieEntity {
 
     @Basic(optional = false)
     @Column(name = "NUMERO", table = "AEASERIE", nullable = false)
-    private int numero;
+    private Integer numero;
 
     @Basic(optional = false)
     @Column(name = "ATIVO", table = "AEASERIE", nullable = false)
@@ -138,15 +138,15 @@ public class AeaserieEntity {
 
     @Basic(optional = false)
     @Column(name = "LINHAS_ANTES_BODY", table = "AEASERIE", nullable = false)
-    private int linhasAntesBody;
+    private Integer linhasAntesBody;
 
     @Basic(optional = false)
     @Column(name = "LINHAS_BODY", table = "AEASERIE", nullable = false)
-    private int linhasBody;
+    private Integer linhasBody;
 
     @Basic(optional = false)
     @Column(name = "LINHAS_DEPOIS_BODY", table = "AEASERIE", nullable = false)
-    private int linhasDepoisBody;
+    private Integer linhasDepoisBody;
 
     @Basic
     @Column(name = "DISPOSITIVO", table = "AEASERIE", length = 128)
@@ -162,7 +162,7 @@ public class AeaserieEntity {
 
     @Basic(optional = false)
     @Column(name = "QTDE_EXCESSOES", table = "AEASERIE", nullable = false)
-    private int qtdeExcessoes;
+    private Integer qtdeExcessoes;
 
     @Basic
     @Column(name = "MODELO_ECF", table = "AEASERIE", length = 20)
@@ -236,19 +236,19 @@ public class AeaserieEntity {
         this.idAeaserieGrande = idAeaserieGrande;
     }
 
-    public int getIdAeamoddf() {
+    public Integer getIdAeamoddf() {
         return idAeamoddf;
     }
 
-    public void setIdAeamoddf(int idAeamoddf) {
+    public void setIdAeamoddf(Integer idAeamoddf) {
         this.idAeamoddf = idAeamoddf;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
@@ -396,11 +396,11 @@ public class AeaserieEntity {
         this.codigo = codigo;
     }
 
-    public int getNumero() {
+    public Integer getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(Integer numero) {
         this.numero = numero;
     }
 
@@ -452,27 +452,27 @@ public class AeaserieEntity {
         this.ecf = ecf;
     }
 
-    public int getLinhasAntesBody() {
+    public Integer getLinhasAntesBody() {
         return linhasAntesBody;
     }
 
-    public void setLinhasAntesBody(int linhasAntesBody) {
+    public void setLinhasAntesBody(Integer linhasAntesBody) {
         this.linhasAntesBody = linhasAntesBody;
     }
 
-    public int getLinhasBody() {
+    public Integer getLinhasBody() {
         return linhasBody;
     }
 
-    public void setLinhasBody(int linhasBody) {
+    public void setLinhasBody(Integer linhasBody) {
         this.linhasBody = linhasBody;
     }
 
-    public int getLinhasDepoisBody() {
+    public Integer getLinhasDepoisBody() {
         return linhasDepoisBody;
     }
 
-    public void setLinhasDepoisBody(int linhasDepoisBody) {
+    public void setLinhasDepoisBody(Integer linhasDepoisBody) {
         this.linhasDepoisBody = linhasDepoisBody;
     }
 
@@ -500,11 +500,11 @@ public class AeaserieEntity {
         this.tipoExcessao = tipoExcessao;
     }
 
-    public int getQtdeExcessoes() {
+    public Integer getQtdeExcessoes() {
         return qtdeExcessoes;
     }
 
-    public void setQtdeExcessoes(int qtdeExcessoes) {
+    public void setQtdeExcessoes(Integer qtdeExcessoes) {
         this.qtdeExcessoes = qtdeExcessoes;
     }
 

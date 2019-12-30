@@ -21,15 +21,15 @@ public class AeaitentEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAENTRA", table = "AEAITENT", nullable = false)
-    private int idAeaentra;
+    private Integer idAeaentra;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAUNVEN", table = "AEAITENT", nullable = false)
-    private int idAeaunven;
+    private Integer idAeaunven;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAESTOQ", table = "AEAITENT", nullable = false)
-    private int idAeaestoq;
+    private Integer idAeaestoq;
 
     @Basic
     @Column(name = "ID_AEAITNFS", table = "AEAITENT")
@@ -41,7 +41,7 @@ public class AeaitentEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFANATOP", table = "AEAITENT", nullable = false)
-    private int idCfanatop;
+    private Integer idCfanatop;
 
     @Basic
     @Column(name = "ID_AEAITPED", table = "AEAITENT")
@@ -100,7 +100,7 @@ public class AeaitentEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "AEAITENT", nullable = false)
-    private int sequencia;
+    private Integer sequencia;
 
     @Basic(optional = false)
     @Column(name = "QUANTIDADE", table = "AEAITENT", nullable = false)
@@ -443,27 +443,27 @@ public class AeaitentEntity {
         this.idAeaitent = idAeaitent;
     }
 
-    public int getIdAeaentra() {
+    public Integer getIdAeaentra() {
         return idAeaentra;
     }
 
-    public void setIdAeaentra(int idAeaentra) {
+    public void setIdAeaentra(Integer idAeaentra) {
         this.idAeaentra = idAeaentra;
     }
 
-    public int getIdAeaunven() {
+    public Integer getIdAeaunven() {
         return idAeaunven;
     }
 
-    public void setIdAeaunven(int idAeaunven) {
+    public void setIdAeaunven(Integer idAeaunven) {
         this.idAeaunven = idAeaunven;
     }
 
-    public int getIdAeaestoq() {
+    public Integer getIdAeaestoq() {
         return idAeaestoq;
     }
 
-    public void setIdAeaestoq(int idAeaestoq) {
+    public void setIdAeaestoq(Integer idAeaestoq) {
         this.idAeaestoq = idAeaestoq;
     }
 
@@ -483,11 +483,11 @@ public class AeaitentEntity {
         this.idAeaitsai = idAeaitsai;
     }
 
-    public int getIdCfanatop() {
+    public Integer getIdCfanatop() {
         return idCfanatop;
     }
 
-    public void setIdCfanatop(int idCfanatop) {
+    public void setIdCfanatop(Integer idCfanatop) {
         this.idCfanatop = idCfanatop;
     }
 
@@ -595,11 +595,11 @@ public class AeaitentEntity {
         this.dtEntrada = dtEntrada;
     }
 
-    public int getSequencia() {
+    public Integer getSequencia() {
         return sequencia;
     }
 
-    public void setSequencia(int sequencia) {
+    public void setSequencia(Integer sequencia) {
         this.sequencia = sequencia;
     }
 

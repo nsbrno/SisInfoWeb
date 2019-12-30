@@ -21,19 +21,19 @@ public class CbaitaceEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA", table = "CBAITACE", nullable = false)
-    private int idCbaplcta;
+    private Integer idCbaplcta;
 
     @Basic(optional = false)
     @Column(name = "ID_CBATRANS", table = "CBAITACE", nullable = false)
-    private int idCbatrans;
+    private Integer idCbatrans;
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA_NUMCX", table = "CBAITACE", nullable = false)
-    private int idCbaplctaNumcx;
+    private Integer idCbaplctaNumcx;
 
     @Basic(optional = false)
     @Column(name = "ID_CFATPDOC", table = "CBAITACE", nullable = false)
-    private int idCfatpdoc;
+    private Integer idCfatpdoc;
 
     @Basic
     @Column(name = "ID_CFACLIFO", table = "CBAITACE")
@@ -67,7 +67,7 @@ public class CbaitaceEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "CBAITACE", nullable = false)
-    private int sequencia;
+    private Integer sequencia;
 
     @Basic(optional = false)
     @Column(name = "D_C", table = "CBAITACE", nullable = false)
@@ -98,35 +98,35 @@ public class CbaitaceEntity {
         this.idCbaitace = idCbaitace;
     }
 
-    public int getIdCbaplcta() {
+    public Integer getIdCbaplcta() {
         return idCbaplcta;
     }
 
-    public void setIdCbaplcta(int idCbaplcta) {
+    public void setIdCbaplcta(Integer idCbaplcta) {
         this.idCbaplcta = idCbaplcta;
     }
 
-    public int getIdCbatrans() {
+    public Integer getIdCbatrans() {
         return idCbatrans;
     }
 
-    public void setIdCbatrans(int idCbatrans) {
+    public void setIdCbatrans(Integer idCbatrans) {
         this.idCbatrans = idCbatrans;
     }
 
-    public int getIdCbaplctaNumcx() {
+    public Integer getIdCbaplctaNumcx() {
         return idCbaplctaNumcx;
     }
 
-    public void setIdCbaplctaNumcx(int idCbaplctaNumcx) {
+    public void setIdCbaplctaNumcx(Integer idCbaplctaNumcx) {
         this.idCbaplctaNumcx = idCbaplctaNumcx;
     }
 
-    public int getIdCfatpdoc() {
+    public Integer getIdCfatpdoc() {
         return idCfatpdoc;
     }
 
-    public void setIdCfatpdoc(int idCfatpdoc) {
+    public void setIdCfatpdoc(Integer idCfatpdoc) {
         this.idCfatpdoc = idCfatpdoc;
     }
 
@@ -186,11 +186,11 @@ public class CbaitaceEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getSequencia() {
+    public Integer getSequencia() {
         return sequencia;
     }
 
-    public void setSequencia(int sequencia) {
+    public void setSequencia(Integer sequencia) {
         this.sequencia = sequencia;
     }
 

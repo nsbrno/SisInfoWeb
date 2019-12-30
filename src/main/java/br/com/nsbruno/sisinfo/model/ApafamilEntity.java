@@ -61,7 +61,7 @@ public class ApafamilEntity {
 
     @Basic(optional = false)
     @Column(name = "QTDE_MEMBROS", table = "APAFAMIL", nullable = false)
-    private int qtdeMembros;
+    private Integer qtdeMembros;
 
     @Basic
     @Column(name = "ENDERECO", table = "APAFAMIL", length = 128)
@@ -292,11 +292,11 @@ public class ApafamilEntity {
         this.tempoComun = tempoComun;
     }
 
-    public int getQtdeMembros() {
+    public Integer getQtdeMembros() {
         return qtdeMembros;
     }
 
-    public void setQtdeMembros(int qtdeMembros) {
+    public void setQtdeMembros(Integer qtdeMembros) {
         this.qtdeMembros = qtdeMembros;
     }
 

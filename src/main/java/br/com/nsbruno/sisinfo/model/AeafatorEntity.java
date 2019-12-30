@@ -8,10 +8,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 
 @Entity
 @Table(name = "AEAFATOR")
+@Data
 public class AeafatorEntity {
 
     @Id
@@ -42,7 +44,7 @@ public class AeafatorEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "AEAFATOR", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic(optional = false)
     @Column(name = "DESCRICAO", table = "AEAFATOR", nullable = false, length = 40)
@@ -102,182 +104,5 @@ public class AeafatorEntity {
 
     @Basic(optional = false)
     @Column(name = "DIAS_BONUS", table = "AEAFATOR", nullable = false)
-    private int diasBonus;
-
-    public Integer getIdAeafator() {
-        return idAeafator;
-    }
-
-    public void setIdAeafator(Integer idAeafator) {
-        this.idAeafator = idAeafator;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public int getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public double getJuroMedioAtac() {
-        return juroMedioAtac;
-    }
-
-    public void setJuroMedioAtac(double juroMedioAtac) {
-        this.juroMedioAtac = juroMedioAtac;
-    }
-
-    public double getJuroMedioVare() {
-        return juroMedioVare;
-    }
-
-    public void setJuroMedioVare(double juroMedioVare) {
-        this.juroMedioVare = juroMedioVare;
-    }
-
-    public double getJuroMedioServ() {
-        return juroMedioServ;
-    }
-
-    public void setJuroMedioServ(double juroMedioServ) {
-        this.juroMedioServ = juroMedioServ;
-    }
-
-    public double getDescPgAntAtac() {
-        return descPgAntAtac;
-    }
-
-    public void setDescPgAntAtac(double descPgAntAtac) {
-        this.descPgAntAtac = descPgAntAtac;
-    }
-
-    public double getDescPgAntVare() {
-        return descPgAntVare;
-    }
-
-    public void setDescPgAntVare(double descPgAntVare) {
-        this.descPgAntVare = descPgAntVare;
-    }
-
-    public double getDescPgAntServ() {
-        return descPgAntServ;
-    }
-
-    public void setDescPgAntServ(double descPgAntServ) {
-        this.descPgAntServ = descPgAntServ;
-    }
-
-    public double getDescMaxPlanoAtacVista() {
-        return descMaxPlanoAtacVista;
-    }
-
-    public void setDescMaxPlanoAtacVista(double descMaxPlanoAtacVista) {
-        this.descMaxPlanoAtacVista = descMaxPlanoAtacVista;
-    }
-
-    public double getDescMaxPlanoAtacPrazo() {
-        return descMaxPlanoAtacPrazo;
-    }
-
-    public void setDescMaxPlanoAtacPrazo(double descMaxPlanoAtacPrazo) {
-        this.descMaxPlanoAtacPrazo = descMaxPlanoAtacPrazo;
-    }
-
-    public double getDescMaxPlanoVareVista() {
-        return descMaxPlanoVareVista;
-    }
-
-    public void setDescMaxPlanoVareVista(double descMaxPlanoVareVista) {
-        this.descMaxPlanoVareVista = descMaxPlanoVareVista;
-    }
-
-    public double getDescMaxPlanoVarePrazo() {
-        return descMaxPlanoVarePrazo;
-    }
-
-    public void setDescMaxPlanoVarePrazo(double descMaxPlanoVarePrazo) {
-        this.descMaxPlanoVarePrazo = descMaxPlanoVarePrazo;
-    }
-
-    public double getDescMaxPlanoServVista() {
-        return descMaxPlanoServVista;
-    }
-
-    public void setDescMaxPlanoServVista(double descMaxPlanoServVista) {
-        this.descMaxPlanoServVista = descMaxPlanoServVista;
-    }
-
-    public double getDescMaxPlanoServPrazo() {
-        return descMaxPlanoServPrazo;
-    }
-
-    public void setDescMaxPlanoServPrazo(double descMaxPlanoServPrazo) {
-        this.descMaxPlanoServPrazo = descMaxPlanoServPrazo;
-    }
-
-    public String getTipoBonus() {
-        return tipoBonus;
-    }
-
-    public void setTipoBonus(String tipoBonus) {
-        this.tipoBonus = tipoBonus;
-    }
-
-    public int getDiasBonus() {
-        return diasBonus;
-    }
-
-    public void setDiasBonus(int diasBonus) {
-        this.diasBonus = diasBonus;
-    }
-
+    private Integer diasBonus;
 }

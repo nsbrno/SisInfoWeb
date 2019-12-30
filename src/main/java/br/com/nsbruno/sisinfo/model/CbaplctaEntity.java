@@ -21,7 +21,7 @@ public class CbaplctaEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CTAGRUPO", table = "CBAPLCTA", nullable = false)
-    private int idCtagrupo;
+    private Integer idCtagrupo;
 
     @Basic
     @Column(name = "ID_CBAPLCTA_ANT", table = "CBAPLCTA")
@@ -51,7 +51,7 @@ public class CbaplctaEntity {
 
     @Basic(optional = false)
     @Column(name = "COD_REDUZ", table = "CBAPLCTA", nullable = false)
-    private int codReduz;
+    private Integer codReduz;
 
     @Basic(optional = false)
     @Column(name = "COD_ESTRUTURAL", table = "CBAPLCTA", nullable = false, length = 26)
@@ -131,7 +131,7 @@ public class CbaplctaEntity {
 
     @Basic(optional = false)
     @Column(name = "NIVEL", table = "CBAPLCTA", nullable = false)
-    private int nivel;
+    private Integer nivel;
 
     @Lob
     @Basic
@@ -146,11 +146,11 @@ public class CbaplctaEntity {
         this.idCbaplcta = idCbaplcta;
     }
 
-    public int getIdCtagrupo() {
+    public Integer getIdCtagrupo() {
         return idCtagrupo;
     }
 
-    public void setIdCtagrupo(int idCtagrupo) {
+    public void setIdCtagrupo(Integer idCtagrupo) {
         this.idCtagrupo = idCtagrupo;
     }
 
@@ -202,11 +202,11 @@ public class CbaplctaEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodReduz() {
+    public Integer getCodReduz() {
         return codReduz;
     }
 
-    public void setCodReduz(int codReduz) {
+    public void setCodReduz(Integer codReduz) {
         this.codReduz = codReduz;
     }
 
@@ -362,11 +362,11 @@ public class CbaplctaEntity {
         this.dg = dg;
     }
 
-    public int getNivel() {
+    public Integer getNivel() {
         return nivel;
     }
 
-    public void setNivel(int nivel) {
+    public void setNivel(Integer nivel) {
         this.nivel = nivel;
     }
 

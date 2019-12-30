@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "SMARLPRN")
+@Data
 public class SmarlprnEntity {
 
     @Id
@@ -19,7 +21,7 @@ public class SmarlprnEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAUSURL", table = "SMARLPRN", nullable = false)
-    private int idSmausurl;
+    private Integer idSmausurl;
 
     @Basic
     @Column(name = "ID_SMAUSUAR", table = "SMARLPRN")
@@ -54,85 +56,4 @@ public class SmarlprnEntity {
     @Basic
     @Column(name = "IMPRESSORA", table = "SMARLPRN", length = 40)
     private String impressora;
-
-    public Integer getIdSmarlprn() {
-        return idSmarlprn;
-    }
-
-    public void setIdSmarlprn(Integer idSmarlprn) {
-        this.idSmarlprn = idSmarlprn;
-    }
-
-    public int getIdSmausurl() {
-        return idSmausurl;
-    }
-
-    public void setIdSmausurl(int idSmausurl) {
-        this.idSmausurl = idSmausurl;
-    }
-
-    public Integer getIdSmausuar() {
-        return idSmausuar;
-    }
-
-    public void setIdSmausuar(Integer idSmausuar) {
-        this.idSmausuar = idSmausuar;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public String getMicro() {
-        return micro;
-    }
-
-    public void setMicro(String micro) {
-        this.micro = micro;
-    }
-
-    public String getImpressora() {
-        return impressora;
-    }
-
-    public void setImpressora(String impressora) {
-        this.impressora = impressora;
-    }
-
 }

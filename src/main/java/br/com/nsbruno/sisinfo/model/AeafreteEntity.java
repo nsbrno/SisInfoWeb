@@ -24,15 +24,15 @@ public class AeafreteEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO", table = "AEAFRETE", nullable = false)
-    private int idCfaclifo;
+    private Integer idCfaclifo;
 
     @Basic(optional = false)
     @Column(name = "ID_CFANATOP", table = "AEAFRETE", nullable = false)
-    private int idCfanatop;
+    private Integer idCfanatop;
 
     @Basic(optional = false)
     @Column(name = "ID_AEASERIE", table = "AEAFRETE", nullable = false)
-    private int idAeaserie;
+    private Integer idAeaserie;
 
     @Basic
     @Column(name = "ID_CFACIDAD_ORIG", table = "AEAFRETE")
@@ -74,7 +74,7 @@ public class AeafreteEntity {
 
     @Basic(optional = false)
     @Column(name = "NUMERO", table = "AEAFRETE", nullable = false)
-    private int numero;
+    private Integer numero;
 
     @Basic(optional = false)
     @Column(name = "DT_EMISSAO", table = "AEAFRETE", nullable = false)
@@ -146,27 +146,27 @@ public class AeafreteEntity {
         this.idAeaentra = idAeaentra;
     }
 
-    public int getIdCfaclifo() {
+    public Integer getIdCfaclifo() {
         return idCfaclifo;
     }
 
-    public void setIdCfaclifo(int idCfaclifo) {
+    public void setIdCfaclifo(Integer idCfaclifo) {
         this.idCfaclifo = idCfaclifo;
     }
 
-    public int getIdCfanatop() {
+    public Integer getIdCfanatop() {
         return idCfanatop;
     }
 
-    public void setIdCfanatop(int idCfanatop) {
+    public void setIdCfanatop(Integer idCfanatop) {
         this.idCfanatop = idCfanatop;
     }
 
-    public int getIdAeaserie() {
+    public Integer getIdAeaserie() {
         return idAeaserie;
     }
 
-    public void setIdAeaserie(int idAeaserie) {
+    public void setIdAeaserie(Integer idAeaserie) {
         this.idAeaserie = idAeaserie;
     }
 
@@ -242,11 +242,11 @@ public class AeafreteEntity {
         this.subserie = subserie;
     }
 
-    public int getNumero() {
+    public Integer getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(Integer numero) {
         this.numero = numero;
     }
 

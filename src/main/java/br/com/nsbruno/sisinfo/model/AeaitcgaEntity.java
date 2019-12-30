@@ -20,11 +20,11 @@ public class AeaitcgaEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEACARGA", table = "AEAITCGA", nullable = false)
-    private int idAeacarga;
+    private Integer idAeacarga;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAROMAN", table = "AEAITCGA", nullable = false)
-    private int idAearoman;
+    private Integer idAearoman;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEAITCGA", nullable = false, length = 16)
@@ -50,7 +50,7 @@ public class AeaitcgaEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "AEAITCGA", nullable = false)
-    private int sequencia;
+    private Integer sequencia;
 
     @Basic(optional = false)
     @Column(name = "VL_ROMANEIO", table = "AEAITCGA", nullable = false)
@@ -64,19 +64,19 @@ public class AeaitcgaEntity {
         this.idAeaitcga = idAeaitcga;
     }
 
-    public int getIdAeacarga() {
+    public Integer getIdAeacarga() {
         return idAeacarga;
     }
 
-    public void setIdAeacarga(int idAeacarga) {
+    public void setIdAeacarga(Integer idAeacarga) {
         this.idAeacarga = idAeacarga;
     }
 
-    public int getIdAearoman() {
+    public Integer getIdAearoman() {
         return idAearoman;
     }
 
-    public void setIdAearoman(int idAearoman) {
+    public void setIdAearoman(Integer idAearoman) {
         this.idAearoman = idAearoman;
     }
 
@@ -120,11 +120,11 @@ public class AeaitcgaEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getSequencia() {
+    public Integer getSequencia() {
         return sequencia;
     }
 
-    public void setSequencia(int sequencia) {
+    public void setSequencia(Integer sequencia) {
         this.sequencia = sequencia;
     }
 

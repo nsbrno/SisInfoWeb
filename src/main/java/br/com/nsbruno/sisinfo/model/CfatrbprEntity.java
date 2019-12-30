@@ -20,7 +20,7 @@ public class CfatrbprEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFAESTAD", table = "CFATRBPR", nullable = false)
-    private int idCfaestad;
+    private Integer idCfaestad;
 
     @Basic
     @Column(name = "ID_AEAAGPPR", table = "CFATRBPR")
@@ -86,7 +86,7 @@ public class CfatrbprEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "CFATRBPR", nullable = false)
-    private int sequencia;
+    private Integer sequencia;
 
     @Basic
     @Column(name = "TIPO_IPI", table = "CFATRBPR")
@@ -124,11 +124,11 @@ public class CfatrbprEntity {
         this.idCfatrbpr = idCfatrbpr;
     }
 
-    public int getIdCfaestad() {
+    public Integer getIdCfaestad() {
         return idCfaestad;
     }
 
-    public void setIdCfaestad(int idCfaestad) {
+    public void setIdCfaestad(Integer idCfaestad) {
         this.idCfaestad = idCfaestad;
     }
 
@@ -252,11 +252,11 @@ public class CfatrbprEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getSequencia() {
+    public Integer getSequencia() {
         return sequencia;
     }
 
-    public void setSequencia(int sequencia) {
+    public void setSequencia(Integer sequencia) {
         this.sequencia = sequencia;
     }
 

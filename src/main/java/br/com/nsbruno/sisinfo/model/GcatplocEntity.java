@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "GCATPLOC")
+@Data
 public class GcatplocEntity {
 
     @Id
@@ -53,86 +55,5 @@ public class GcatplocEntity {
 
     @Basic(optional = false)
     @Column(name = "NUMERO_DIAS", table = "GCATPLOC", nullable = false)
-    private int numeroDias;
-
-    public Integer getIdGcatploc() {
-        return idGcatploc;
-    }
-
-    public void setIdGcatploc(Integer idGcatploc) {
-        this.idGcatploc = idGcatploc;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public Integer getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(Integer codigo) {
-        this.codigo = codigo;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public String getAtivo() {
-        return ativo;
-    }
-
-    public void setAtivo(String ativo) {
-        this.ativo = ativo;
-    }
-
-    public int getNumeroDias() {
-        return numeroDias;
-    }
-
-    public void setNumeroDias(int numeroDias) {
-        this.numeroDias = numeroDias;
-    }
-
+    private Integer numeroDias;
 }

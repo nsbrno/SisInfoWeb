@@ -42,7 +42,7 @@ public class CtagrupoEntity {
 
     @Basic(optional = false)
     @Column(name = "COD_REDUZ", table = "CTAGRUPO", nullable = false)
-    private int codReduz;
+    private Integer codReduz;
 
     @Basic(optional = false)
     @Column(name = "DESCRICAO", table = "CTAGRUPO", nullable = false, length = 40)
@@ -54,47 +54,47 @@ public class CtagrupoEntity {
 
     @Basic(optional = false)
     @Column(name = "TAM_NIVEL1", table = "CTAGRUPO", nullable = false)
-    private int tamNivel1;
+    private Integer tamNivel1;
 
     @Basic(optional = false)
     @Column(name = "TAM_NIVEL2", table = "CTAGRUPO", nullable = false)
-    private int tamNivel2;
+    private Integer tamNivel2;
 
     @Basic(optional = false)
     @Column(name = "TAM_NIVEL3", table = "CTAGRUPO", nullable = false)
-    private int tamNivel3;
+    private Integer tamNivel3;
 
     @Basic(optional = false)
     @Column(name = "TAM_NIVEL4", table = "CTAGRUPO", nullable = false)
-    private int tamNivel4;
+    private Integer tamNivel4;
 
     @Basic(optional = false)
     @Column(name = "TAM_NIVEL5", table = "CTAGRUPO", nullable = false)
-    private int tamNivel5;
+    private Integer tamNivel5;
 
     @Basic(optional = false)
     @Column(name = "TAM_NIVEL6", table = "CTAGRUPO", nullable = false)
-    private int tamNivel6;
+    private Integer tamNivel6;
 
     @Basic(optional = false)
     @Column(name = "TAM_NIVEL7", table = "CTAGRUPO", nullable = false)
-    private int tamNivel7;
+    private Integer tamNivel7;
 
     @Basic(optional = false)
     @Column(name = "TAM_NIVEL8", table = "CTAGRUPO", nullable = false)
-    private int tamNivel8;
+    private Integer tamNivel8;
 
     @Basic(optional = false)
     @Column(name = "TAM_NIVEL9", table = "CTAGRUPO", nullable = false)
-    private int tamNivel9;
+    private Integer tamNivel9;
 
     @Basic(optional = false)
     @Column(name = "ULT_NIVEL", table = "CTAGRUPO", nullable = false)
-    private int ultNivel;
+    private Integer ultNivel;
 
     @Basic(optional = false)
     @Column(name = "TOT_DIGITOS", table = "CTAGRUPO", nullable = false)
-    private int totDigitos;
+    private Integer totDigitos;
 
     @Basic(optional = false)
     @Column(name = "CHEIO", table = "CTAGRUPO", nullable = false)
@@ -148,11 +148,11 @@ public class CtagrupoEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodReduz() {
+    public Integer getCodReduz() {
         return codReduz;
     }
 
-    public void setCodReduz(int codReduz) {
+    public void setCodReduz(Integer codReduz) {
         this.codReduz = codReduz;
     }
 
@@ -172,91 +172,91 @@ public class CtagrupoEntity {
         this.mascara = mascara;
     }
 
-    public int getTamNivel1() {
+    public Integer getTamNivel1() {
         return tamNivel1;
     }
 
-    public void setTamNivel1(int tamNivel1) {
+    public void setTamNivel1(Integer tamNivel1) {
         this.tamNivel1 = tamNivel1;
     }
 
-    public int getTamNivel2() {
+    public Integer getTamNivel2() {
         return tamNivel2;
     }
 
-    public void setTamNivel2(int tamNivel2) {
+    public void setTamNivel2(Integer tamNivel2) {
         this.tamNivel2 = tamNivel2;
     }
 
-    public int getTamNivel3() {
+    public Integer getTamNivel3() {
         return tamNivel3;
     }
 
-    public void setTamNivel3(int tamNivel3) {
+    public void setTamNivel3(Integer tamNivel3) {
         this.tamNivel3 = tamNivel3;
     }
 
-    public int getTamNivel4() {
+    public Integer getTamNivel4() {
         return tamNivel4;
     }
 
-    public void setTamNivel4(int tamNivel4) {
+    public void setTamNivel4(Integer tamNivel4) {
         this.tamNivel4 = tamNivel4;
     }
 
-    public int getTamNivel5() {
+    public Integer getTamNivel5() {
         return tamNivel5;
     }
 
-    public void setTamNivel5(int tamNivel5) {
+    public void setTamNivel5(Integer tamNivel5) {
         this.tamNivel5 = tamNivel5;
     }
 
-    public int getTamNivel6() {
+    public Integer getTamNivel6() {
         return tamNivel6;
     }
 
-    public void setTamNivel6(int tamNivel6) {
+    public void setTamNivel6(Integer tamNivel6) {
         this.tamNivel6 = tamNivel6;
     }
 
-    public int getTamNivel7() {
+    public Integer getTamNivel7() {
         return tamNivel7;
     }
 
-    public void setTamNivel7(int tamNivel7) {
+    public void setTamNivel7(Integer tamNivel7) {
         this.tamNivel7 = tamNivel7;
     }
 
-    public int getTamNivel8() {
+    public Integer getTamNivel8() {
         return tamNivel8;
     }
 
-    public void setTamNivel8(int tamNivel8) {
+    public void setTamNivel8(Integer tamNivel8) {
         this.tamNivel8 = tamNivel8;
     }
 
-    public int getTamNivel9() {
+    public Integer getTamNivel9() {
         return tamNivel9;
     }
 
-    public void setTamNivel9(int tamNivel9) {
+    public void setTamNivel9(Integer tamNivel9) {
         this.tamNivel9 = tamNivel9;
     }
 
-    public int getUltNivel() {
+    public Integer getUltNivel() {
         return ultNivel;
     }
 
-    public void setUltNivel(int ultNivel) {
+    public void setUltNivel(Integer ultNivel) {
         this.ultNivel = ultNivel;
     }
 
-    public int getTotDigitos() {
+    public Integer getTotDigitos() {
         return totDigitos;
     }
 
-    public void setTotDigitos(int totDigitos) {
+    public void setTotDigitos(Integer totDigitos) {
         this.totDigitos = totDigitos;
     }
 

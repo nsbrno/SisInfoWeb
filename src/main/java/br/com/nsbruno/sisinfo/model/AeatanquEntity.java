@@ -19,11 +19,11 @@ public class AeatanquEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEATANQU", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAPRODU", table = "AEATANQU", nullable = false)
-    private int idAeaprodu;
+    private Integer idAeaprodu;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEATANQU", nullable = false, length = 16)
@@ -49,7 +49,7 @@ public class AeatanquEntity {
 
     @Basic(optional = false)
     @Column(name = "NUMERO", table = "AEATANQU", nullable = false)
-    private int numero;
+    private Integer numero;
 
     @Basic
     @Column(name = "DESCRICAO", table = "AEATANQU", length = 40)
@@ -75,19 +75,19 @@ public class AeatanquEntity {
         this.idAeatanqu = idAeatanqu;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
-    public int getIdAeaprodu() {
+    public Integer getIdAeaprodu() {
         return idAeaprodu;
     }
 
-    public void setIdAeaprodu(int idAeaprodu) {
+    public void setIdAeaprodu(Integer idAeaprodu) {
         this.idAeaprodu = idAeaprodu;
     }
 
@@ -131,11 +131,11 @@ public class AeatanquEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getNumero() {
+    public Integer getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(Integer numero) {
         this.numero = numero;
     }
 

@@ -23,11 +23,11 @@ public class CpaavaliEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CPAAPONT", table = "CPAAVALI", nullable = false)
-    private int idCpaapont;
+    private Integer idCpaapont;
 
     @Basic(optional = false)
     @Column(name = "ID_CPAPESOA", table = "CPAAVALI", nullable = false)
-    private int idCpapesoa;
+    private Integer idCpapesoa;
 
     @Basic
     @Column(name = "US_CAD", table = "CPAAVALI", length = 20)
@@ -91,19 +91,19 @@ public class CpaavaliEntity {
         this.idCfaestad = idCfaestad;
     }
 
-    public int getIdCpaapont() {
+    public Integer getIdCpaapont() {
         return idCpaapont;
     }
 
-    public void setIdCpaapont(int idCpaapont) {
+    public void setIdCpaapont(Integer idCpaapont) {
         this.idCpaapont = idCpaapont;
     }
 
-    public int getIdCpapesoa() {
+    public Integer getIdCpapesoa() {
         return idCpapesoa;
     }
 
-    public void setIdCpapesoa(int idCpapesoa) {
+    public void setIdCpapesoa(Integer idCpapesoa) {
         this.idCpapesoa = idCpapesoa;
     }
 

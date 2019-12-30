@@ -42,7 +42,7 @@ public class CfatpcobEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "CFATPCOB", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic(optional = false)
     @Column(name = "DESCRICAO", table = "CFATPCOB", nullable = false, length = 40)
@@ -100,11 +100,11 @@ public class CfatpcobEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

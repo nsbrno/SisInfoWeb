@@ -20,11 +20,11 @@ public class CbanumcxEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "CBANUMCX", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA", table = "CBANUMCX", nullable = false)
-    private int idCbaplcta;
+    private Integer idCbaplcta;
 
     @Basic
     @Column(name = "ID_CBAPLCTA_SALDO", table = "CBANUMCX")
@@ -32,11 +32,11 @@ public class CbanumcxEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA_JUROS_DISP", table = "CBANUMCX", nullable = false)
-    private int idCbaplctaJurosDisp;
+    private Integer idCbaplctaJurosDisp;
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA_TROCO", table = "CBANUMCX", nullable = false)
-    private int idCbaplctaTroco;
+    private Integer idCbaplctaTroco;
 
     @Basic
     @Column(name = "ID_AEASERIE", table = "CBANUMCX")
@@ -70,7 +70,7 @@ public class CbanumcxEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "CBANUMCX", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic(optional = false)
     @Column(name = "DESCRICAO", table = "CBANUMCX", nullable = false, length = 40)
@@ -156,19 +156,19 @@ public class CbanumcxEntity {
         this.idCbanumcx = idCbanumcx;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
-    public int getIdCbaplcta() {
+    public Integer getIdCbaplcta() {
         return idCbaplcta;
     }
 
-    public void setIdCbaplcta(int idCbaplcta) {
+    public void setIdCbaplcta(Integer idCbaplcta) {
         this.idCbaplcta = idCbaplcta;
     }
 
@@ -180,19 +180,19 @@ public class CbanumcxEntity {
         this.idCbaplctaSaldo = idCbaplctaSaldo;
     }
 
-    public int getIdCbaplctaJurosDisp() {
+    public Integer getIdCbaplctaJurosDisp() {
         return idCbaplctaJurosDisp;
     }
 
-    public void setIdCbaplctaJurosDisp(int idCbaplctaJurosDisp) {
+    public void setIdCbaplctaJurosDisp(Integer idCbaplctaJurosDisp) {
         this.idCbaplctaJurosDisp = idCbaplctaJurosDisp;
     }
 
-    public int getIdCbaplctaTroco() {
+    public Integer getIdCbaplctaTroco() {
         return idCbaplctaTroco;
     }
 
-    public void setIdCbaplctaTroco(int idCbaplctaTroco) {
+    public void setIdCbaplctaTroco(Integer idCbaplctaTroco) {
         this.idCbaplctaTroco = idCbaplctaTroco;
     }
 
@@ -252,11 +252,11 @@ public class CbanumcxEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

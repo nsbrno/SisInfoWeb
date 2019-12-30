@@ -22,19 +22,19 @@ public class AeaplojaEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEAPLOJA", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAPRODU", table = "AEAPLOJA", nullable = false)
-    private int idAeaprodu;
+    private Integer idAeaprodu;
 
     @Basic(optional = false)
     @Column(name = "ID_AEACODST_ENT", table = "AEAPLOJA", nullable = false)
-    private int idAeacodstEnt;
+    private Integer idAeacodstEnt;
 
     @Basic(optional = false)
     @Column(name = "ID_AEACODST", table = "AEAPLOJA", nullable = false)
-    private int idAeacodst;
+    private Integer idAeacodst;
 
     @Basic
     @Column(name = "ID_AEAOBSPR", table = "AEAPLOJA")
@@ -214,7 +214,7 @@ public class AeaplojaEntity {
 
     @Basic(optional = false)
     @Column(name = "NUM_COMPRAS", table = "AEAPLOJA", nullable = false)
-    private int numCompras;
+    private Integer numCompras;
 
     @Basic(optional = false)
     @Column(name = "TEMPO_PED_ENTREGA", table = "AEAPLOJA", nullable = false)
@@ -248,35 +248,35 @@ public class AeaplojaEntity {
         this.idAeaploja = idAeaploja;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
-    public int getIdAeaprodu() {
+    public Integer getIdAeaprodu() {
         return idAeaprodu;
     }
 
-    public void setIdAeaprodu(int idAeaprodu) {
+    public void setIdAeaprodu(Integer idAeaprodu) {
         this.idAeaprodu = idAeaprodu;
     }
 
-    public int getIdAeacodstEnt() {
+    public Integer getIdAeacodstEnt() {
         return idAeacodstEnt;
     }
 
-    public void setIdAeacodstEnt(int idAeacodstEnt) {
+    public void setIdAeacodstEnt(Integer idAeacodstEnt) {
         this.idAeacodstEnt = idAeacodstEnt;
     }
 
-    public int getIdAeacodst() {
+    public Integer getIdAeacodst() {
         return idAeacodst;
     }
 
-    public void setIdAeacodst(int idAeacodst) {
+    public void setIdAeacodst(Integer idAeacodst) {
         this.idAeacodst = idAeacodst;
     }
 
@@ -600,11 +600,11 @@ public class AeaplojaEntity {
         this.maximo = maximo;
     }
 
-    public int getNumCompras() {
+    public Integer getNumCompras() {
         return numCompras;
     }
 
-    public void setNumCompras(int numCompras) {
+    public void setNumCompras(Integer numCompras) {
         this.numCompras = numCompras;
     }
 

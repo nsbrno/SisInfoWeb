@@ -24,7 +24,7 @@ public class AeapctmpEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAPLOJA", table = "AEAPCTMP", nullable = false)
-    private int idAeaploja;
+    private Integer idAeaploja;
 
     @Basic
     @Column(name = "ID_AEAGRDPL", table = "AEAPCTMP")
@@ -93,11 +93,11 @@ public class AeapctmpEntity {
         this.idSmaempre = idSmaempre;
     }
 
-    public int getIdAeaploja() {
+    public Integer getIdAeaploja() {
         return idAeaploja;
     }
 
-    public void setIdAeaploja(int idAeaploja) {
+    public void setIdAeaploja(Integer idAeaploja) {
         this.idAeaploja = idAeaploja;
     }
 

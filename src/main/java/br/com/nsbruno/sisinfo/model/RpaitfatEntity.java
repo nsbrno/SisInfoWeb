@@ -8,10 +8,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 
 @Entity
 @Table(name = "RPAITFAT")
+@Data
 public class RpaitfatEntity {
 
     @Id
@@ -20,7 +22,7 @@ public class RpaitfatEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_RPAFATUR", table = "RPAITFAT", nullable = false)
-    private int idRpafatur;
+    private Integer idRpafatur;
 
     @Basic
     @Column(name = "ID_AEAPEDID", table = "RPAITFAT")
@@ -74,7 +76,7 @@ public class RpaitfatEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "RPAITFAT", nullable = false)
-    private int sequencia;
+    private Integer sequencia;
 
     @Basic(optional = false)
     @Column(name = "CANCELADO", table = "RPAITFAT", nullable = false)
@@ -87,149 +89,4 @@ public class RpaitfatEntity {
     @Basic
     @Column(name = "COMPLEMENTO", table = "RPAITFAT")
     private String complemento;
-
-    public Integer getIdRpaitfat() {
-        return idRpaitfat;
-    }
-
-    public void setIdRpaitfat(Integer idRpaitfat) {
-        this.idRpaitfat = idRpaitfat;
-    }
-
-    public int getIdRpafatur() {
-        return idRpafatur;
-    }
-
-    public void setIdRpafatur(int idRpafatur) {
-        this.idRpafatur = idRpafatur;
-    }
-
-    public Integer getIdAeapedid() {
-        return idAeapedid;
-    }
-
-    public void setIdAeapedid(Integer idAeapedid) {
-        this.idAeapedid = idAeapedid;
-    }
-
-    public Integer getIdAeaentra() {
-        return idAeaentra;
-    }
-
-    public void setIdAeaentra(Integer idAeaentra) {
-        this.idAeaentra = idAeaentra;
-    }
-
-    public Integer getIdAeasaida() {
-        return idAeasaida;
-    }
-
-    public void setIdAeasaida(Integer idAeasaida) {
-        this.idAeasaida = idAeasaida;
-    }
-
-    public Integer getIdAeanfsai() {
-        return idAeanfsai;
-    }
-
-    public void setIdAeanfsai(Integer idAeanfsai) {
-        this.idAeanfsai = idAeanfsai;
-    }
-
-    public Integer getIdAeafrete() {
-        return idAeafrete;
-    }
-
-    public void setIdAeafrete(Integer idAeafrete) {
-        this.idAeafrete = idAeafrete;
-    }
-
-    public Integer getIdGcavigen() {
-        return idGcavigen;
-    }
-
-    public void setIdGcavigen(Integer idGcavigen) {
-        this.idGcavigen = idGcavigen;
-    }
-
-    public Integer getIdAeacaixa() {
-        return idAeacaixa;
-    }
-
-    public void setIdAeacaixa(Integer idAeacaixa) {
-        this.idAeacaixa = idAeacaixa;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public int getSequencia() {
-        return sequencia;
-    }
-
-    public void setSequencia(int sequencia) {
-        this.sequencia = sequencia;
-    }
-
-    public String getCancelado() {
-        return cancelado;
-    }
-
-    public void setCancelado(String cancelado) {
-        this.cancelado = cancelado;
-    }
-
-    public double getVlItemFat() {
-        return vlItemFat;
-    }
-
-    public void setVlItemFat(double vlItemFat) {
-        this.vlItemFat = vlItemFat;
-    }
-
-    public String getComplemento() {
-        return complemento;
-    }
-
-    public void setComplemento(String complemento) {
-        this.complemento = complemento;
-    }
-
 }

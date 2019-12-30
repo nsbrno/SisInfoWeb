@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "AEABOMBA")
+@Data
 public class AeabombaEntity {
 
     @Id
@@ -19,7 +21,7 @@ public class AeabombaEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEABOMBA", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEABOMBA", nullable = false, length = 16)
@@ -45,7 +47,7 @@ public class AeabombaEntity {
 
     @Basic(optional = false)
     @Column(name = "NUMERO", table = "AEABOMBA", nullable = false)
-    private int numero;
+    private Integer numero;
 
     @Basic
     @Column(name = "SERIE", table = "AEABOMBA", length = 20)
@@ -62,101 +64,4 @@ public class AeabombaEntity {
     @Basic
     @Column(name = "TIPO_MEDICAO", table = "AEABOMBA")
     private String tipoMedicao;
-
-    public Integer getIdAeabomba() {
-        return idAeabomba;
-    }
-
-    public void setIdAeabomba(Integer idAeabomba) {
-        this.idAeabomba = idAeabomba;
-    }
-
-    public int getIdSmaempre() {
-        return idSmaempre;
-    }
-
-    public void setIdSmaempre(int idSmaempre) {
-        this.idSmaempre = idSmaempre;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public int getNumero() {
-        return numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
-    public String getSerie() {
-        return serie;
-    }
-
-    public void setSerie(String serie) {
-        this.serie = serie;
-    }
-
-    public String getFabricante() {
-        return fabricante;
-    }
-
-    public void setFabricante(String fabricante) {
-        this.fabricante = fabricante;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public String getTipoMedicao() {
-        return tipoMedicao;
-    }
-
-    public void setTipoMedicao(String tipoMedicao) {
-        this.tipoMedicao = tipoMedicao;
-    }
-
 }

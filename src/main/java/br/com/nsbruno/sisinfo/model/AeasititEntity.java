@@ -42,7 +42,7 @@ public class AeasititEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "AEASITIT", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic(optional = false)
     @Column(name = "DESCRICAO", table = "AEASITIT", nullable = false, length = 40)
@@ -96,11 +96,11 @@ public class AeasititEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

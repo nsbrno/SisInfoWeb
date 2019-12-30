@@ -97,11 +97,11 @@ public class CfaequipEntity {
 
     @Basic(optional = false)
     @Column(name = "ANO_MOD", table = "CFAEQUIP", nullable = false)
-    private int anoMod;
+    private Integer anoMod;
 
     @Basic(optional = false)
     @Column(name = "ANO_FAB", table = "CFAEQUIP", nullable = false)
-    private int anoFab;
+    private Integer anoFab;
 
     @Basic
     @Column(name = "PLACA", table = "CFAEQUIP", length = 10)
@@ -109,7 +109,7 @@ public class CfaequipEntity {
 
     @Basic(optional = false)
     @Column(name = "CAPACIDADE", table = "CFAEQUIP", nullable = false)
-    private int capacidade;
+    private Integer capacidade;
 
     @Basic(optional = false)
     @Column(name = "TOCO_KG", table = "CFAEQUIP", nullable = false)
@@ -283,19 +283,19 @@ public class CfaequipEntity {
         this.vlCompra = vlCompra;
     }
 
-    public int getAnoMod() {
+    public Integer getAnoMod() {
         return anoMod;
     }
 
-    public void setAnoMod(int anoMod) {
+    public void setAnoMod(Integer anoMod) {
         this.anoMod = anoMod;
     }
 
-    public int getAnoFab() {
+    public Integer getAnoFab() {
         return anoFab;
     }
 
-    public void setAnoFab(int anoFab) {
+    public void setAnoFab(Integer anoFab) {
         this.anoFab = anoFab;
     }
 
@@ -307,11 +307,11 @@ public class CfaequipEntity {
         this.placa = placa;
     }
 
-    public int getCapacidade() {
+    public Integer getCapacidade() {
         return capacidade;
     }
 
-    public void setCapacidade(int capacidade) {
+    public void setCapacidade(Integer capacidade) {
         this.capacidade = capacidade;
     }
 

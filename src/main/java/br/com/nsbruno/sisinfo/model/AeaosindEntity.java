@@ -21,11 +21,11 @@ public class AeaosindEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEAOSIND", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "ID_AEASERIE", table = "AEAOSIND", nullable = false)
-    private int idAeaserie;
+    private Integer idAeaserie;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEAOSIND", nullable = false, length = 16)
@@ -80,19 +80,19 @@ public class AeaosindEntity {
         this.idAeaosind = idAeaosind;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
-    public int getIdAeaserie() {
+    public Integer getIdAeaserie() {
         return idAeaserie;
     }
 
-    public void setIdAeaserie(int idAeaserie) {
+    public void setIdAeaserie(Integer idAeaserie) {
         this.idAeaserie = idAeaserie;
     }
 

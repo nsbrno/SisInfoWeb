@@ -20,11 +20,11 @@ public class CfarepreEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO_REPRE", table = "CFAREPRE", nullable = false)
-    private int idCfaclifoRepre;
+    private Integer idCfaclifoRepre;
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO", table = "CFAREPRE", nullable = false)
-    private int idCfaclifo;
+    private Integer idCfaclifo;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "CFAREPRE", nullable = false, length = 16)
@@ -56,19 +56,19 @@ public class CfarepreEntity {
         this.idCfarepre = idCfarepre;
     }
 
-    public int getIdCfaclifoRepre() {
+    public Integer getIdCfaclifoRepre() {
         return idCfaclifoRepre;
     }
 
-    public void setIdCfaclifoRepre(int idCfaclifoRepre) {
+    public void setIdCfaclifoRepre(Integer idCfaclifoRepre) {
         this.idCfaclifoRepre = idCfaclifoRepre;
     }
 
-    public int getIdCfaclifo() {
+    public Integer getIdCfaclifo() {
         return idCfaclifo;
     }
 
-    public void setIdCfaclifo(int idCfaclifo) {
+    public void setIdCfaclifo(Integer idCfaclifo) {
         this.idCfaclifo = idCfaclifo;
     }
 

@@ -20,11 +20,11 @@ public class CfaavaliEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO", table = "CFAAVALI", nullable = false)
-    private int idCfaclifo;
+    private Integer idCfaclifo;
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO_AVAL", table = "CFAAVALI", nullable = false)
-    private int idCfaclifoAval;
+    private Integer idCfaclifoAval;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "CFAAVALI", nullable = false, length = 16)
@@ -56,19 +56,19 @@ public class CfaavaliEntity {
         this.idCfaavali = idCfaavali;
     }
 
-    public int getIdCfaclifo() {
+    public Integer getIdCfaclifo() {
         return idCfaclifo;
     }
 
-    public void setIdCfaclifo(int idCfaclifo) {
+    public void setIdCfaclifo(Integer idCfaclifo) {
         this.idCfaclifo = idCfaclifo;
     }
 
-    public int getIdCfaclifoAval() {
+    public Integer getIdCfaclifoAval() {
         return idCfaclifoAval;
     }
 
-    public void setIdCfaclifoAval(int idCfaclifoAval) {
+    public void setIdCfaclifoAval(Integer idCfaclifoAval) {
         this.idCfaclifoAval = idCfaclifoAval;
     }
 

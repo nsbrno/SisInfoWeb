@@ -101,7 +101,7 @@ public class CpapesoaEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO_COMPENSACAO", table = "CPAPESOA", nullable = false)
-    private int codigoCompensacao;
+    private Integer codigoCompensacao;
 
     public Integer getIdCpapesoa() {
         return idCpapesoa;
@@ -271,11 +271,11 @@ public class CpapesoaEntity {
         this.web = web;
     }
 
-    public int getCodigoCompensacao() {
+    public Integer getCodigoCompensacao() {
         return codigoCompensacao;
     }
 
-    public void setCodigoCompensacao(int codigoCompensacao) {
+    public void setCodigoCompensacao(Integer codigoCompensacao) {
         this.codigoCompensacao = codigoCompensacao;
     }
 

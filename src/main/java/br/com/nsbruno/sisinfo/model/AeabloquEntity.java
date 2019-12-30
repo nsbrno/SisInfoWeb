@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "AEABLOQU")
+@Data
 public class AeabloquEntity {
 
     @Id
@@ -90,157 +92,4 @@ public class AeabloquEntity {
     @Basic
     @Column(name = "NFS_SEM_ESTOQUE", table = "AEABLOQU")
     private String nfsSemEstoque;
-
-    public Integer getIdAeabloqu() {
-        return idAeabloqu;
-    }
-
-    public void setIdAeabloqu(Integer idAeabloqu) {
-        this.idAeabloqu = idAeabloqu;
-    }
-
-    public Integer getIdSmaempre() {
-        return idSmaempre;
-    }
-
-    public void setIdSmaempre(Integer idSmaempre) {
-        this.idSmaempre = idSmaempre;
-    }
-
-    public Integer getIdAeafamil() {
-        return idAeafamil;
-    }
-
-    public void setIdAeafamil(Integer idAeafamil) {
-        this.idAeafamil = idAeafamil;
-    }
-
-    public Integer getIdAeaclase() {
-        return idAeaclase;
-    }
-
-    public void setIdAeaclase(Integer idAeaclase) {
-        this.idAeaclase = idAeaclase;
-    }
-
-    public Integer getIdAeagrupo() {
-        return idAeagrupo;
-    }
-
-    public void setIdAeagrupo(Integer idAeagrupo) {
-        this.idAeagrupo = idAeagrupo;
-    }
-
-    public Integer getIdAeasgrup() {
-        return idAeasgrup;
-    }
-
-    public void setIdAeasgrup(Integer idAeasgrup) {
-        this.idAeasgrup = idAeasgrup;
-    }
-
-    public Integer getIdAeamarca() {
-        return idAeamarca;
-    }
-
-    public void setIdAeamarca(Integer idAeamarca) {
-        this.idAeamarca = idAeamarca;
-    }
-
-    public Integer getIdAeaprodu() {
-        return idAeaprodu;
-    }
-
-    public void setIdAeaprodu(Integer idAeaprodu) {
-        this.idAeaprodu = idAeaprodu;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public String getBloqueiaOrc() {
-        return bloqueiaOrc;
-    }
-
-    public void setBloqueiaOrc(String bloqueiaOrc) {
-        this.bloqueiaOrc = bloqueiaOrc;
-    }
-
-    public String getBloqueiaPed() {
-        return bloqueiaPed;
-    }
-
-    public void setBloqueiaPed(String bloqueiaPed) {
-        this.bloqueiaPed = bloqueiaPed;
-    }
-
-    public String getBloqueiaNfs() {
-        return bloqueiaNfs;
-    }
-
-    public void setBloqueiaNfs(String bloqueiaNfs) {
-        this.bloqueiaNfs = bloqueiaNfs;
-    }
-
-    public String getOrcSemEstoque() {
-        return orcSemEstoque;
-    }
-
-    public void setOrcSemEstoque(String orcSemEstoque) {
-        this.orcSemEstoque = orcSemEstoque;
-    }
-
-    public String getPedSemEstoque() {
-        return pedSemEstoque;
-    }
-
-    public void setPedSemEstoque(String pedSemEstoque) {
-        this.pedSemEstoque = pedSemEstoque;
-    }
-
-    public String getNfsSemEstoque() {
-        return nfsSemEstoque;
-    }
-
-    public void setNfsSemEstoque(String nfsSemEstoque) {
-        this.nfsSemEstoque = nfsSemEstoque;
-    }
-
 }

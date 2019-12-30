@@ -19,11 +19,11 @@ public class CfaselecEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO", table = "CFASELEC", nullable = false)
-    private int idCfaclifo;
+    private Integer idCfaclifo;
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO_USUAR", table = "CFASELEC", nullable = false)
-    private int idCfaclifoUsuar;
+    private Integer idCfaclifoUsuar;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "CFASELEC", nullable = false, length = 16)
@@ -55,19 +55,19 @@ public class CfaselecEntity {
         this.idCfaselec = idCfaselec;
     }
 
-    public int getIdCfaclifo() {
+    public Integer getIdCfaclifo() {
         return idCfaclifo;
     }
 
-    public void setIdCfaclifo(int idCfaclifo) {
+    public void setIdCfaclifo(Integer idCfaclifo) {
         this.idCfaclifo = idCfaclifo;
     }
 
-    public int getIdCfaclifoUsuar() {
+    public Integer getIdCfaclifoUsuar() {
         return idCfaclifoUsuar;
     }
 
-    public void setIdCfaclifoUsuar(int idCfaclifoUsuar) {
+    public void setIdCfaclifoUsuar(Integer idCfaclifoUsuar) {
         this.idCfaclifoUsuar = idCfaclifoUsuar;
     }
 

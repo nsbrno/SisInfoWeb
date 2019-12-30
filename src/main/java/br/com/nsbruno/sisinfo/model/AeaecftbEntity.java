@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "AEAECFTB")
+@Data
 public class AeaecftbEntity {
 
     @Id
@@ -19,7 +21,7 @@ public class AeaecftbEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEAECFTB", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEAECFTB", nullable = false, length = 16)
@@ -57,94 +59,5 @@ public class AeaecftbEntity {
 
     @Basic(optional = false)
     @Column(name = "CAIXA", table = "AEAECFTB", nullable = false)
-    private int caixa;
-
-    public Integer getIdAeaecftb() {
-        return idAeaecftb;
-    }
-
-    public void setIdAeaecftb(Integer idAeaecftb) {
-        this.idAeaecftb = idAeaecftb;
-    }
-
-    public int getIdSmaempre() {
-        return idSmaempre;
-    }
-
-    public void setIdSmaempre(int idSmaempre) {
-        this.idSmaempre = idSmaempre;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public String getNumeroSerie() {
-        return numeroSerie;
-    }
-
-    public void setNumeroSerie(String numeroSerie) {
-        this.numeroSerie = numeroSerie;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public String getModeloEcf() {
-        return modeloEcf;
-    }
-
-    public void setModeloEcf(String modeloEcf) {
-        this.modeloEcf = modeloEcf;
-    }
-
-    public int getCaixa() {
-        return caixa;
-    }
-
-    public void setCaixa(int caixa) {
-        this.caixa = caixa;
-    }
-
+    private Integer caixa;
 }

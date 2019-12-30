@@ -29,7 +29,7 @@ public class CfadepenEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO", table = "CFADEPEN", nullable = false)
-    private int idCfaclifo;
+    private Integer idCfaclifo;
 
     @Basic
     @Column(name = "ID_CFAPARTI", table = "CFADEPEN")
@@ -121,7 +121,7 @@ public class CfadepenEntity {
 
     @Basic
     @Column(name = "CONTRIBUINTE", table = "CFADEPEN")
-    private String contribuinte;
+    private String contribuIntegere;
 
     public Integer getIdCfadepen() {
         return idCfadepen;
@@ -147,11 +147,11 @@ public class CfadepenEntity {
         this.idCfaprofi = idCfaprofi;
     }
 
-    public int getIdCfaclifo() {
+    public Integer getIdCfaclifo() {
         return idCfaclifo;
     }
 
-    public void setIdCfaclifo(int idCfaclifo) {
+    public void setIdCfaclifo(Integer idCfaclifo) {
         this.idCfaclifo = idCfaclifo;
     }
 
@@ -323,12 +323,12 @@ public class CfadepenEntity {
         this.participaPastoral = participaPastoral;
     }
 
-    public String getContribuinte() {
-        return contribuinte;
+    public String getContribuIntegere() {
+        return contribuIntegere;
     }
 
-    public void setContribuinte(String contribuinte) {
-        this.contribuinte = contribuinte;
+    public void setContribuIntegere(String contribuIntegere) {
+        this.contribuIntegere = contribuIntegere;
     }
 
 }

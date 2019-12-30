@@ -19,7 +19,7 @@ public class AeaitretEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAITSAI", table = "AEAITRET", nullable = false)
-    private int idAeaitsai;
+    private Integer idAeaitsai;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEAITRET", nullable = false, length = 16)
@@ -60,11 +60,11 @@ public class AeaitretEntity {
         this.idAeaitret = idAeaitret;
     }
 
-    public int getIdAeaitsai() {
+    public Integer getIdAeaitsai() {
         return idAeaitsai;
     }
 
-    public void setIdAeaitsai(int idAeaitsai) {
+    public void setIdAeaitsai(Integer idAeaitsai) {
         this.idAeaitsai = idAeaitsai;
     }
 

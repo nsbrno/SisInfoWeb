@@ -21,27 +21,27 @@ public class AeaitnfsEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEANFSAI", table = "AEAITNFS", nullable = false)
-    private int idAeanfsai;
+    private Integer idAeanfsai;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAESTOQ", table = "AEAITNFS", nullable = false)
-    private int idAeaestoq;
+    private Integer idAeaestoq;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAUNVEN", table = "AEAITNFS", nullable = false)
-    private int idAeaunven;
+    private Integer idAeaunven;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAPLPGT", table = "AEAITNFS", nullable = false)
-    private int idAeaplpgt;
+    private Integer idAeaplpgt;
 
     @Basic(optional = false)
     @Column(name = "ID_AEACODOM", table = "AEAITNFS", nullable = false)
-    private int idAeacodom;
+    private Integer idAeacodom;
 
     @Basic(optional = false)
     @Column(name = "ID_AEACODST", table = "AEAITNFS", nullable = false)
-    private int idAeacodst;
+    private Integer idAeacodst;
 
     @Basic
     @Column(name = "ID_AEACODST_IPI", table = "AEAITNFS")
@@ -65,11 +65,11 @@ public class AeaitnfsEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFANATOP", table = "AEAITNFS", nullable = false)
-    private int idCfanatop;
+    private Integer idCfanatop;
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO_VENDEDOR", table = "AEAITNFS", nullable = false)
-    private int idCfaclifoVendedor;
+    private Integer idCfaclifoVendedor;
 
     @Basic
     @Column(name = "ID_AEAITNFS_CONJ", table = "AEAITNFS")
@@ -116,7 +116,7 @@ public class AeaitnfsEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "AEAITNFS", nullable = false)
-    private int sequencia;
+    private Integer sequencia;
 
     @Basic(optional = false)
     @Column(name = "REDUCAO_ICMS", table = "AEAITNFS", nullable = false)
@@ -479,51 +479,51 @@ public class AeaitnfsEntity {
         this.idAeaitnfs = idAeaitnfs;
     }
 
-    public int getIdAeanfsai() {
+    public Integer getIdAeanfsai() {
         return idAeanfsai;
     }
 
-    public void setIdAeanfsai(int idAeanfsai) {
+    public void setIdAeanfsai(Integer idAeanfsai) {
         this.idAeanfsai = idAeanfsai;
     }
 
-    public int getIdAeaestoq() {
+    public Integer getIdAeaestoq() {
         return idAeaestoq;
     }
 
-    public void setIdAeaestoq(int idAeaestoq) {
+    public void setIdAeaestoq(Integer idAeaestoq) {
         this.idAeaestoq = idAeaestoq;
     }
 
-    public int getIdAeaunven() {
+    public Integer getIdAeaunven() {
         return idAeaunven;
     }
 
-    public void setIdAeaunven(int idAeaunven) {
+    public void setIdAeaunven(Integer idAeaunven) {
         this.idAeaunven = idAeaunven;
     }
 
-    public int getIdAeaplpgt() {
+    public Integer getIdAeaplpgt() {
         return idAeaplpgt;
     }
 
-    public void setIdAeaplpgt(int idAeaplpgt) {
+    public void setIdAeaplpgt(Integer idAeaplpgt) {
         this.idAeaplpgt = idAeaplpgt;
     }
 
-    public int getIdAeacodom() {
+    public Integer getIdAeacodom() {
         return idAeacodom;
     }
 
-    public void setIdAeacodom(int idAeacodom) {
+    public void setIdAeacodom(Integer idAeacodom) {
         this.idAeacodom = idAeacodom;
     }
 
-    public int getIdAeacodst() {
+    public Integer getIdAeacodst() {
         return idAeacodst;
     }
 
-    public void setIdAeacodst(int idAeacodst) {
+    public void setIdAeacodst(Integer idAeacodst) {
         this.idAeacodst = idAeacodst;
     }
 
@@ -567,19 +567,19 @@ public class AeaitnfsEntity {
         this.idGcaprodu = idGcaprodu;
     }
 
-    public int getIdCfanatop() {
+    public Integer getIdCfanatop() {
         return idCfanatop;
     }
 
-    public void setIdCfanatop(int idCfanatop) {
+    public void setIdCfanatop(Integer idCfanatop) {
         this.idCfanatop = idCfanatop;
     }
 
-    public int getIdCfaclifoVendedor() {
+    public Integer getIdCfaclifoVendedor() {
         return idCfaclifoVendedor;
     }
 
-    public void setIdCfaclifoVendedor(int idCfaclifoVendedor) {
+    public void setIdCfaclifoVendedor(Integer idCfaclifoVendedor) {
         this.idCfaclifoVendedor = idCfaclifoVendedor;
     }
 
@@ -663,11 +663,11 @@ public class AeaitnfsEntity {
         this.dtNf = dtNf;
     }
 
-    public int getSequencia() {
+    public Integer getSequencia() {
         return sequencia;
     }
 
-    public void setSequencia(int sequencia) {
+    public void setSequencia(Integer sequencia) {
         this.sequencia = sequencia;
     }
 

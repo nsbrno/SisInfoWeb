@@ -42,7 +42,7 @@ public class CfamotivEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "CFAMOTIV", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic
     @Column(name = "DESCRICAO", table = "CFAMOTIV", length = 40)
@@ -100,11 +100,11 @@ public class CfamotivEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

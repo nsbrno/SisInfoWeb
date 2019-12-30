@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "SMADIRTE")
+@Data
 public class SmadirteEntity {
 
     @Id
@@ -54,85 +56,4 @@ public class SmadirteEntity {
     @Basic
     @Column(name = "FORMATO", table = "SMADIRTE")
     private String formato;
-
-    public Integer getIdSmadirte() {
-        return idSmadirte;
-    }
-
-    public void setIdSmadirte(Integer idSmadirte) {
-        this.idSmadirte = idSmadirte;
-    }
-
-    public Integer getIdSmaarqui() {
-        return idSmaarqui;
-    }
-
-    public void setIdSmaarqui(Integer idSmaarqui) {
-        this.idSmaarqui = idSmaarqui;
-    }
-
-    public Integer getIdSmausuar() {
-        return idSmausuar;
-    }
-
-    public void setIdSmausuar(Integer idSmausuar) {
-        this.idSmausuar = idSmausuar;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public String getCampo() {
-        return campo;
-    }
-
-    public void setCampo(String campo) {
-        this.campo = campo;
-    }
-
-    public String getFormato() {
-        return formato;
-    }
-
-    public void setFormato(String formato) {
-        this.formato = formato;
-    }
-
 }

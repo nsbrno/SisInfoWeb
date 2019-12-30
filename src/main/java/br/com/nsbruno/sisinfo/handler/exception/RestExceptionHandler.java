@@ -7,8 +7,8 @@
 package br.com.nsbruno.sisinfo.handler.exception;
 
 import br.com.nsbruno.sisinfo.model.ErrorMessageEntity;
+import java.time.ZonedDateTime;
 import java.util.Arrays;
-import java.util.Date;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -33,7 +33,7 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler{
         //String s1 = errorMessageEntity.getMessage();
         //Exception ex, HttpHeaders headers, HttpStatus status, WebRequest request
         ErrorMessageEntity errorMessageEntity = new ErrorMessageEntity();
-        errorMessageEntity.setTimestamp(new Date());
+        errorMessageEntity.setTimestamp(ZonedDateTime.now().toString());
         errorMessageEntity.setStatus(status.value());
         errorMessageEntity.setError(status.name());
         errorMessageEntity.setMessage((ex.getLocalizedMessage() == null ? ex.toString() : ex.getLocalizedMessage()));

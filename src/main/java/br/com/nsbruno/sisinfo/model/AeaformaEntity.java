@@ -20,31 +20,31 @@ public class AeaformaEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEAFORMA", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "ID_CFATPDOC_PV", table = "AEAFORMA", nullable = false)
-    private int idCfatpdocPv;
+    private Integer idCfatpdocPv;
 
     @Basic(optional = false)
     @Column(name = "ID_CFATPCOB_PV", table = "AEAFORMA", nullable = false)
-    private int idCfatpcobPv;
+    private Integer idCfatpcobPv;
 
     @Basic(optional = false)
     @Column(name = "ID_CFAPORTA_PV", table = "AEAFORMA", nullable = false)
-    private int idCfaportaPv;
+    private Integer idCfaportaPv;
 
     @Basic(optional = false)
     @Column(name = "ID_CFATPDOC_VF", table = "AEAFORMA", nullable = false)
-    private int idCfatpdocVf;
+    private Integer idCfatpdocVf;
 
     @Basic(optional = false)
     @Column(name = "ID_CFATPCOB_VF", table = "AEAFORMA", nullable = false)
-    private int idCfatpcobVf;
+    private Integer idCfatpcobVf;
 
     @Basic(optional = false)
     @Column(name = "ID_CFAPORTA_VF", table = "AEAFORMA", nullable = false)
-    private int idCfaportaVf;
+    private Integer idCfaportaVf;
 
     @Basic
     @Column(name = "ID_CFACCRED", table = "AEAFORMA")
@@ -74,7 +74,7 @@ public class AeaformaEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "AEAFORMA", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic(optional = false)
     @Column(name = "DESCRICAO", table = "AEAFORMA", nullable = false, length = 40)
@@ -104,59 +104,59 @@ public class AeaformaEntity {
         this.idAeaforma = idAeaforma;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
-    public int getIdCfatpdocPv() {
+    public Integer getIdCfatpdocPv() {
         return idCfatpdocPv;
     }
 
-    public void setIdCfatpdocPv(int idCfatpdocPv) {
+    public void setIdCfatpdocPv(Integer idCfatpdocPv) {
         this.idCfatpdocPv = idCfatpdocPv;
     }
 
-    public int getIdCfatpcobPv() {
+    public Integer getIdCfatpcobPv() {
         return idCfatpcobPv;
     }
 
-    public void setIdCfatpcobPv(int idCfatpcobPv) {
+    public void setIdCfatpcobPv(Integer idCfatpcobPv) {
         this.idCfatpcobPv = idCfatpcobPv;
     }
 
-    public int getIdCfaportaPv() {
+    public Integer getIdCfaportaPv() {
         return idCfaportaPv;
     }
 
-    public void setIdCfaportaPv(int idCfaportaPv) {
+    public void setIdCfaportaPv(Integer idCfaportaPv) {
         this.idCfaportaPv = idCfaportaPv;
     }
 
-    public int getIdCfatpdocVf() {
+    public Integer getIdCfatpdocVf() {
         return idCfatpdocVf;
     }
 
-    public void setIdCfatpdocVf(int idCfatpdocVf) {
+    public void setIdCfatpdocVf(Integer idCfatpdocVf) {
         this.idCfatpdocVf = idCfatpdocVf;
     }
 
-    public int getIdCfatpcobVf() {
+    public Integer getIdCfatpcobVf() {
         return idCfatpcobVf;
     }
 
-    public void setIdCfatpcobVf(int idCfatpcobVf) {
+    public void setIdCfatpcobVf(Integer idCfatpcobVf) {
         this.idCfatpcobVf = idCfatpcobVf;
     }
 
-    public int getIdCfaportaVf() {
+    public Integer getIdCfaportaVf() {
         return idCfaportaVf;
     }
 
-    public void setIdCfaportaVf(int idCfaportaVf) {
+    public void setIdCfaportaVf(Integer idCfaportaVf) {
         this.idCfaportaVf = idCfaportaVf;
     }
 
@@ -208,11 +208,11 @@ public class AeaformaEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 

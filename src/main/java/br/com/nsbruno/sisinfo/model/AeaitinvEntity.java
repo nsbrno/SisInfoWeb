@@ -19,15 +19,15 @@ public class AeaitinvEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAINVEN", table = "AEAITINV", nullable = false)
-    private int idAeainven;
+    private Integer idAeainven;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAESTOQ", table = "AEAITINV", nullable = false)
-    private int idAeaestoq;
+    private Integer idAeaestoq;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAUNVEN", table = "AEAITINV", nullable = false)
-    private int idAeaunven;
+    private Integer idAeaunven;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEAITINV", nullable = false, length = 16)
@@ -75,27 +75,27 @@ public class AeaitinvEntity {
         this.idAeaitinv = idAeaitinv;
     }
 
-    public int getIdAeainven() {
+    public Integer getIdAeainven() {
         return idAeainven;
     }
 
-    public void setIdAeainven(int idAeainven) {
+    public void setIdAeainven(Integer idAeainven) {
         this.idAeainven = idAeainven;
     }
 
-    public int getIdAeaestoq() {
+    public Integer getIdAeaestoq() {
         return idAeaestoq;
     }
 
-    public void setIdAeaestoq(int idAeaestoq) {
+    public void setIdAeaestoq(Integer idAeaestoq) {
         this.idAeaestoq = idAeaestoq;
     }
 
-    public int getIdAeaunven() {
+    public Integer getIdAeaunven() {
         return idAeaunven;
     }
 
-    public void setIdAeaunven(int idAeaunven) {
+    public void setIdAeaunven(Integer idAeaunven) {
         this.idAeaunven = idAeaunven;
     }
 

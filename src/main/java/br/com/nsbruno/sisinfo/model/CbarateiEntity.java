@@ -27,7 +27,7 @@ public class CbarateiEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CBACTCUS", table = "CBARATEI", nullable = false)
-    private int idCbactcus;
+    private Integer idCbactcus;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "CBARATEI", nullable = false, length = 16)
@@ -79,11 +79,11 @@ public class CbarateiEntity {
         this.idCbalanca = idCbalanca;
     }
 
-    public int getIdCbactcus() {
+    public Integer getIdCbactcus() {
         return idCbactcus;
     }
 
-    public void setIdCbactcus(int idCbactcus) {
+    public void setIdCbactcus(Integer idCbactcus) {
         this.idCbactcus = idCbactcus;
     }
 

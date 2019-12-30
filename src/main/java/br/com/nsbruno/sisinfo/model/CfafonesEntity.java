@@ -95,7 +95,7 @@ public class CfafonesEntity {
 
     @Basic(optional = false)
     @Column(name = "RAMAL", table = "CFAFONES", nullable = false)
-    private int ramal;
+    private Integer ramal;
 
     public Integer getIdCfafones() {
         return idCfafones;
@@ -249,11 +249,11 @@ public class CfafonesEntity {
         this.comentario = comentario;
     }
 
-    public int getRamal() {
+    public Integer getRamal() {
         return ramal;
     }
 
-    public void setRamal(int ramal) {
+    public void setRamal(Integer ramal) {
         this.ramal = ramal;
     }
 

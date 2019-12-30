@@ -65,7 +65,7 @@ public class CbactcusEntity {
 
     @Basic(optional = false)
     @Column(name = "NIVEL", table = "CBACTCUS", nullable = false)
-    private int nivel;
+    private Integer nivel;
 
     @Basic
     @Column(name = "A_S", table = "CBACTCUS")
@@ -171,11 +171,11 @@ public class CbactcusEntity {
         this.dg = dg;
     }
 
-    public int getNivel() {
+    public Integer getNivel() {
         return nivel;
     }
 
-    public void setNivel(int nivel) {
+    public void setNivel(Integer nivel) {
         this.nivel = nivel;
     }
 

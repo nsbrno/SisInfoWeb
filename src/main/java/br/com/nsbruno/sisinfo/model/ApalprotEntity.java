@@ -50,7 +50,7 @@ public class ApalprotEntity {
 
     @Basic(optional = false)
     @Column(name = "ANO", table = "APALPROT", nullable = false)
-    private int ano;
+    private Integer ano;
 
     @Basic
     @Column(name = "NUMERO", table = "APALPROT")
@@ -76,7 +76,7 @@ public class ApalprotEntity {
 
     @Basic(optional = false)
     @Column(name = "IMPRESSOES", table = "APALPROT", nullable = false)
-    private int impressoes;
+    private Integer impressoes;
 
     public Integer getIdApalprot() {
         return idApalprot;
@@ -142,11 +142,11 @@ public class ApalprotEntity {
         this.guid = guid;
     }
 
-    public int getAno() {
+    public Integer getAno() {
         return ano;
     }
 
-    public void setAno(int ano) {
+    public void setAno(Integer ano) {
         this.ano = ano;
     }
 
@@ -190,11 +190,11 @@ public class ApalprotEntity {
         this.texto = texto;
     }
 
-    public int getImpressoes() {
+    public Integer getImpressoes() {
         return impressoes;
     }
 
-    public void setImpressoes(int impressoes) {
+    public void setImpressoes(Integer impressoes) {
         this.impressoes = impressoes;
     }
 

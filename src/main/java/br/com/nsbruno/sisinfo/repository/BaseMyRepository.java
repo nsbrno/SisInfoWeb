@@ -7,6 +7,7 @@ package br.com.nsbruno.sisinfo.repository;
 
 import java.io.Serializable;
 import java.sql.ResultSet;
+import java.util.List;
 import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
@@ -19,5 +20,19 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 @NoRepositoryBean
 public interface BaseMyRepository<E, ID extends Serializable> extends PagingAndSortingRepository<E, ID>{
     
-    ResultSet executeSQL(String select);
+    List<E> executeSQLClient(String select, String tableName);
+    
+    List<E> executeSQLAdmin(String selectQuery, String tableName);
+    
+    Integer executeSQLForCountClient(String selectQuery);
+    
+    Integer executeSQLForCountAdmin(String selectQuery);
+    
+    Integer executeInsertUpdateClient(String instrucaoSQL);
+    
+    Integer executeDeleteClient(String instrucaoSQL);
+    
+    Integer executeInsertUpdateAdmin(String instrucaoSQL);
+    
+    List<E> mapResultSetToObject(ResultSet rs, Class outputClass);
 }

@@ -19,7 +19,7 @@ public class CpaendosEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CPAAPONT", table = "CPAENDOS", nullable = false)
-    private int idCpaapont;
+    private Integer idCpaapont;
 
     @Basic
     @Column(name = "ID_CFAESTAD", table = "CPAENDOS")
@@ -79,11 +79,11 @@ public class CpaendosEntity {
         this.idCpaendos = idCpaendos;
     }
 
-    public int getIdCpaapont() {
+    public Integer getIdCpaapont() {
         return idCpaapont;
     }
 
-    public void setIdCpaapont(int idCpaapont) {
+    public void setIdCpaapont(Integer idCpaapont) {
         this.idCpaapont = idCpaapont;
     }
 

@@ -9,9 +9,11 @@ import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "SMAITREL")
+@Data
 public class SmaitrelEntity {
 
     @Id
@@ -20,7 +22,7 @@ public class SmaitrelEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMARELAT", table = "SMAITREL", nullable = false)
-    private int idSmarelat;
+    private Integer idSmarelat;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "SMAITREL", nullable = false, length = 16)
@@ -52,77 +54,4 @@ public class SmaitrelEntity {
     @Basic
     @Column(name = "SQL", table = "SMAITREL")
     private byte[] sql;
-
-    public Integer getIdSmaitrel() {
-        return idSmaitrel;
-    }
-
-    public void setIdSmaitrel(Integer idSmaitrel) {
-        this.idSmaitrel = idSmaitrel;
-    }
-
-    public int getIdSmarelat() {
-        return idSmarelat;
-    }
-
-    public void setIdSmarelat(int idSmarelat) {
-        this.idSmarelat = idSmarelat;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public String getNomeArquivo() {
-        return nomeArquivo;
-    }
-
-    public void setNomeArquivo(String nomeArquivo) {
-        this.nomeArquivo = nomeArquivo;
-    }
-
-    public byte[] getSql() {
-        return sql;
-    }
-
-    public void setSql(byte[] sql) {
-        this.sql = sql;
-    }
-
 }

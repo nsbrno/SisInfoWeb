@@ -20,11 +20,11 @@ public class AeaserfaEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEASERIE", table = "AEASERFA", nullable = false)
-    private int idAeaserie;
+    private Integer idAeaserie;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAFAMIL", table = "AEASERFA", nullable = false)
-    private int idAeafamil;
+    private Integer idAeafamil;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEASERFA", nullable = false, length = 16)
@@ -60,19 +60,19 @@ public class AeaserfaEntity {
         this.idAeaserfa = idAeaserfa;
     }
 
-    public int getIdAeaserie() {
+    public Integer getIdAeaserie() {
         return idAeaserie;
     }
 
-    public void setIdAeaserie(int idAeaserie) {
+    public void setIdAeaserie(Integer idAeaserie) {
         this.idAeaserie = idAeaserie;
     }
 
-    public int getIdAeafamil() {
+    public Integer getIdAeafamil() {
         return idAeafamil;
     }
 
-    public void setIdAeafamil(int idAeafamil) {
+    public void setIdAeafamil(Integer idAeafamil) {
         this.idAeafamil = idAeafamil;
     }
 

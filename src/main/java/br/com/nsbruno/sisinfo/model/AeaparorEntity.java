@@ -20,19 +20,19 @@ public class AeaparorEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAORCAM", table = "AEAPAROR", nullable = false)
-    private int idAeaorcam;
+    private Integer idAeaorcam;
 
     @Basic(optional = false)
     @Column(name = "ID_CFATPDOC", table = "AEAPAROR", nullable = false)
-    private int idCfatpdoc;
+    private Integer idCfatpdoc;
 
     @Basic(optional = false)
     @Column(name = "ID_CFAPORTA", table = "AEAPAROR", nullable = false)
-    private int idCfaporta;
+    private Integer idCfaporta;
 
     @Basic(optional = false)
     @Column(name = "ID_CFATPCOB", table = "AEAPAROR", nullable = false)
-    private int idCfatpcob;
+    private Integer idCfatpcob;
 
     @Basic
     @Column(name = "ID_CFAESTAD_ORGAO", table = "AEAPAROR")
@@ -70,7 +70,7 @@ public class AeaparorEntity {
 
     @Basic(optional = false)
     @Column(name = "PARCELA", table = "AEAPAROR", nullable = false)
-    private int parcela;
+    private Integer parcela;
 
     @Basic
     @Column(name = "DT_EMISSAO", table = "AEAPAROR")
@@ -92,7 +92,7 @@ public class AeaparorEntity {
 
     @Basic(optional = false)
     @Column(name = "AGENCIA", table = "AEAPAROR", nullable = false)
-    private int agencia;
+    private Integer agencia;
 
     @Basic
     @Column(name = "DG_AG", table = "AEAPAROR")
@@ -142,35 +142,35 @@ public class AeaparorEntity {
         this.idAeaparor = idAeaparor;
     }
 
-    public int getIdAeaorcam() {
+    public Integer getIdAeaorcam() {
         return idAeaorcam;
     }
 
-    public void setIdAeaorcam(int idAeaorcam) {
+    public void setIdAeaorcam(Integer idAeaorcam) {
         this.idAeaorcam = idAeaorcam;
     }
 
-    public int getIdCfatpdoc() {
+    public Integer getIdCfatpdoc() {
         return idCfatpdoc;
     }
 
-    public void setIdCfatpdoc(int idCfatpdoc) {
+    public void setIdCfatpdoc(Integer idCfatpdoc) {
         this.idCfatpdoc = idCfatpdoc;
     }
 
-    public int getIdCfaporta() {
+    public Integer getIdCfaporta() {
         return idCfaporta;
     }
 
-    public void setIdCfaporta(int idCfaporta) {
+    public void setIdCfaporta(Integer idCfaporta) {
         this.idCfaporta = idCfaporta;
     }
 
-    public int getIdCfatpcob() {
+    public Integer getIdCfatpcob() {
         return idCfatpcob;
     }
 
-    public void setIdCfatpcob(int idCfatpcob) {
+    public void setIdCfatpcob(Integer idCfatpcob) {
         this.idCfatpcob = idCfatpcob;
     }
 
@@ -238,11 +238,11 @@ public class AeaparorEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getParcela() {
+    public Integer getParcela() {
         return parcela;
     }
 
-    public void setParcela(int parcela) {
+    public void setParcela(Integer parcela) {
         this.parcela = parcela;
     }
 
@@ -278,11 +278,11 @@ public class AeaparorEntity {
         this.vlDifParcela = vlDifParcela;
     }
 
-    public int getAgencia() {
+    public Integer getAgencia() {
         return agencia;
     }
 
-    public void setAgencia(int agencia) {
+    public void setAgencia(Integer agencia) {
         this.agencia = agencia;
     }
 

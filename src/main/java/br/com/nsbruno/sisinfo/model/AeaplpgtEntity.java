@@ -20,7 +20,7 @@ public class AeaplpgtEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEAPLPGT", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic
     @Column(name = "ID_CFAMOEDA", table = "AEAPLPGT")
@@ -62,7 +62,7 @@ public class AeaplpgtEntity {
 
     @Basic(optional = false)
     @Column(name = "CODIGO", table = "AEAPLPGT", nullable = false)
-    private int codigo;
+    private Integer codigo;
 
     @Basic(optional = false)
     @Column(name = "DESCRICAO", table = "AEAPLPGT", nullable = false, length = 40)
@@ -114,31 +114,31 @@ public class AeaplpgtEntity {
 
     @Basic(optional = false)
     @Column(name = "DIAS_ENTRADA", table = "AEAPLPGT", nullable = false)
-    private int diasEntrada;
+    private Integer diasEntrada;
 
     @Basic(optional = false)
     @Column(name = "QTDE_PARCELAS1", table = "AEAPLPGT", nullable = false)
-    private int qtdeParcelas1;
+    private Integer qtdeParcelas1;
 
     @Basic(optional = false)
     @Column(name = "DIAS_PARCELAS1", table = "AEAPLPGT", nullable = false)
-    private int diasParcelas1;
+    private Integer diasParcelas1;
 
     @Basic(optional = false)
     @Column(name = "QTDE_PARCELAS2", table = "AEAPLPGT", nullable = false)
-    private int qtdeParcelas2;
+    private Integer qtdeParcelas2;
 
     @Basic(optional = false)
     @Column(name = "DIAS_PARCELAS2", table = "AEAPLPGT", nullable = false)
-    private int diasParcelas2;
+    private Integer diasParcelas2;
 
     @Basic(optional = false)
     @Column(name = "QTDE_PARCELAS3", table = "AEAPLPGT", nullable = false)
-    private int qtdeParcelas3;
+    private Integer qtdeParcelas3;
 
     @Basic(optional = false)
     @Column(name = "DIAS_PARCELAS3", table = "AEAPLPGT", nullable = false)
-    private int diasParcelas3;
+    private Integer diasParcelas3;
 
     @Basic(optional = false)
     @Column(name = "JURO_MEDIO_ATAC", table = "AEAPLPGT", nullable = false)
@@ -188,11 +188,11 @@ public class AeaplpgtEntity {
         this.idAeaplpgt = idAeaplpgt;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
@@ -268,11 +268,11 @@ public class AeaplpgtEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 
@@ -372,59 +372,59 @@ public class AeaplpgtEntity {
         this.percEntrada = percEntrada;
     }
 
-    public int getDiasEntrada() {
+    public Integer getDiasEntrada() {
         return diasEntrada;
     }
 
-    public void setDiasEntrada(int diasEntrada) {
+    public void setDiasEntrada(Integer diasEntrada) {
         this.diasEntrada = diasEntrada;
     }
 
-    public int getQtdeParcelas1() {
+    public Integer getQtdeParcelas1() {
         return qtdeParcelas1;
     }
 
-    public void setQtdeParcelas1(int qtdeParcelas1) {
+    public void setQtdeParcelas1(Integer qtdeParcelas1) {
         this.qtdeParcelas1 = qtdeParcelas1;
     }
 
-    public int getDiasParcelas1() {
+    public Integer getDiasParcelas1() {
         return diasParcelas1;
     }
 
-    public void setDiasParcelas1(int diasParcelas1) {
+    public void setDiasParcelas1(Integer diasParcelas1) {
         this.diasParcelas1 = diasParcelas1;
     }
 
-    public int getQtdeParcelas2() {
+    public Integer getQtdeParcelas2() {
         return qtdeParcelas2;
     }
 
-    public void setQtdeParcelas2(int qtdeParcelas2) {
+    public void setQtdeParcelas2(Integer qtdeParcelas2) {
         this.qtdeParcelas2 = qtdeParcelas2;
     }
 
-    public int getDiasParcelas2() {
+    public Integer getDiasParcelas2() {
         return diasParcelas2;
     }
 
-    public void setDiasParcelas2(int diasParcelas2) {
+    public void setDiasParcelas2(Integer diasParcelas2) {
         this.diasParcelas2 = diasParcelas2;
     }
 
-    public int getQtdeParcelas3() {
+    public Integer getQtdeParcelas3() {
         return qtdeParcelas3;
     }
 
-    public void setQtdeParcelas3(int qtdeParcelas3) {
+    public void setQtdeParcelas3(Integer qtdeParcelas3) {
         this.qtdeParcelas3 = qtdeParcelas3;
     }
 
-    public int getDiasParcelas3() {
+    public Integer getDiasParcelas3() {
         return diasParcelas3;
     }
 
-    public void setDiasParcelas3(int diasParcelas3) {
+    public void setDiasParcelas3(Integer diasParcelas3) {
         this.diasParcelas3 = diasParcelas3;
     }
 

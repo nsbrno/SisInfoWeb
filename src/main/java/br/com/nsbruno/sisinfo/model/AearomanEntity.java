@@ -21,7 +21,7 @@ public class AearomanEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEAROMAN", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic
     @Column(name = "ID_CFAAREAS", table = "AEAROMAN")
@@ -59,7 +59,7 @@ public class AearomanEntity {
 
     @Basic(optional = false)
     @Column(name = "NUMERO", table = "AEAROMAN", nullable = false)
-    private int numero;
+    private Integer numero;
 
     @Basic(optional = false)
     @Column(name = "DT_ROMANEIO", table = "AEAROMAN", nullable = false)
@@ -102,11 +102,11 @@ public class AearomanEntity {
         this.idAearoman = idAearoman;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
@@ -174,11 +174,11 @@ public class AearomanEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getNumero() {
+    public Integer getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(Integer numero) {
         this.numero = numero;
     }
 

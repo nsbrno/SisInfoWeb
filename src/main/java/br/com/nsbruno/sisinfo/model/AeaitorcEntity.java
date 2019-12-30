@@ -21,23 +21,23 @@ public class AeaitorcEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAORCAM", table = "AEAITORC", nullable = false)
-    private int idAeaorcam;
+    private Integer idAeaorcam;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAESTOQ", table = "AEAITORC", nullable = false)
-    private int idAeaestoq;
+    private Integer idAeaestoq;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAPLPGT", table = "AEAITORC", nullable = false)
-    private int idAeaplpgt;
+    private Integer idAeaplpgt;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAUNVEN", table = "AEAITORC", nullable = false)
-    private int idAeaunven;
+    private Integer idAeaunven;
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO_VENDEDOR", table = "AEAITORC", nullable = false)
-    private int idCfaclifoVendedor;
+    private Integer idCfaclifoVendedor;
 
     @Basic
     @Column(name = "ID_AEAITORC_CONJ", table = "AEAITORC")
@@ -67,7 +67,7 @@ public class AeaitorcEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "AEAITORC", nullable = false)
-    private int sequencia;
+    private Integer sequencia;
 
     @Basic(optional = false)
     @Column(name = "QUANTIDADE", table = "AEAITORC", nullable = false)
@@ -142,43 +142,43 @@ public class AeaitorcEntity {
         this.idAeaitorc = idAeaitorc;
     }
 
-    public int getIdAeaorcam() {
+    public Integer getIdAeaorcam() {
         return idAeaorcam;
     }
 
-    public void setIdAeaorcam(int idAeaorcam) {
+    public void setIdAeaorcam(Integer idAeaorcam) {
         this.idAeaorcam = idAeaorcam;
     }
 
-    public int getIdAeaestoq() {
+    public Integer getIdAeaestoq() {
         return idAeaestoq;
     }
 
-    public void setIdAeaestoq(int idAeaestoq) {
+    public void setIdAeaestoq(Integer idAeaestoq) {
         this.idAeaestoq = idAeaestoq;
     }
 
-    public int getIdAeaplpgt() {
+    public Integer getIdAeaplpgt() {
         return idAeaplpgt;
     }
 
-    public void setIdAeaplpgt(int idAeaplpgt) {
+    public void setIdAeaplpgt(Integer idAeaplpgt) {
         this.idAeaplpgt = idAeaplpgt;
     }
 
-    public int getIdAeaunven() {
+    public Integer getIdAeaunven() {
         return idAeaunven;
     }
 
-    public void setIdAeaunven(int idAeaunven) {
+    public void setIdAeaunven(Integer idAeaunven) {
         this.idAeaunven = idAeaunven;
     }
 
-    public int getIdCfaclifoVendedor() {
+    public Integer getIdCfaclifoVendedor() {
         return idCfaclifoVendedor;
     }
 
-    public void setIdCfaclifoVendedor(int idCfaclifoVendedor) {
+    public void setIdCfaclifoVendedor(Integer idCfaclifoVendedor) {
         this.idCfaclifoVendedor = idCfaclifoVendedor;
     }
 
@@ -230,11 +230,11 @@ public class AeaitorcEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getSequencia() {
+    public Integer getSequencia() {
         return sequencia;
     }
 
-    public void setSequencia(int sequencia) {
+    public void setSequencia(Integer sequencia) {
         this.sequencia = sequencia;
     }
 

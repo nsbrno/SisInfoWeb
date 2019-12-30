@@ -21,7 +21,7 @@ public class CbacontaEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFAPORTA", table = "CBACONTA", nullable = false)
-    private int idCfaporta;
+    private Integer idCfaporta;
 
     @Basic
     @Column(name = "ID_CBAPLCTA", table = "CBACONTA")
@@ -60,7 +60,7 @@ public class CbacontaEntity {
 
     @Basic(optional = false)
     @Column(name = "AGENCIA", table = "CBACONTA", nullable = false)
-    private int agencia;
+    private Integer agencia;
 
     @Basic
     @Column(name = "DG_AG", table = "CBACONTA")
@@ -68,7 +68,7 @@ public class CbacontaEntity {
 
     @Basic(optional = false)
     @Column(name = "CONTA", table = "CBACONTA", nullable = false)
-    private int conta;
+    private Integer conta;
 
     @Basic
     @Column(name = "DG_CT", table = "CBACONTA", length = 2)
@@ -96,7 +96,7 @@ public class CbacontaEntity {
 
     @Basic(optional = false)
     @Column(name = "RAMAL", table = "CBACONTA", nullable = false)
-    private int ramal;
+    private Integer ramal;
 
     @Lob
     @Basic
@@ -123,11 +123,11 @@ public class CbacontaEntity {
         this.idCbaconta = idCbaconta;
     }
 
-    public int getIdCfaporta() {
+    public Integer getIdCfaporta() {
         return idCfaporta;
     }
 
-    public void setIdCfaporta(int idCfaporta) {
+    public void setIdCfaporta(Integer idCfaporta) {
         this.idCfaporta = idCfaporta;
     }
 
@@ -195,11 +195,11 @@ public class CbacontaEntity {
         this.dtAbertura = dtAbertura;
     }
 
-    public int getAgencia() {
+    public Integer getAgencia() {
         return agencia;
     }
 
-    public void setAgencia(int agencia) {
+    public void setAgencia(Integer agencia) {
         this.agencia = agencia;
     }
 
@@ -211,11 +211,11 @@ public class CbacontaEntity {
         this.dgAg = dgAg;
     }
 
-    public int getConta() {
+    public Integer getConta() {
         return conta;
     }
 
-    public void setConta(int conta) {
+    public void setConta(Integer conta) {
         this.conta = conta;
     }
 
@@ -267,11 +267,11 @@ public class CbacontaEntity {
         this.fone = fone;
     }
 
-    public int getRamal() {
+    public Integer getRamal() {
         return ramal;
     }
 
-    public void setRamal(int ramal) {
+    public void setRamal(Integer ramal) {
         this.ramal = ramal;
     }
 

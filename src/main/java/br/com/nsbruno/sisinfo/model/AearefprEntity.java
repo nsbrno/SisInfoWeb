@@ -20,11 +20,11 @@ public class AearefprEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAPRODU", table = "AEAREFPR", nullable = false)
-    private int idAeaprodu;
+    private Integer idAeaprodu;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAREFER", table = "AEAREFPR", nullable = false)
-    private int idAearefer;
+    private Integer idAearefer;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEAREFPR", nullable = false, length = 16)
@@ -56,19 +56,19 @@ public class AearefprEntity {
         this.idAearefpr = idAearefpr;
     }
 
-    public int getIdAeaprodu() {
+    public Integer getIdAeaprodu() {
         return idAeaprodu;
     }
 
-    public void setIdAeaprodu(int idAeaprodu) {
+    public void setIdAeaprodu(Integer idAeaprodu) {
         this.idAeaprodu = idAeaprodu;
     }
 
-    public int getIdAearefer() {
+    public Integer getIdAearefer() {
         return idAearefer;
     }
 
-    public void setIdAearefer(int idAearefer) {
+    public void setIdAearefer(Integer idAearefer) {
         this.idAearefer = idAearefer;
     }
 

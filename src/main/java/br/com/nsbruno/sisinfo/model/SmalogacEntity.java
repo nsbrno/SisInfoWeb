@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "SMALOGAC")
+@Data
 public class SmalogacEntity {
 
     @Id
@@ -38,53 +40,4 @@ public class SmalogacEntity {
     @Column(name = "DT_SAIU", table = "SMALOGAC")
     @Temporal(TemporalType.TIMESTAMP)
     private Date dtSaiu;
-
-    public Integer getIdSmalogac() {
-        return idSmalogac;
-    }
-
-    public void setIdSmalogac(Integer idSmalogac) {
-        this.idSmalogac = idSmalogac;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getTela() {
-        return tela;
-    }
-
-    public void setTela(String tela) {
-        this.tela = tela;
-    }
-
-    public Date getDtSaiu() {
-        return dtSaiu;
-    }
-
-    public void setDtSaiu(Date dtSaiu) {
-        this.dtSaiu = dtSaiu;
-    }
-
 }

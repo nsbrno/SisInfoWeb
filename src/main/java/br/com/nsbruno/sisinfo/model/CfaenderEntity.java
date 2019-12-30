@@ -109,7 +109,7 @@ public class CfaenderEntity {
 
     @Basic
     @Column(name = "INTERNET", table = "CFAENDER", length = 128)
-    private String internet;
+    private String Integerernet;
 
     @Basic
     @Column(name = "LETRA_CX_POSTAL", table = "CFAENDER")
@@ -308,11 +308,11 @@ public class CfaenderEntity {
     }
 
     public String getInternet() {
-        return internet;
+        return Integerernet;
     }
 
-    public void setInternet(String internet) {
-        this.internet = internet;
+    public void setInternet(String Integerernet) {
+        this.Integerernet = Integerernet;
     }
 
     public String getLetraCxPostal() {

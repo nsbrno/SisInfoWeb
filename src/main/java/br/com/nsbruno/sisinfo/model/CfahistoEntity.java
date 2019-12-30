@@ -24,7 +24,7 @@ public class CfahistoEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO", table = "CFAHISTO", nullable = false)
-    private int idCfaclifo;
+    private Integer idCfaclifo;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "CFAHISTO", nullable = false, length = 16)
@@ -96,11 +96,11 @@ public class CfahistoEntity {
         this.idCfastatu = idCfastatu;
     }
 
-    public int getIdCfaclifo() {
+    public Integer getIdCfaclifo() {
         return idCfaclifo;
     }
 
-    public void setIdCfaclifo(int idCfaclifo) {
+    public void setIdCfaclifo(Integer idCfaclifo) {
         this.idCfaclifo = idCfaclifo;
     }
 

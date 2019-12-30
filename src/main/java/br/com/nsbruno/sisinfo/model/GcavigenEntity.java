@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "GCAVIGEN")
+@Data
 public class GcavigenEntity {
 
     @Id
@@ -75,138 +77,9 @@ public class GcavigenEntity {
 
     @Basic(optional = false)
     @Column(name = "STATUS", table = "GCAVIGEN", nullable = false)
-    private int status;
+    private Integer status;
 
     @Basic(optional = false)
     @Column(name = "QUANTIDADE", table = "GCAVIGEN", nullable = false)
     private double quantidade;
-
-    public Integer getIdGcavigen() {
-        return idGcavigen;
-    }
-
-    public void setIdGcavigen(Integer idGcavigen) {
-        this.idGcavigen = idGcavigen;
-    }
-
-    public Integer getIdGcatploc() {
-        return idGcatploc;
-    }
-
-    public void setIdGcatploc(Integer idGcatploc) {
-        this.idGcatploc = idGcatploc;
-    }
-
-    public Integer getIdGcacontr() {
-        return idGcacontr;
-    }
-
-    public void setIdGcacontr(Integer idGcacontr) {
-        this.idGcacontr = idGcacontr;
-    }
-
-    public Integer getIdCfaclifoVendedor() {
-        return idCfaclifoVendedor;
-    }
-
-    public void setIdCfaclifoVendedor(Integer idCfaclifoVendedor) {
-        this.idCfaclifoVendedor = idCfaclifoVendedor;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public Date getDataInicio() {
-        return dataInicio;
-    }
-
-    public void setDataInicio(Date dataInicio) {
-        this.dataInicio = dataInicio;
-    }
-
-    public Date getDataTermino() {
-        return dataTermino;
-    }
-
-    public void setDataTermino(Date dataTermino) {
-        this.dataTermino = dataTermino;
-    }
-
-    public double getVlVigencia() {
-        return vlVigencia;
-    }
-
-    public void setVlVigencia(double vlVigencia) {
-        this.vlVigencia = vlVigencia;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public short getSituacao() {
-        return situacao;
-    }
-
-    public void setSituacao(short situacao) {
-        this.situacao = situacao;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
-    }
-
-    public double getQuantidade() {
-        return quantidade;
-    }
-
-    public void setQuantidade(double quantidade) {
-        this.quantidade = quantidade;
-    }
-
 }

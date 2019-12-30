@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "AEAETIND")
+@Data
 public class AeaetindEntity {
 
     @Id
@@ -19,11 +21,11 @@ public class AeaetindEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAITIND", table = "AEAETIND", nullable = false)
-    private int idAeaitind;
+    private Integer idAeaitind;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAETPRD", table = "AEAETIND", nullable = false)
-    private int idAeaetprd;
+    private Integer idAeaetprd;
 
     @Basic
     @Column(name = "US_CAD", table = "AEAETIND", length = 20)
@@ -55,85 +57,4 @@ public class AeaetindEntity {
     @Basic
     @Column(name = "MIN_GASTOS", table = "AEAETIND")
     private Integer minGastos;
-
-    public Integer getIdAeaetind() {
-        return idAeaetind;
-    }
-
-    public void setIdAeaetind(Integer idAeaetind) {
-        this.idAeaetind = idAeaetind;
-    }
-
-    public int getIdAeaitind() {
-        return idAeaitind;
-    }
-
-    public void setIdAeaitind(int idAeaitind) {
-        this.idAeaitind = idAeaitind;
-    }
-
-    public int getIdAeaetprd() {
-        return idAeaetprd;
-    }
-
-    public void setIdAeaetprd(int idAeaetprd) {
-        this.idAeaetprd = idAeaetprd;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public Date getDtMovimento() {
-        return dtMovimento;
-    }
-
-    public void setDtMovimento(Date dtMovimento) {
-        this.dtMovimento = dtMovimento;
-    }
-
-    public Integer getMinGastos() {
-        return minGastos;
-    }
-
-    public void setMinGastos(Integer minGastos) {
-        this.minGastos = minGastos;
-    }
-
 }

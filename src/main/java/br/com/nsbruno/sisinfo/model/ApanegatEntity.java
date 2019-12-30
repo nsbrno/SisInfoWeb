@@ -53,11 +53,11 @@ public class ApanegatEntity {
 
     @Basic(optional = false)
     @Column(name = "ANO", table = "APANEGAT", nullable = false)
-    private int ano;
+    private Integer ano;
 
     @Basic(optional = false)
     @Column(name = "ANOFIM", table = "APANEGAT", nullable = false)
-    private int anofim;
+    private Integer anofim;
 
     @Basic
     @Column(name = "DT_NASCIMENTO", table = "APANEGAT")
@@ -177,19 +177,19 @@ public class ApanegatEntity {
         this.nome = nome;
     }
 
-    public int getAno() {
+    public Integer getAno() {
         return ano;
     }
 
-    public void setAno(int ano) {
+    public void setAno(Integer ano) {
         this.ano = ano;
     }
 
-    public int getAnofim() {
+    public Integer getAnofim() {
         return anofim;
     }
 
-    public void setAnofim(int anofim) {
+    public void setAnofim(Integer anofim) {
         this.anofim = anofim;
     }
 

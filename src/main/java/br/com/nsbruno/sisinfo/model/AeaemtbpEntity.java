@@ -8,10 +8,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 
 @Entity
 @Table(name = "AEAEMTBP")
+@Data
 public class AeaemtbpEntity {
 
     @Id
@@ -20,11 +22,11 @@ public class AeaemtbpEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEATBPRO", table = "AEAEMTBP", nullable = false)
-    private int idAeatbpro;
+    private Integer idAeatbpro;
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEAEMTBP", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEAEMTBP", nullable = false, length = 16)
@@ -47,69 +49,4 @@ public class AeaemtbpEntity {
     @Basic
     @Column(name = "CT_INTEG", table = "AEAEMTBP")
     private Integer ctInteg;
-
-    public Integer getIdAeaemtbp() {
-        return idAeaemtbp;
-    }
-
-    public void setIdAeaemtbp(Integer idAeaemtbp) {
-        this.idAeaemtbp = idAeaemtbp;
-    }
-
-    public int getIdAeatbpro() {
-        return idAeatbpro;
-    }
-
-    public void setIdAeatbpro(int idAeatbpro) {
-        this.idAeatbpro = idAeatbpro;
-    }
-
-    public int getIdSmaempre() {
-        return idSmaempre;
-    }
-
-    public void setIdSmaempre(int idSmaempre) {
-        this.idSmaempre = idSmaempre;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
 }

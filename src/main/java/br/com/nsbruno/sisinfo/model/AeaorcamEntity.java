@@ -21,7 +21,7 @@ public class AeaorcamEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEAORCAM", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic
     @Column(name = "ID_CFACLIFO_VENDEDOR_INI", table = "AEAORCAM")
@@ -37,7 +37,7 @@ public class AeaorcamEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEASERIE", table = "AEAORCAM", nullable = false)
-    private int idAeaserie;
+    private Integer idAeaserie;
 
     @Basic
     @Column(name = "ID_CFAMOEDA", table = "AEAORCAM")
@@ -114,7 +114,7 @@ public class AeaorcamEntity {
 
     @Basic(optional = false)
     @Column(name = "NUMERO", table = "AEAORCAM", nullable = false)
-    private int numero;
+    private Integer numero;
 
     @Basic(optional = false)
     @Column(name = "VL_MERC_CUSTO", table = "AEAORCAM", nullable = false)
@@ -239,7 +239,7 @@ public class AeaorcamEntity {
 
     @Basic(optional = false)
     @Column(name = "NUM_EMISSOES", table = "AEAORCAM", nullable = false)
-    private int numEmissoes;
+    private Integer numEmissoes;
 
     @Basic
     @Column(name = "MANTEM", table = "AEAORCAM")
@@ -273,11 +273,11 @@ public class AeaorcamEntity {
         this.idAeaorcam = idAeaorcam;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
@@ -305,11 +305,11 @@ public class AeaorcamEntity {
         this.idCfaclifo = idCfaclifo;
     }
 
-    public int getIdAeaserie() {
+    public Integer getIdAeaserie() {
         return idAeaserie;
     }
 
-    public void setIdAeaserie(int idAeaserie) {
+    public void setIdAeaserie(Integer idAeaserie) {
         this.idAeaserie = idAeaserie;
     }
 
@@ -449,11 +449,11 @@ public class AeaorcamEntity {
         this.dtEmissao = dtEmissao;
     }
 
-    public int getNumero() {
+    public Integer getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(Integer numero) {
         this.numero = numero;
     }
 
@@ -697,11 +697,11 @@ public class AeaorcamEntity {
         this.obs = obs;
     }
 
-    public int getNumEmissoes() {
+    public Integer getNumEmissoes() {
         return numEmissoes;
     }
 
-    public void setNumEmissoes(int numEmissoes) {
+    public void setNumEmissoes(Integer numEmissoes) {
         this.numEmissoes = numEmissoes;
     }
 

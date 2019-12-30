@@ -158,7 +158,7 @@ public class CfaclifoEntity {
     private String cpfCgc;
 
     @Column(name = "CPF_CGC_SEQ", table = "CFACLIFO", nullable = false)
-    private int cpfCgcSeq;
+    private Integer cpfCgcSeq;
 
     @Basic
     @Column(name = "IE_RG", table = "CFACLIFO", length = 18)
@@ -395,7 +395,7 @@ public class CfaclifoEntity {
     private String areasInteresse;
 
     @Column(name = "QTDE_FUNCIONARIOS", table = "CFACLIFO", nullable = false)
-    private int qtdeFuncionarios;
+    private Integer qtdeFuncionarios;
 
     @Column(name = "OUTRAS_RENDAS", table = "CFACLIFO", nullable = false)
     private double outrasRendas;
@@ -404,10 +404,10 @@ public class CfaclifoEntity {
     private double limiteCartao;
 
     @Column(name = "NUM_DEP_MAIOR", table = "CFACLIFO", nullable = false)
-    private int numDepMaior;
+    private Integer numDepMaior;
 
     @Column(name = "NUM_DEP_MENOR", table = "CFACLIFO", nullable = false)
-    private int numDepMenor;
+    private Integer numDepMenor;
 
     @Lob
     @Basic
@@ -522,16 +522,16 @@ public class CfaclifoEntity {
     private String localTrabalho;
 
     @Column(name = "MANEQUIM", table = "CFACLIFO", nullable = false)
-    private int manequim;
+    private Integer manequim;
 
     @Column(name = "MANEQUIM_CONJUGE", table = "CFACLIFO", nullable = false)
-    private int manequimConjuge;
+    private Integer manequimConjuge;
 
     @Column(name = "CALCADO", table = "CFACLIFO", nullable = false)
-    private int calcado;
+    private Integer calcado;
 
     @Column(name = "CALCADO_CONJUGE", table = "CFACLIFO", nullable = false)
-    private int calcadoConjuge;
+    private Integer calcadoConjuge;
 
     @Basic
     @Column(name = "TIPO_FUNCIONARIO", table = "CFACLIFO", length = 18)
@@ -612,7 +612,7 @@ public class CfaclifoEntity {
 
     @Basic
     @Column(name = "IS_CONTRIBUINTE", table = "CFACLIFO")
-    private String isContribuinte;
+    private String isContribuIntegere;
 
     @Basic
     @Column(name = "IS_FUNERARIA", table = "CFACLIFO")
@@ -844,7 +844,7 @@ public class CfaclifoEntity {
     private Date dtValidadeSuframa;
 
     @Column(name = "QTDE_LICENCA_MOVEL", table = "CFACLIFO", nullable = false)
-    private int qtdeLicencaMovel;
+    private Integer qtdeLicencaMovel;
 
     @Basic
     @Column(name = "VERSAO_SAVARE", table = "CFACLIFO", length = 20)
@@ -872,7 +872,7 @@ public class CfaclifoEntity {
 
     
     @Column(name = "PORTA_BANCO_SISINFO", table = "CFACLIFO", nullable = false)
-    private int portaBancoSisinfo;
+    private Integer portaBancoSisinfo;
 
     @Basic
     @Column(name = "MODO_CONEXAO_WEBSERVICE", table = "CFACLIFO")

@@ -24,7 +24,7 @@ public class CbasaldoEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA", table = "CBASALDO", nullable = false)
-    private int idCbaplcta;
+    private Integer idCbaplcta;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "CBASALDO", nullable = false, length = 16)
@@ -93,11 +93,11 @@ public class CbasaldoEntity {
         this.idSmaempre = idSmaempre;
     }
 
-    public int getIdCbaplcta() {
+    public Integer getIdCbaplcta() {
         return idCbaplcta;
     }
 
-    public void setIdCbaplcta(int idCbaplcta) {
+    public void setIdCbaplcta(Integer idCbaplcta) {
         this.idCbaplcta = idCbaplcta;
     }
 

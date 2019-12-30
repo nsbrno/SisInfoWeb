@@ -9,10 +9,12 @@ import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 
 @Entity
 @Table(name = "AEAEVEST")
+@Data
 public class AeaevestEntity {
 
     @Id
@@ -21,7 +23,7 @@ public class AeaevestEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEAEVEST", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEAEVEST", nullable = false, length = 16)
@@ -62,93 +64,4 @@ public class AeaevestEntity {
     @Basic
     @Column(name = "OBS", table = "AEAEVEST")
     private byte[] obs;
-
-    public Integer getIdAeaevest() {
-        return idAeaevest;
-    }
-
-    public void setIdAeaevest(Integer idAeaevest) {
-        this.idAeaevest = idAeaevest;
-    }
-
-    public int getIdSmaempre() {
-        return idSmaempre;
-    }
-
-    public void setIdSmaempre(int idSmaempre) {
-        this.idSmaempre = idSmaempre;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public Integer getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(Integer codigo) {
-        this.codigo = codigo;
-    }
-
-    public Date getDtMovimento() {
-        return dtMovimento;
-    }
-
-    public void setDtMovimento(Date dtMovimento) {
-        this.dtMovimento = dtMovimento;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public byte[] getObs() {
-        return obs;
-    }
-
-    public void setObs(byte[] obs) {
-        this.obs = obs;
-    }
-
 }

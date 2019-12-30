@@ -68,7 +68,7 @@ public class GcaitvigEntity {
 
     @Basic(optional = false)
     @Column(name = "RECALCULA_DIAS", table = "GCAITVIG", nullable = false)
-    private int recalculaDias;
+    private Integer recalculaDias;
 
     @Basic(optional = false)
     @Column(name = "MULTA_DIARIA", table = "GCAITVIG", nullable = false)
@@ -178,11 +178,11 @@ public class GcaitvigEntity {
         this.atrasadoAntecipado = atrasadoAntecipado;
     }
 
-    public int getRecalculaDias() {
+    public Integer getRecalculaDias() {
         return recalculaDias;
     }
 
-    public void setRecalculaDias(int recalculaDias) {
+    public void setRecalculaDias(Integer recalculaDias) {
         this.recalculaDias = recalculaDias;
     }
 

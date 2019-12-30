@@ -19,7 +19,7 @@ public class AealacreEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEABOMBA", table = "AEALACRE", nullable = false)
-    private int idAeabomba;
+    private Integer idAeabomba;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEALACRE", nullable = false, length = 16)
@@ -60,11 +60,11 @@ public class AealacreEntity {
         this.idAealacre = idAealacre;
     }
 
-    public int getIdAeabomba() {
+    public Integer getIdAeabomba() {
         return idAeabomba;
     }
 
-    public void setIdAeabomba(int idAeabomba) {
+    public void setIdAeabomba(Integer idAeabomba) {
         this.idAeabomba = idAeabomba;
     }
 

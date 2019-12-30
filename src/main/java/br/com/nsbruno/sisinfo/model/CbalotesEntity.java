@@ -20,7 +20,7 @@ public class CbalotesEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "CBALOTES", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "CBALOTES", nullable = false, length = 16)
@@ -46,11 +46,11 @@ public class CbalotesEntity {
 
     @Basic(optional = false)
     @Column(name = "ANO", table = "CBALOTES", nullable = false)
-    private int ano;
+    private Integer ano;
 
     @Basic(optional = false)
     @Column(name = "NUMERO", table = "CBALOTES", nullable = false)
-    private int numero;
+    private Integer numero;
 
     @Basic(optional = false)
     @Column(name = "ORIGEM", table = "CBALOTES", nullable = false, length = 18)
@@ -90,11 +90,11 @@ public class CbalotesEntity {
         this.idCbalotes = idCbalotes;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
@@ -138,19 +138,19 @@ public class CbalotesEntity {
         this.ctInteg = ctInteg;
     }
 
-    public int getAno() {
+    public Integer getAno() {
         return ano;
     }
 
-    public void setAno(int ano) {
+    public void setAno(Integer ano) {
         this.ano = ano;
     }
 
-    public int getNumero() {
+    public Integer getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(Integer numero) {
         this.numero = numero;
     }
 

@@ -1,11 +1,12 @@
 package br.com.nsbruno.sisinfo.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
@@ -21,6 +22,7 @@ public class SmausuarEntity implements Serializable {
 
     @Id
     @Column(name = "ID_SMAUSUAR", table = "SMAUSUAR", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idSmausuar;
 
     @Basic
@@ -29,13 +31,13 @@ public class SmausuarEntity implements Serializable {
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO", table = "SMAUSUAR", nullable = false)
-    private int idCfaclifo;
+    private Integer idCfaclifo;
 
     @Basic
     @Column(name = "ID_CBANUMCX", table = "SMAUSUAR")
     private Integer idCbanumcx;
 
-    @Basic(optional = false)
+    @Basic
     @Column(name = "GUID", table = "SMAUSUAR", nullable = false, length = 16)
     private String guid;
 
@@ -215,55 +217,55 @@ public class SmausuarEntity implements Serializable {
 
     @Basic(optional = false)
     @Column(name = "FONTE_LCF_SIZE", table = "SMAUSUAR", nullable = false)
-    private int fonteLcfSize;
+    private Integer fonteLcfSize;
 
     @Basic(optional = false)
     @Column(name = "FONTE_LSF_SIZE", table = "SMAUSUAR", nullable = false)
-    private int fonteLsfSize;
+    private Integer fonteLsfSize;
 
     @Basic(optional = false)
     @Column(name = "FONTE_CCF_SIZE", table = "SMAUSUAR", nullable = false)
-    private int fonteCcfSize;
+    private Integer fonteCcfSize;
 
     @Basic(optional = false)
     @Column(name = "FONTE_CSF_SIZE", table = "SMAUSUAR", nullable = false)
-    private int fonteCsfSize;
+    private Integer fonteCsfSize;
 
     @Basic(optional = false)
     @Column(name = "FONTE_LSG_SIZE", table = "SMAUSUAR", nullable = false)
-    private int fonteLsgSize;
+    private Integer fonteLsgSize;
 
     @Basic(optional = false)
     @Column(name = "FONTE_CPOSG_SIZE", table = "SMAUSUAR", nullable = false)
-    private int fonteCposgSize;
+    private Integer fonteCposgSize;
 
     @Basic(optional = false)
     @Column(name = "FONTE_LIG_SIZE", table = "SMAUSUAR", nullable = false)
-    private int fonteLigSize;
+    private Integer fonteLigSize;
 
     @Basic(optional = false)
     @Column(name = "FONTE_LPG_SIZE", table = "SMAUSUAR", nullable = false)
-    private int fonteLpgSize;
+    private Integer fonteLpgSize;
 
     @Basic(optional = false)
     @Column(name = "FONTE_HGCF_SIZE", table = "SMAUSUAR", nullable = false)
-    private int fonteHgcfSize;
+    private Integer fonteHgcfSize;
 
     @Basic(optional = false)
     @Column(name = "FONTE_COLSG_SIZE", table = "SMAUSUAR", nullable = false)
-    private int fonteColsgSize;
+    private Integer fonteColsgSize;
 
     @Basic(optional = false)
     @Column(name = "FONTE_HGSF_SIZE", table = "SMAUSUAR", nullable = false)
-    private int fonteHgsfSize;
+    private Integer fonteHgsfSize;
 
     @Basic(optional = false)
     @Column(name = "FONTE_MENU_SIZE", table = "SMAUSUAR", nullable = false)
-    private int fonteMenuSize;
+    private Integer fonteMenuSize;
 
     @Basic(optional = false)
     @Column(name = "FONTE_RELAT_SIZE", table = "SMAUSUAR", nullable = false)
-    private int fonteRelatSize;
+    private Integer fonteRelatSize;
 
     @Basic
     @Column(name = "FONTE_LCF_ESTILO", table = "SMAUSUAR", length = 5)
@@ -343,11 +345,11 @@ public class SmausuarEntity implements Serializable {
 
     @Basic(optional = false)
     @Column(name = "DEFAULT_ROW_HEIGHT", table = "SMAUSUAR", nullable = false)
-    private int defaultRowHeight;
+    private Integer defaultRowHeight;
 
     @Basic(optional = false)
     @Column(name = "DEFAULT_ROW_HEIGHT_C", table = "SMAUSUAR", nullable = false)
-    private int defaultRowHeightC;
+    private Integer defaultRowHeightC;
 
     @Basic
     @Column(name = "MASCARA_DATA_HORA", table = "SMAUSUAR", length = 40)
@@ -375,23 +377,23 @@ public class SmausuarEntity implements Serializable {
 
     @Basic(optional = false)
     @Column(name = "TAMANHO_PERC", table = "SMAUSUAR", nullable = false)
-    private int tamanhoPerc;
+    private Integer tamanhoPerc;
 
     @Basic(optional = false)
     @Column(name = "TAMANHO_QTDE", table = "SMAUSUAR", nullable = false)
-    private int tamanhoQtde;
+    private Integer tamanhoQtde;
 
     @Basic(optional = false)
     @Column(name = "DECIMAIS_PERC", table = "SMAUSUAR", nullable = false)
-    private int decimaisPerc;
+    private Integer decimaisPerc;
 
     @Basic(optional = false)
     @Column(name = "DECIMAIS_QTDE", table = "SMAUSUAR", nullable = false)
-    private int decimaisQtde;
+    private Integer decimaisQtde;
 
     @Basic(optional = false)
     @Column(name = "DECIMAIS_PRECO", table = "SMAUSUAR", nullable = false)
-    private int decimaisPreco;
+    private Integer decimaisPreco;
 
     @Basic
     @Column(name = "GERENCIA_CORES", table = "SMAUSUAR")

@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "AEACOFFL")
+@Data
 public class AeacofflEntity {
 
     @Id
@@ -19,7 +21,7 @@ public class AeacofflEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "AEACOFFL", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic
     @Column(name = "ID_AEANFSAI_DUVIDA", table = "AEACOFFL")
@@ -72,117 +74,4 @@ public class AeacofflEntity {
     @Column(name = "DT_CONT_FIM", table = "AEACOFFL")
     @Temporal(TemporalType.TIMESTAMP)
     private Date dtContFim;
-
-    public Integer getIdAeacoffl() {
-        return idAeacoffl;
-    }
-
-    public void setIdAeacoffl(Integer idAeacoffl) {
-        this.idAeacoffl = idAeacoffl;
-    }
-
-    public int getIdSmaempre() {
-        return idSmaempre;
-    }
-
-    public void setIdSmaempre(int idSmaempre) {
-        this.idSmaempre = idSmaempre;
-    }
-
-    public Integer getIdAeanfsaiDuvida() {
-        return idAeanfsaiDuvida;
-    }
-
-    public void setIdAeanfsaiDuvida(Integer idAeanfsaiDuvida) {
-        this.idAeanfsaiDuvida = idAeanfsaiDuvida;
-    }
-
-    public Integer getIdAeanfsaiOffline() {
-        return idAeanfsaiOffline;
-    }
-
-    public void setIdAeanfsaiOffline(Integer idAeanfsaiOffline) {
-        this.idAeanfsaiOffline = idAeanfsaiOffline;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public String getMotivo() {
-        return motivo;
-    }
-
-    public void setMotivo(String motivo) {
-        this.motivo = motivo;
-    }
-
-    public Date getDtContIni() {
-        return dtContIni;
-    }
-
-    public void setDtContIni(Date dtContIni) {
-        this.dtContIni = dtContIni;
-    }
-
-    public Date getDtContFim() {
-        return dtContFim;
-    }
-
-    public void setDtContFim(Date dtContFim) {
-        this.dtContFim = dtContFim;
-    }
-
 }

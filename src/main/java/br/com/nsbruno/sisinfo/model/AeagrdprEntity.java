@@ -24,7 +24,7 @@ public class AeagrdprEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_AEAGRADE", table = "AEAGRDPR", nullable = false)
-    private int idAeagrade;
+    private Integer idAeagrade;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "AEAGRDPR", nullable = false, length = 16)
@@ -76,11 +76,11 @@ public class AeagrdprEntity {
         this.idAeaprodu = idAeaprodu;
     }
 
-    public int getIdAeagrade() {
+    public Integer getIdAeagrade() {
         return idAeagrade;
     }
 
-    public void setIdAeagrade(int idAeagrade) {
+    public void setIdAeagrade(Integer idAeagrade) {
         this.idAeagrade = idAeagrade;
     }
 

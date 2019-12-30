@@ -20,7 +20,7 @@ public class CfaposseEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO", table = "CFAPOSSE", nullable = false)
-    private int idCfaclifo;
+    private Integer idCfaclifo;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "CFAPOSSE", nullable = false, length = 16)
@@ -78,11 +78,11 @@ public class CfaposseEntity {
         this.idCfaposse = idCfaposse;
     }
 
-    public int getIdCfaclifo() {
+    public Integer getIdCfaclifo() {
         return idCfaclifo;
     }
 
-    public void setIdCfaclifo(int idCfaclifo) {
+    public void setIdCfaclifo(Integer idCfaclifo) {
         this.idCfaclifo = idCfaclifo;
     }
 

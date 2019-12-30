@@ -19,11 +19,11 @@ public class AealoceqEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFAEQUIP", table = "AEALOCEQ", nullable = false)
-    private int idCfaequip;
+    private Integer idCfaequip;
 
     @Basic(optional = false)
     @Column(name = "ID_AEAESTOQ", table = "AEALOCEQ", nullable = false)
-    private int idAeaestoq;
+    private Integer idAeaestoq;
 
     @Basic
     @Column(name = "ID_AEAEVEST", table = "AEALOCEQ")
@@ -76,19 +76,19 @@ public class AealoceqEntity {
         this.idAealoceq = idAealoceq;
     }
 
-    public int getIdCfaequip() {
+    public Integer getIdCfaequip() {
         return idCfaequip;
     }
 
-    public void setIdCfaequip(int idCfaequip) {
+    public void setIdCfaequip(Integer idCfaequip) {
         this.idCfaequip = idCfaequip;
     }
 
-    public int getIdAeaestoq() {
+    public Integer getIdAeaestoq() {
         return idAeaestoq;
     }
 
-    public void setIdAeaestoq(int idAeaestoq) {
+    public void setIdAeaestoq(Integer idAeaestoq) {
         this.idAeaestoq = idAeaestoq;
     }
 

@@ -19,11 +19,11 @@ public class CfamotnvEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CFACLIFO", table = "CFAMOTNV", nullable = false)
-    private int idCfaclifo;
+    private Integer idCfaclifo;
 
     @Basic(optional = false)
     @Column(name = "ID_CFAMOTIV", table = "CFAMOTNV", nullable = false)
-    private int idCfamotiv;
+    private Integer idCfamotiv;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "CFAMOTNV", nullable = false, length = 16)
@@ -60,19 +60,19 @@ public class CfamotnvEntity {
         this.idCfamotnv = idCfamotnv;
     }
 
-    public int getIdCfaclifo() {
+    public Integer getIdCfaclifo() {
         return idCfaclifo;
     }
 
-    public void setIdCfaclifo(int idCfaclifo) {
+    public void setIdCfaclifo(Integer idCfaclifo) {
         this.idCfaclifo = idCfaclifo;
     }
 
-    public int getIdCfamotiv() {
+    public Integer getIdCfamotiv() {
         return idCfamotiv;
     }
 
-    public void setIdCfamotiv(int idCfamotiv) {
+    public void setIdCfamotiv(Integer idCfamotiv) {
         this.idCfamotiv = idCfamotiv;
     }
 

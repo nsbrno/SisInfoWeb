@@ -20,15 +20,15 @@ public class CbapartiEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_SMAEMPRE", table = "CBAPARTI", nullable = false)
-    private int idSmaempre;
+    private Integer idSmaempre;
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA", table = "CBAPARTI", nullable = false)
-    private int idCbaplcta;
+    private Integer idCbaplcta;
 
     @Basic(optional = false)
     @Column(name = "ID_CBALOTES", table = "CBAPARTI", nullable = false)
-    private int idCbalotes;
+    private Integer idCbalotes;
 
     @Basic(optional = false)
     @Column(name = "GUID", table = "CBAPARTI", nullable = false, length = 16)
@@ -124,27 +124,27 @@ public class CbapartiEntity {
         this.idCbaparti = idCbaparti;
     }
 
-    public int getIdSmaempre() {
+    public Integer getIdSmaempre() {
         return idSmaempre;
     }
 
-    public void setIdSmaempre(int idSmaempre) {
+    public void setIdSmaempre(Integer idSmaempre) {
         this.idSmaempre = idSmaempre;
     }
 
-    public int getIdCbaplcta() {
+    public Integer getIdCbaplcta() {
         return idCbaplcta;
     }
 
-    public void setIdCbaplcta(int idCbaplcta) {
+    public void setIdCbaplcta(Integer idCbaplcta) {
         this.idCbaplcta = idCbaplcta;
     }
 
-    public int getIdCbalotes() {
+    public Integer getIdCbalotes() {
         return idCbalotes;
     }
 
-    public void setIdCbalotes(int idCbalotes) {
+    public void setIdCbalotes(Integer idCbalotes) {
         this.idCbalotes = idCbalotes;
     }
 

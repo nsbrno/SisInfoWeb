@@ -21,15 +21,15 @@ public class CbaitmovEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CBATRANS", table = "CBAITMOV", nullable = false)
-    private int idCbatrans;
+    private Integer idCbatrans;
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA", table = "CBAITMOV", nullable = false)
-    private int idCbaplcta;
+    private Integer idCbaplcta;
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA_NUMCX", table = "CBAITMOV", nullable = false)
-    private int idCbaplctaNumcx;
+    private Integer idCbaplctaNumcx;
 
     @Basic
     @Column(name = "ID_CBAPLCTA_JUROS", table = "CBAITMOV")
@@ -37,7 +37,7 @@ public class CbaitmovEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_CBAPLCTA_JUROS_DISP", table = "CBAITMOV", nullable = false)
-    private int idCbaplctaJurosDisp;
+    private Integer idCbaplctaJurosDisp;
 
     @Basic
     @Column(name = "ID_CBAPLCTA_DESCONTO", table = "CBAITMOV")
@@ -75,7 +75,7 @@ public class CbaitmovEntity {
 
     @Basic(optional = false)
     @Column(name = "SEQUENCIA", table = "CBAITMOV", nullable = false)
-    private int sequencia;
+    private Integer sequencia;
 
     @Basic(optional = false)
     @Column(name = "A_S", table = "CBAITMOV", nullable = false)
@@ -126,27 +126,27 @@ public class CbaitmovEntity {
         this.idCbaitmov = idCbaitmov;
     }
 
-    public int getIdCbatrans() {
+    public Integer getIdCbatrans() {
         return idCbatrans;
     }
 
-    public void setIdCbatrans(int idCbatrans) {
+    public void setIdCbatrans(Integer idCbatrans) {
         this.idCbatrans = idCbatrans;
     }
 
-    public int getIdCbaplcta() {
+    public Integer getIdCbaplcta() {
         return idCbaplcta;
     }
 
-    public void setIdCbaplcta(int idCbaplcta) {
+    public void setIdCbaplcta(Integer idCbaplcta) {
         this.idCbaplcta = idCbaplcta;
     }
 
-    public int getIdCbaplctaNumcx() {
+    public Integer getIdCbaplctaNumcx() {
         return idCbaplctaNumcx;
     }
 
-    public void setIdCbaplctaNumcx(int idCbaplctaNumcx) {
+    public void setIdCbaplctaNumcx(Integer idCbaplctaNumcx) {
         this.idCbaplctaNumcx = idCbaplctaNumcx;
     }
 
@@ -158,11 +158,11 @@ public class CbaitmovEntity {
         this.idCbaplctaJuros = idCbaplctaJuros;
     }
 
-    public int getIdCbaplctaJurosDisp() {
+    public Integer getIdCbaplctaJurosDisp() {
         return idCbaplctaJurosDisp;
     }
 
-    public void setIdCbaplctaJurosDisp(int idCbaplctaJurosDisp) {
+    public void setIdCbaplctaJurosDisp(Integer idCbaplctaJurosDisp) {
         this.idCbaplctaJurosDisp = idCbaplctaJurosDisp;
     }
 
@@ -230,11 +230,11 @@ public class CbaitmovEntity {
         this.dC = dC;
     }
 
-    public int getSequencia() {
+    public Integer getSequencia() {
         return sequencia;
     }
 
-    public void setSequencia(int sequencia) {
+    public void setSequencia(Integer sequencia) {
         this.sequencia = sequencia;
     }
 

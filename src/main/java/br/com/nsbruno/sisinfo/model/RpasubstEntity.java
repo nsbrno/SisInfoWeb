@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Data;
 
 @Entity
 @Table(name = "RPASUBST")
+@Data
 public class RpasubstEntity {
 
     @Id
@@ -19,7 +21,7 @@ public class RpasubstEntity {
 
     @Basic(optional = false)
     @Column(name = "ID_RPAPARCE", table = "RPASUBST", nullable = false)
-    private int idRpaparce;
+    private Integer idRpaparce;
 
     @Basic
     @Column(name = "ID_CFATPDOC", table = "RPASUBST")
@@ -76,125 +78,4 @@ public class RpasubstEntity {
     @Column(name = "DT_VENCIMENTO", table = "RPASUBST")
     @Temporal(TemporalType.DATE)
     private Date dtVencimento;
-
-    public Integer getIdRpasubst() {
-        return idRpasubst;
-    }
-
-    public void setIdRpasubst(Integer idRpasubst) {
-        this.idRpasubst = idRpasubst;
-    }
-
-    public int getIdRpaparce() {
-        return idRpaparce;
-    }
-
-    public void setIdRpaparce(int idRpaparce) {
-        this.idRpaparce = idRpaparce;
-    }
-
-    public Integer getIdCfatpdoc() {
-        return idCfatpdoc;
-    }
-
-    public void setIdCfatpdoc(Integer idCfatpdoc) {
-        this.idCfatpdoc = idCfatpdoc;
-    }
-
-    public Integer getIdCfaporta() {
-        return idCfaporta;
-    }
-
-    public void setIdCfaporta(Integer idCfaporta) {
-        this.idCfaporta = idCfaporta;
-    }
-
-    public Integer getIdCbaplctaCtaTrans() {
-        return idCbaplctaCtaTrans;
-    }
-
-    public void setIdCbaplctaCtaTrans(Integer idCbaplctaCtaTrans) {
-        this.idCbaplctaCtaTrans = idCbaplctaCtaTrans;
-    }
-
-    public Integer getIdCbaplctaDp() {
-        return idCbaplctaDp;
-    }
-
-    public void setIdCbaplctaDp(Integer idCbaplctaDp) {
-        this.idCbaplctaDp = idCbaplctaDp;
-    }
-
-    public Integer getIdCbaplcta() {
-        return idCbaplcta;
-    }
-
-    public void setIdCbaplcta(Integer idCbaplcta) {
-        this.idCbaplcta = idCbaplcta;
-    }
-
-    public String getGuid() {
-        return guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
-    }
-
-    public String getUsCad() {
-        return usCad;
-    }
-
-    public void setUsCad(String usCad) {
-        this.usCad = usCad;
-    }
-
-    public Date getDtCad() {
-        return dtCad;
-    }
-
-    public void setDtCad(Date dtCad) {
-        this.dtCad = dtCad;
-    }
-
-    public Date getDtAlt() {
-        return dtAlt;
-    }
-
-    public void setDtAlt(Date dtAlt) {
-        this.dtAlt = dtAlt;
-    }
-
-    public Integer getCtInteg() {
-        return ctInteg;
-    }
-
-    public void setCtInteg(Integer ctInteg) {
-        this.ctInteg = ctInteg;
-    }
-
-    public double getVlParcela() {
-        return vlParcela;
-    }
-
-    public void setVlParcela(double vlParcela) {
-        this.vlParcela = vlParcela;
-    }
-
-    public Date getDtEmissao() {
-        return dtEmissao;
-    }
-
-    public void setDtEmissao(Date dtEmissao) {
-        this.dtEmissao = dtEmissao;
-    }
-
-    public Date getDtVencimento() {
-        return dtVencimento;
-    }
-
-    public void setDtVencimento(Date dtVencimento) {
-        this.dtVencimento = dtVencimento;
-    }
-
 }
